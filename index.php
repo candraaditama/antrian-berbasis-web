@@ -81,7 +81,7 @@
     <div class="container-fluid">
       <!-- copyright -->
       <div class="copyright text-center mb-2 mb-md-0">
-        &copy; 2021 - <a href="https://www.indrasatya.com/" target="_blank" class="text-danger text-decoration-none">www.indrasatya.com</a>. All rights reserved.
+        &copy; 2021 - <a href="#" target="_blank" class="text-danger text-decoration-none">Disdukcapil Bantul</a>. All rights reserved.
       </div>
     </div>
   </footer>

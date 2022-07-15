@@ -92,14 +92,14 @@ require('layout/header.php');
             // jika berhasil
             if (result === 'Sukses') {
               // tampilkan jumlah antrian
-              $('#antrian').load('get_antrian.php').fadeIn('slow');
+              $('#antrian').load('get_antrian.php');
             }
           },
         });
 
-        $.get("get_antrian.php", function (my_var) {
+        $.get("get_antrian.php", function (loketa) {
           // my_var contains whatever that request returned
-          PrintElem(my_var);
+          PrintElem(loketa);
         });
 
       });
@@ -112,14 +112,14 @@ require('layout/header.php');
             // jika berhasil
             if (result === 'Sukses') {
               // tampilkan jumlah antrian
-              $('#antrian-b').load('get_antrian_b.php').fadeIn('slow');
+              $('#antrian-b').load('get_antrian_b.php');
             }
           },
         });
 
-        $.get("get_antrian_b.php", function (my_var) {
+        $.get("get_antrian_b.php", function (loketb) {
           // my_var contains whatever that request returned
-          PrintElem(my_var);
+          PrintElem(loketb);
         });
 
       });

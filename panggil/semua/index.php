@@ -14,17 +14,21 @@
   <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 
   <!-- Fontawesome Icons -->
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Font -->
-  <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&amp;display=swap"
+    rel="stylesheet">
 
   <!-- DataTables -->
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/dt-1.10.25/datatables.min.css" />
@@ -37,13 +41,13 @@
   <main class="flex-shrink-0">
     <div class="container pt-4">
       <!-- <div class="d-flex flex-column flex-md-row px-4 py-3 mb-4 bg-white rounded-2 shadow-sm"> -->
-        <!-- judul halaman -->
-        <!-- <div class="d-flex align-items-center me-md-auto">
+      <!-- judul halaman -->
+      <!-- <div class="d-flex align-items-center me-md-auto">
           <i class="bi-mic-fill text-success me-3 fs-3"></i>
           <h1 class="h5 pt-2 fw-bolder">DAFTAR ANTREAN</h1>
         </div> -->
-        <!-- breadcrumbs -->
-        <!-- <div class="ms-5 ms-md-0 pt-md-3 pb-md-0">
+      <!-- breadcrumbs -->
+      <!-- <div class="ms-5 ms-md-0 pt-md-3 pb-md-0">
           <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="http://Disdukcapil Bantul/"><i class="bi-house-fill text-success"></i></a></li>
@@ -61,7 +65,7 @@
             <div class="card-body p-2">
               <div class="d-flex justify-content-start">
                 <div class="feature-icon-3 me-4">
-                <i class="fa-solid fa-a text-dark"></i>
+                  <i class="fa-solid fa-a text-dark"></i>
                 </div>
                 <div>
                   <p id="jumlah-antrian" class="fs-3 text-dark mb-1"></p>
@@ -129,7 +133,7 @@
             <div class="card-body p-2">
               <div class="d-flex justify-content-start">
                 <div class="feature-icon-3 me-4">
-                <i class="fa-solid fa-b text-dark"></i>
+                  <i class="fa-solid fa-b text-dark"></i>
                 </div>
                 <div>
                   <p id="jumlah-antrian-b" class="fs-3 text-dark mb-1"></p>
@@ -196,7 +200,7 @@
             <div class="card-body p-2">
               <div class="d-flex justify-content-start">
                 <div class="feature-icon-3 me-4">
-                <i class="fa-solid fa-c text-dark"></i>
+                  <i class="fa-solid fa-c text-dark"></i>
                 </div>
                 <div>
                   <p id="jumlah-antrian-c" class="fs-3 text-dark mb-1"></p>
@@ -255,7 +259,7 @@
           </div>
         </div>
       </div>
-      
+
       <div class="row">
         <!-- menampilkan informasi jumlah antrian -->
         <div class="col-md-3 mb-4">
@@ -263,7 +267,7 @@
             <div class="card-body p-2">
               <div class="d-flex justify-content-start">
                 <div class="feature-icon-3 me-4">
-                <i class="fa-solid fa-f text-dark"></i>
+                  <i class="fa-solid fa-f text-dark"></i>
                 </div>
                 <div>
                   <p id="jumlah-antrian-f" class="fs-3 text-dark mb-1"></p>
@@ -330,7 +334,7 @@
             <div class="card-body p-2">
               <div class="d-flex justify-content-start">
                 <div class="feature-icon-3 me-4">
-                <i class="fa-solid fa-g text-dark"></i>
+                  <i class="fa-solid fa-g text-dark"></i>
                 </div>
                 <div>
                   <p id="jumlah-antrian-g" class="fs-3 text-dark mb-1"></p>
@@ -397,7 +401,7 @@
             <div class="card-body p-2">
               <div class="d-flex justify-content-start">
                 <div class="feature-icon-3 me-4">
-                <i class="fa-solid fa-h text-dark"></i>
+                  <i class="fa-solid fa-h text-dark"></i>
                 </div>
                 <div>
                   <p id="jumlah-antrian-h" class="fs-3 text-dark mb-1"></p>
@@ -464,7 +468,7 @@
             <div class="card-body p-2">
               <div class="d-flex justify-content-start">
                 <div class="feature-icon-3 me-4">
-                <i class="fa-solid fa-i text-dark"></i>
+                  <i class="fa-solid fa-i text-dark"></i>
                 </div>
                 <div>
                   <p id="jumlah-antrian-i" class="fs-3 text-dark mb-1"></p>
@@ -533,18 +537,22 @@
       <hr class="my-4">
       <!-- copyright -->
       <div class="copyright text-center mb-2 mb-md-0">
-        &copy; 2022 - <a href="https://disdukcapil.bantulkab.go.id/" target="_blank" class="text-danger text-decoration-none">Disdukcapil Bantul</a>. All rights reserved.
+        &copy; 2022 - <a href="https://disdukcapil.bantulkab.go.id/" target="_blank"
+          class="text-danger text-decoration-none">Disdukcapil Bantul</a>. All rights reserved.
       </div>
     </div>
   </footer>
 
- 
+
 
   <!-- jQuery Core -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <!-- Popper and Bootstrap JS -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script> -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  </script>
 
   <!-- DataTables -->
   <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.10.25/datatables.min.js"></script>
@@ -554,7 +562,7 @@
   <script src="https://code.responsivevoice.org/responsivevoice.js?key=AdOLuec5"></script>
 
   <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
       // tampilkan informasi antrian
       $('#jumlah-antrian').load('../loket-a/get_jumlah_antrian.php');
       $('#antrian-sekarang').load('../loket-a/get_antrian_sekarang.php');
@@ -573,33 +581,33 @@
       $('#antrian-selanjutnya-c').load('../loket-c/get_antrian_selanjutnya.php');
       $('#sisa-antrian-c').load('../loket-c/get_sisa_antrian.php');
 
-    // tampilkan informasi antrian
-    $('#jumlah-antrian-f').load('../loket-f/get_jumlah_antrian.php');
+      // tampilkan informasi antrian
+      $('#jumlah-antrian-f').load('../loket-f/get_jumlah_antrian.php');
       $('#antrian-sekarang-f').load('../loket-f/get_antrian_sekarang.php');
       $('#antrian-selanjutnya-f').load('../loket-f/get_antrian_selanjutnya.php');
       $('#sisa-antrian-f').load('../loket-f/get_sisa_antrian.php');
- 
-          // tampilkan informasi antrian
-    $('#jumlah-antrian-g').load('../loket-g/get_jumlah_antrian.php');
+
+      // tampilkan informasi antrian
+      $('#jumlah-antrian-g').load('../loket-g/get_jumlah_antrian.php');
       $('#antrian-sekarang-g').load('../loket-g/get_antrian_sekarang.php');
       $('#antrian-selanjutnya-g').load('../loket-g/get_antrian_selanjutnya.php');
       $('#sisa-antrian-g').load('../loket-g/get_sisa_antrian.php');
 
- 
-          // tampilkan informasi antrian
-          $('#jumlah-antrian-h').load('../loket-h/get_jumlah_antrian.php');
+
+      // tampilkan informasi antrian
+      $('#jumlah-antrian-h').load('../loket-h/get_jumlah_antrian.php');
       $('#antrian-sekarang-h').load('../loket-h/get_antrian_sekarang.php');
       $('#antrian-selanjutnya-h').load('../loket-h/get_antrian_selanjutnya.php');
       $('#sisa-antrian-h').load('../loket-h/get_sisa_antrian.php');
 
 
-                // tampilkan informasi antrian
-                $('#jumlah-antrian-i').load('../loket-i/get_jumlah_antrian.php');
+      // tampilkan informasi antrian
+      $('#jumlah-antrian-i').load('../loket-i/get_jumlah_antrian.php');
       $('#antrian-sekarang-i').load('../loket-i/get_antrian_sekarang.php');
       $('#antrian-selanjutnya-i').load('../loket-i/get_antrian_selanjutnya.php');
       $('#sisa-antrian-i').load('../loket-i/get_sisa_antrian.php');
       // auto reload data antrian setiap 1 detik untuk menampilkan data secara realtime
-      setInterval(function() {
+      setInterval(function () {
         $('#jumlah-antrian').load('../loket-a/get_jumlah_antrian.php').fadeIn("slow");
         $('#antrian-sekarang').load('../loket-a/get_antrian_sekarang.php').fadeIn("slow");
         $('#antrian-selanjutnya').load('../loket-a/get_antrian_selanjutnya.php').fadeIn("slow");

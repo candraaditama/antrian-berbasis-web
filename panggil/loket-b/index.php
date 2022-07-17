@@ -42,7 +42,7 @@
         <div class="ms-5 ms-md-0 pt-md-3 pb-md-0">
           <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="http://www.indrasatya.com/"><i class="bi-house-fill text-success"></i></a></li>
+              <li class="breadcrumb-item"><a href="http://Disdukcapil Bantul/"><i class="bi-house-fill text-success"></i></a></li>
               <li class="breadcrumb-item" aria-current="page">Dashboard</li>
               <li class="breadcrumb-item" aria-current="page">Antrian</li>
             </ol>
@@ -141,10 +141,13 @@
       <hr class="my-4">
       <!-- copyright -->
       <div class="copyright text-center mb-2 mb-md-0">
-        &copy; 2021 - <a href="https://www.indrasatya.com/" target="_blank" class="text-danger text-decoration-none">www.indrasatya.com</a>. All rights reserved.
+        &copy; 2022 - <a href="https://disdukcapil.bantulkab.go.id/" target="_blank" class="text-danger text-decoration-none">Disdukcapil Bantul</a>. All rights reserved.
       </div>
     </div>
   </footer>
+
+
+
 
   <!-- load file audio bell antrian -->
   <audio id="tingtung" src="../../assets/audio/tingtung.mp3"></audio>

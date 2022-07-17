@@ -113,14 +113,17 @@ require('layout/header.php');
             if (result === 'Sukses') {
               // tampilkan jumlah antrian
               $('#antrian-b').load('get_antrian_b.php');
+              $.get("get_antrian_b.php", function (loketb) {
+          // my_var contains whatever that request returned
+          PrintElem(loketb);
+          $('#antrian-b').text(loketb);
+
+        });
             }
           },
         });
 
-        $.get("get_antrian_b.php", function (loketb) {
-          // my_var contains whatever that request returned
-          PrintElem(loketb);
-        });
+
 
       });
 

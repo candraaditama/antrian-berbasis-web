@@ -66,7 +66,7 @@
               </div>
               <h3>Panggilan Antrian</h3>
               <p class="mb-4">Halaman Panggilan Antrian digunakan petugas loket untuk memanggil antrian pengunjung.</p>
-              <a href="panggilan-antrian" class="btn btn-success rounded-pill px-4 py-2">
+              <a href="#" class="btn btn-success rounded-pill px-4 py-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Tampilkan <i class="bi-chevron-right ms-2"></i>
               </a>
             </div>
@@ -81,10 +81,39 @@
     <div class="container-fluid">
       <!-- copyright -->
       <div class="copyright text-center mb-2 mb-md-0">
-        &copy; 2021 - <a href="#" target="_blank" class="text-danger text-decoration-none">Disdukcapil Bantul</a>. All rights reserved.
+        &copy; 2022 - <a href="#" target="_blank" class="text-danger text-decoration-none">Disdukcapil Bantul</a>. All rights reserved.
       </div>
     </div>
   </footer>
+<!-- Modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Pilih Loket</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <a class="btn btn-lg btn-success m-2" href="panggil/loket-a" role="button">Loket A</a>
+      <a class="btn btn-lg btn-success m-2" href="#" role="button">Loket B</a>
+      <a class="btn btn-lg btn-success m-2" href="#" role="button">Loket C</a>
+      <a class="btn btn-lg btn-success m-2" href="#" role="button">Loket D</a>
+      <a class="btn btn-lg btn-success m-2" href="#" role="button">Loket E</a>
+      <a class="btn btn-lg btn-success m-2" href="#" role="button">Loket F</a>
+      <a class="btn btn-lg btn-success m-2" href="#" role="button">Loket G</a>
+      <a class="btn btn-lg btn-success m-2" href="#" role="button">Loket H</a>
+      <a class="btn btn-lg btn-success m-2" href="#" role="button">Loket I</a>
+      <a class="btn btn-lg btn-success m-2" href="#" role="button">Loket J</a>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+      </div>
+    </div>
+  </div>
+</div>
 
   <!-- Popper and Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

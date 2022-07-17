@@ -97,15 +97,15 @@
       </div>
       <div class="modal-body">
       <a class="btn btn-lg btn-success m-2" href="panggil/loket-a" role="button">Loket A</a>
-      <a class="btn btn-lg btn-success m-2" href="#" role="button">Loket B</a>
-      <a class="btn btn-lg btn-success m-2" href="#" role="button">Loket C</a>
-      <a class="btn btn-lg btn-success m-2" href="#" role="button">Loket D</a>
-      <a class="btn btn-lg btn-success m-2" href="#" role="button">Loket E</a>
-      <a class="btn btn-lg btn-success m-2" href="#" role="button">Loket F</a>
-      <a class="btn btn-lg btn-success m-2" href="#" role="button">Loket G</a>
-      <a class="btn btn-lg btn-success m-2" href="#" role="button">Loket H</a>
-      <a class="btn btn-lg btn-success m-2" href="#" role="button">Loket I</a>
-      <a class="btn btn-lg btn-success m-2" href="#" role="button">Loket J</a>
+      <a class="btn btn-lg btn-success m-2" href="panggil/loket-b" role="button">Loket B</a>
+      <a class="btn btn-lg btn-success m-2" href="panggil/loket-c" role="button">Loket C</a>
+      <a class="btn btn-lg btn-success m-2" href="panggil/loket-d" role="button">Loket D</a>
+      <a class="btn btn-lg btn-success m-2" href="panggil/loket-e" role="button">Loket E</a>
+      <a class="btn btn-lg btn-success m-2" href="panggil/loket-f" role="button">Loket F</a>
+      <a class="btn btn-lg btn-success m-2" href="panggil/loket-g" role="button">Loket G</a>
+      <a class="btn btn-lg btn-success m-2" href="panggil/loket-h" role="button">Loket H</a>
+      <a class="btn btn-lg btn-success m-2" href="panggil/loket-i" role="button">Loket I</a>
+      <a class="btn btn-lg btn-success m-2" href="panggil/loket-j" role="button">Loket J</a>
 
       </div>
       <div class="modal-footer">

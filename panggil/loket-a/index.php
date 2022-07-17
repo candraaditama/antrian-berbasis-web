@@ -147,7 +147,7 @@
   </footer>
 
   <!-- load file audio bell antrian -->
-  <audio id="tingtung" src="../assets/audio/tingtung.mp3"></audio>
+  <audio id="tingtung" src="../../assets/audio/tingtung.mp3"></audio>
 
   <!-- jQuery Core -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -237,7 +237,7 @@
 
         // mainkan suara nomor antrian
         setTimeout(function() {
-          responsiveVoice.speak("Nomor Antrian, A-" + data["no_antrian"] + ", menuju, loket, A", "Indonesian Female", {
+          responsiveVoice.speak("Nomor Antrian, " + data["no_antrian"] + ", menuju, loket, A", "Indonesian Female", {
             rate: 0.78,
             pitch: 1,
             volume: 1

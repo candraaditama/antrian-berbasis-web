@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Project counter</title>
+    <title>Display Antrean</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap CSS -->
@@ -45,19 +45,13 @@
                     <p class="fw-bolder">MUTASI PENDUDUK</p>
                 </div>
                 <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
-                    <p id="number1" class="loket">Loket D</p>
-                    <p id="antrian-sekarang-d" class="number"></p>
-                    <span></span>
-                    <p class="fw-bolder">AKTA KELAHIRAN & KEMATIAN</p>
-                </div>
-            </div>
-            <div class="projectFactsWrap ">
-                <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
                     <p id="number1" class="loket">Loket F</p>
                     <p id="antrian-sekarang-f" class="number"></p>
                     <span></span>
                     <p class="fw-bolder">LEGALISIR</p>
                 </div>
+            </div>
+            <div class="projectFactsWrap ">
                 <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
                     <p id="number1" class="loket">Loket G</p>
                     <p id="antrian-sekarang-g" class="number"></p>
@@ -75,6 +69,12 @@
                     <p id="antrian-sekarang-i" class="number"></p>
                     <span></span>
                     <p class="fw-bolder">PERKAWINAN</p>
+                </div>
+                <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
+                    <p id="number1" class="loket">Loket J</p>
+                    <p id="antrian-sekarang-j" class="number"></p>
+                    <span></span>
+                    <p class="fw-bolder">UMUM</p>
                 </div>
             </div>
         </div>
@@ -101,7 +101,7 @@
             $('#antrian-sekarang-c').load('../loket-c/get_antrian_sekarang.php');
 
             // tampilkan informasi antrian
-            $('#antrian-sekarang-d').load('../loket-d/get_antrian_sekarang.php');
+            $('#antrian-sekarang-j').load('../loket-j/get_antrian_sekarang.php');
 
             // tampilkan informasi antrian
             $('#antrian-sekarang-f').load('../loket-f/get_antrian_sekarang.php');
@@ -124,7 +124,7 @@
 
                 $('#antrian-sekarang-c').load('../loket-c/get_antrian_sekarang.php').fadeIn("slow");
 
-                $('#antrian-sekarang-d').load('../loket-d/get_antrian_sekarang.php').fadeIn("slow");
+                $('#antrian-sekarang-j').load('../loket-j/get_antrian_sekarang.php').fadeIn("slow");
 
                 $('#antrian-sekarang-f').load('../loket-f/get_antrian_sekarang.php').fadeIn("slow");
 

@@ -28,7 +28,9 @@
   <!-- Custom Style -->
   <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
-
+<?php
+header("Access-Control-Allow-Origin: *");
+?>
 <body class="d-flex flex-column h-100">
   <main class="flex-shrink-0">
     <div class="container pt-4">

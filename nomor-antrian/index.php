@@ -521,7 +521,7 @@ require('layout/header.php');
 
         mywindow.print();
         mywindow.close();
-      }, 250);
+      }, 150);
       return true;
     }
   </script>

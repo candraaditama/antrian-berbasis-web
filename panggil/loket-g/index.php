@@ -23,7 +23,7 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
 
   <!-- DataTables -->
-  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/dt-1.10.25/datatables.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css" />
 
   <!-- Custom Style -->
   <link rel="stylesheet" href="../../assets/css/style.css">
@@ -124,6 +124,7 @@
               <thead>
                 <tr>
                   <th>Nomor Antrian</th>
+                  <th>ID</th>
                   <th>Status</th>
                   <th>Panggil</th>
                 </tr>
@@ -156,7 +157,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
   <!-- DataTables -->
-  <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.10.25/datatables.min.js"></script>
+  <script type="text/javascript" src="http://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
   <!-- Responsivevoice -->
   <!-- Get API Key -> https://responsivevoice.org/ -->
   <!-- <script src="https://code.responsivevoice.org/responsivevoice.js?key=jQZ2zcdq"></script> -->
@@ -180,6 +182,10 @@
             "data": "no_antrian",
             "width": '250px',
             "className": 'text-center'
+          },
+          {
+            "data": "id",
+            "visible": false
           },
           {
             "data": "status",
@@ -212,7 +218,7 @@
           },
         ],
         "order": [
-          [0, "desc"]             // urutkan data berdasarkan "no_antrian" secara descending
+          [1, "desc"]             // urutkan data berdasarkan "no_antrian" secara descending
         ],
         "iDisplayLength": 10,     // tampilkan 10 data per halaman
       });

@@ -126,6 +126,7 @@ header("Access-Control-Allow-Origin: *");
               <thead>
                 <tr>
                   <th>Nomor Antrian</th>
+                  <th>ID</th>
                   <th>Status</th>
                   <th>Panggil</th>
                 </tr>
@@ -184,6 +185,10 @@ header("Access-Control-Allow-Origin: *");
             "className": 'text-center'
           },
           {
+            "data": "id",
+            "visible": false
+          },
+          {
             "data": "status",
             "visible": false
           },
@@ -214,7 +219,7 @@ header("Access-Control-Allow-Origin: *");
           },
         ],
         "order": [
-          [0, "desc"]             // urutkan data berdasarkan "no_antrian" secara descending
+          [1, "desc"]             // urutkan data berdasarkan "no_antrian" secara descending
         ],
         "iDisplayLength": 10,     // tampilkan 10 data per halaman
       });

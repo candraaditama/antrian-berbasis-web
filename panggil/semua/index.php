@@ -129,7 +129,7 @@
                                         </tr>
                                         <tbody>
                                             <tr>
-                                                <td class="text-warning pt-2">PENGADUAN</td>
+                                                <td class="text-warning pt-4">PENGADUAN</td>
                                                 <td class="text-right text-warning">0821-3325-6500</td>
                                             </tr>
                                             <tr>

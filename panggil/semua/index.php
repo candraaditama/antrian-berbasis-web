@@ -130,23 +130,23 @@
                                         <tbody>
                                             <tr>
                                                 <td class="text-warning pt-4">PENGADUAN</td>
-                                                <td class="text-right text-warning">0821-3325-6500</td>
+                                                <td class="text-right text-warning pt-4">0821-3325-6500</td>
                                             </tr>
                                             <tr>
                                                 <td class="text-warning pt-2">KARTU KELUARGA</td>
-                                                <td class="text-right text-warning">0895-1033-0146</td>
+                                                <td class="text-right text-warning pt-2">0895-1033-0146</td>
                                             </tr>
                                             <tr>
                                                 <td class="text-warning pt-2">MUTASI PENDUDUK</td>
-                                                <td class="text-right text-warning">0895-3448-3998</td>
+                                                <td class="text-right text-warning pt-2 ">0895-3448-3998</td>
                                             </tr>
                                             <tr>
                                                 <td class="text-warning pt-2">PERKAWINAN</td>
-                                                <td class="text-right text-warning">0819-1078-1439</td>
+                                                <td class="text-right text-warning pt-2">0819-1078-1439</td>
                                             </tr>
                                             <tr>
                                                 <td class="text-warning pt-2">PENCATATAN SIPIL</td>
-                                                <td class="text-right text-warning">0897-0870-006</td>
+                                                <td class="text-right text-warning pt-2">0897-0870-006</td>
                                             </tr>
                                         </tbody>
                                     </thead>

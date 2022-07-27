@@ -109,7 +109,6 @@
             // tampilkan informasi antrian
             $('#antrian-sekarang-g').load('../loket-g/get_antrian_sekarang.php');
 
-
             // tampilkan informasi antrian
             $('#antrian-sekarang-h').load('../loket-h/get_antrian_sekarang.php');
 

@@ -1,93 +1,166 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Display Antrean</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
-
-
-    <link rel="stylesheet" type="text/css" href="../../assets/css/dark.css">
-
-
+    <title>:: Media Informasi Antrian Cetak ::</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <script type="text/javascript" src="../../asset/js/bootstrap.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../../assets/js/index.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="../../assets/css/index.min.css" />
 </head>
 
-<body>
-
-    <div class="sectiontitle mb-5">
-        <h2>Dinas Kependudukan & Pencatatan Sipil <br /> Kabupaten Bantul</h2>
-        <!-- <span class="headerLine mt-2"></span> -->
+<body id="bg-body">
+    <div id="header" class="bg-blue-opacity mt-3">
+        <div class="container-fluid d-flex">
+            <img class="float-left" src="../../assets/img/logo.png" width="35%">
+            <div class="float-right ml-auto my-auto text-center section-time bg-blue">
+                <h1 id="time" class="text-warning">sdfsdf</h1>
+                <p id="date" class="text-white font-weight-bolder">dfsdf</p>
+            </div>
+            <div style="clear: both"></div>
+        </div>
     </div>
-    <div id="projectFacts" class="sectionClass">
-        <div class="fullWidth eight columns">
-            <div class="projectFactsWrap ">
-                <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
-                    <p id="number1" class="loket">Loket A</p>
-                    <p id="antrian-sekarang" class="number"></p>
-                    <span></span>
-                    <p class="fw-bolder">PEREKAMAN KTP</p>
-                </div>
-                <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
-                    <p id="number1" class="loket">Loket B</p>
-                    <p id="antrian-sekarang-b" class="number"></p>
-                    <span></span>
-                    <p class="fw-bolder">KARTU KELUARGA</p>
-                </div>
-                <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
-                    <p id="number1" class="loket">Loket C</p>
-                    <p id="antrian-sekarang-c" class="number"></p>
-                    <span></span>
-                    <p class="fw-bolder">MUTASI PENDUDUK</p>
-                </div>
-                <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
-                    <p id="number1" class="loket">Loket F</p>
-                    <p id="antrian-sekarang-f" class="number"></p>
-                    <span></span>
-                    <p class="fw-bolder">LEGALISIR</p>
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card shadow bg-blue">
+                    <div class="card-body">
+                        <table class="header shadow">
+                            <thead>
+                                <tr></tr>
+                                <!-- <tr>DAFTAR ANTREAN</th></tr> -->
+                                <tr>
+                                    <th width="33%" class="p-3 rounded">INFORMASI ANTREAN</th>
+
+                                </tr>
+                            </thead>
+                        </table>
+                        <div id="projectFacts" class="sectionClass">
+                            <div class="fullWidth eight columns">
+                                <div class="projectFactsWrap ">
+                                    <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
+                                        <p id="number1" class="loket">Loket A</p>
+                                        <p id="antrian-sekarang" class="number">A-12</p>
+                                        <span></span>
+                                        <p class="fw-bolder">PEREKAMAN KTP</p>
+                                    </div>
+                                    <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
+                                        <p id="number1" class="loket">Loket B</p>
+                                        <p id="antrian-sekarang-b" class="number"></p>
+                                        <span></span>
+                                        <p class="fw-bolder">KARTU KELUARGA</p>
+                                    </div>
+                                    <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
+                                        <p id="number1" class="loket">Loket C</p>
+                                        <p id="antrian-sekarang-c" class="number"></p>
+                                        <span></span>
+                                        <p class="fw-bolder">MUTASI PENDUDUK</p>
+                                    </div>
+                                    <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
+                                        <p id="number1" class="loket">Loket F</p>
+                                        <p id="antrian-sekarang-f" class="number"></p>
+                                        <span></span>
+                                        <p class="fw-bolder">LEGALISIR</p>
+                                    </div>
+                                </div>
+                                <div class="projectFactsWrap ">
+                                    <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
+                                        <p id="number1" class="loket">Loket G</p>
+                                        <p id="antrian-sekarang-g" class="number">G-21</p>
+                                        <span></span>
+                                        <p class="fw-bolder">KONSULTASI</p>
+                                    </div>
+                                    <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
+                                        <p id="number1" class="loket">Loket H</p>
+                                        <p id="antrian-sekarang-h" class="number"></p>
+                                        <span></span>
+                                        <p class="fw-bolder">PENGADUAN & PPID</p>
+                                    </div>
+                                    <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
+                                        <p id="number1" class="loket">Loket I</p>
+                                        <p id="antrian-sekarang-i" class="number"></p>
+                                        <span></span>
+                                        <p class="fw-bolder">PERKAWINAN</p>
+                                    </div>
+                                    <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
+                                        <p id="number1" class="loket">Loket J</p>
+                                        <p id="antrian-sekarang-j" class="number"></p>
+                                        <span></span>
+                                        <p class="fw-bolder">UMUM</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="projectFactsWrap ">
-                <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
-                    <p id="number1" class="loket">Loket G</p>
-                    <p id="antrian-sekarang-g" class="number"></p>
-                    <span></span>
-                    <p class="fw-bolder">KONSULTASI</p>
+            <div class="col-md-4">
+                <div class="card shadow mb-2 bg-blue">
+                    <div class="card-body p-1">
+                        <div class="image-inner" id="image-inner">
+
+                            <div class="image-item'.$active.'" id="image-item">
+                                <img class="d-block img-fluid w-100"
+                                    src='../../assets/img/MAKLUMAT.jpg' alt="">
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-                <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
-                    <p id="number1" class="loket">Loket H</p>
-                    <p id="antrian-sekarang-h" class="number"></p>
-                    <span></span>
-                    <p class="fw-bolder">PENGADUAN & PPID</p>
-                </div>
-                <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
-                    <p id="number1" class="loket">Loket I</p>
-                    <p id="antrian-sekarang-i" class="number"></p>
-                    <span></span>
-                    <p class="fw-bolder">PERKAWINAN</p>
-                </div>
-                <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
-                    <p id="number1" class="loket">Loket J</p>
-                    <p id="antrian-sekarang-j" class="number"></p>
-                    <span></span>
-                    <p class="fw-bolder">UMUM</p>
+                <div id="caraousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item'.$active.'">
+                            <!-- <img class="d-block img-fluid w-100"
+                                src='../../asset/images/desain_banner/50aed40d12f49144a2a91ecb757561ec.png' alt=""> -->
+                                <table class="header shadow table-kontak">
+                                    <thead>
+                                        <tr></tr>
+                                        <!-- <tr>DAFTAR ANTREAN</th></tr> -->
+                                        <tr>
+                                            <th width="33%" class="rounded p-3" colspan="2">NOMOR WHATSAPP</th>
+                                        </tr>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-warning pt-3">PENGADUAN</td>
+                                                <td class="text-right text-warning">0821-3325-6500</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-warning pt-3">KARTU KELUARGA</td>
+                                                <td class="text-right text-warning">0895-1033-0146</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-warning pt-3">PENCATATAN SIPIL</td>
+                                                <td class="text-right text-warning">0897-0870-006</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-warning pt-3">MUTASI PENDUDUK</td>
+                                                <td class="text-right text-warning">0895-3448-3998</td>
+                                            </tr>
+                                        </tbody>
+                                    </thead>
+                                </table>
+                                
+                        </div>
+                        
+
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- jQuery Core -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-    <!-- Popper and Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
-    </script>
+    <div class="footer">
+        <div class="container-fluid">
+            <marquee>SELAMAT DATANG DI DINAS KEPENDUDUKAN & PENCATATAN SIPIL KABUPATEN BANTUL </marquee>
+        </div>
+    </div>
 
     <script type="text/javascript">
         $(document).ready(function () {
@@ -137,7 +210,6 @@
             }, 1000);
         });
     </script>
-
 </body>
 
 </html>

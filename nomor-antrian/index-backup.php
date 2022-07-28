@@ -294,15 +294,12 @@ require('layout/header.php');
             // jika berhasil
             if (result === 'Sukses') {
               // tampilkan jumlah antrian
+              
+        $.get("get_antrian.php", function (loketa) {
+          PrintElem(loketa);
+          $('#antrian').text(loketa);
 
-              $.get("get_antrian.php", function (loketa) {
-                $.get('../panggil/loket-a/get_sisa_antrian.php', function (data) {
-                  sisa_a = data - 1;
-                  PrintElem(loketa, sisa_a);
-                });
-                $('#antrian').text(loketa);
-
-              });
+        });
 
             }
           },
@@ -318,10 +315,7 @@ require('layout/header.php');
             // jika berhasil
             if (result === 'Sukses') {
               $.get("get_antrian_b.php", function (loketb) {
-                $.get('../panggil/loket-b/get_sisa_antrian_b.php', function (data) {
-                  sisa_b = data - 1;
-                  PrintElem(loketb, sisa_b);
-                });
+                PrintElem(loketb);
                 $('#antrian-b').text(loketb);
               });
             }
@@ -337,10 +331,7 @@ require('layout/header.php');
             // jika berhasil
             if (result === 'Sukses') {
               $.get("get_antrian_c.php", function (loketc) {
-                $.get('../panggil/loket-c/get_sisa_antrian.php', function (data) {
-                  sisa_c = data - 1;
-                  PrintElem(loketc, sisa_c);
-                });
+                PrintElem(loketc);
                 $('#antrian-c').text(loketc);
               });
             }
@@ -356,10 +347,7 @@ require('layout/header.php');
             // jika berhasil
             if (result === 'Sukses') {
               $.get("get_antrian_d.php", function (loketd) {
-                $.get('../panggil/loket-d/get_sisa_antrian.php', function (data) {
-                  sisa_d = data - 1;
-                  PrintElem(loketd, sisa_d);
-                });
+                PrintElem(loketd);
                 $('#antrian-d').text(loketd);
               });
             }
@@ -375,10 +363,7 @@ require('layout/header.php');
             // jika berhasil
             if (result === 'Sukses') {
               $.get("get_antrian_e.php", function (lokete) {
-                $.get('../panggil/loket-e/get_sisa_antrian.php', function (data) {
-                  sisa_e = data - 1;
-                  PrintElem(lokete, sisa_e);
-                });
+                PrintElem(lokete);
                 $('#antrian-e').text(lokete);
               });
             }
@@ -394,10 +379,7 @@ require('layout/header.php');
             // jika berhasil
             if (result === 'Sukses') {
               $.get("get_antrian_f.php", function (loketf) {
-                $.get('../panggil/loket-f/get_sisa_antrian.php', function (data) {
-                  sisa_f = data - 1;
-                  PrintElem(loketf, sisa_f);
-                });
+                PrintElem(loketf);
                 $('#antrian-f').text(loketf);
               });
             }
@@ -413,10 +395,7 @@ require('layout/header.php');
             // jika berhasil
             if (result === 'Sukses') {
               $.get("get_antrian_g.php", function (loketg) {
-                $.get('../panggil/loket-g/get_sisa_antrian.php', function (data) {
-                  sisa_g = data - 1;
-                  PrintElem(loketg, sisa_g);
-                });
+                PrintElem(loketg);
                 $('#antrian-g').text(loketg);
               });
             }
@@ -432,10 +411,7 @@ require('layout/header.php');
             // jika berhasil
             if (result === 'Sukses') {
               $.get("get_antrian_h.php", function (loketh) {
-                $.get('../panggil/loket-h/get_sisa_antrian.php', function (data) {
-                  sisa_h = data - 1;
-                  PrintElem(loketh, sisa_h);
-                });
+                PrintElem(loketh);
                 $('#antrian-h').text(loketh);
               });
             }
@@ -451,11 +427,8 @@ require('layout/header.php');
             // jika berhasil
             if (result === 'Sukses') {
               $.get("get_antrian_i.php", function (loketi) {
-                $.get('../panggil/loket-i/get_sisa_antrian.php', function (data) {
-                  sisa_i = data - 1;
-                  PrintElem(loketi, sisa_i);
-                });               
-                 $('#antrian-i').text(loketi);
+                PrintElem(loketi);
+                $('#antrian-i').text(loketi);
               });
             }
           },
@@ -470,10 +443,7 @@ require('layout/header.php');
             // jika berhasil
             if (result === 'Sukses') {
               $.get("get_antrian_j.php", function (loketj) {
-                $.get('../panggil/loket-j/get_sisa_antrian.php', function (data) {
-                  sisa_j = data - 1;
-                  PrintElem(loketj, sisa_j);
-                });
+                PrintElem(loketj);
                 $('#antrian-j').text(loketj);
               });
             }
@@ -485,7 +455,7 @@ require('layout/header.php');
     });
 
 
-    function PrintElem(nomor, sisa) {
+    function PrintElem(nomor) {
       let today = new Date().toLocaleDateString();
       let time = new Date().toLocaleTimeString();
       let loket = nomor.charAt(0);
@@ -494,7 +464,7 @@ require('layout/header.php');
           loket = "Loket A (Perekaman KTP)";
           break;
         case "B":
-          loket = "Loket B (Kartu Keluarga)";
+          loket = "Loket B (Pendaftaran Penduduk)";
           break;
         case "C":
           loket = "Loket C (Mutasi Penduduk)";
@@ -527,24 +497,21 @@ require('layout/header.php');
         '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Antrian</title></head>'
       );
       mywindow.document.write(
-        '<style>.blog,.container{position:absolute;z-index:1}.blog,.body .info p,.cart .content,.head .number,.head .ref{font-size:14px}.cart_list .cart_item .jam,.cart_list .cart_item .tanggal{margin-left:2px;font-weight:700}.foot,.head{display:flex}img,svg,ul{display:block}:after,:before{box-sizing:border-box}body{font:16px/1.2 Nunito,sans-serif;margin:0}.blog{font-weight:700;text-align:center;bottom:15px;left:50%}.container{width:280px;height:auto;border-radius:5px;background-color:#fff}.body .info,.foot{position:relative}.receipt_box>*{padding:0}.head{align-items:center}.head .logo{flex:1 0 10%}.head .number{flex:1 0 70%;font-weight:900;text-transform:uppercase}.head .ref{font-weight:400;text-transform:none}.body .info:before{content:"";display:block;width:5px;height:100%;position:absolute;top:0;left:-32px}.body .info .welcome,.cart_list .cart_item .price{font-weight:700}.body .info .welcome .username,.cart_list{color:#000}.cart .title{font-size:40px;font-weight:900;text-align:center;text-transform:capitalize;margin:-7px}.cart_list .cart_item{display:flex;padding:3px 0}.cart_list .cart_item+.cart_item{border-top:1px dashed #000}.cart_list .cart_item .index{margin-right:8px;overflow:hidden}.cart_list .cart_item .name{flex-grow:1}.cart_list .cart_item .jam{text-align:right;float:right}.cart_list .cart_item .label-jam{float:right;margin-left:auto}.cart .total{font-weight:700;text-transform:uppercase}.cart .total_price{float:right}.foot{margin-top:3px}.foot:after,.foot:before{border:4px solid transparent;position:absolute;top:-5px}.foot .logo{flex:1 0 20%}.foot .number{flex:1 0 80%;font-size:12px}ul{list-style-type:disc;margin-block-start:0em;margin-block-end:0em;margin-inline-start:0;margin-inline-end:0;padding-inline-start:10px}@media print{@page{size:auto;margin:0}}</style>'
+        '<style>*,*:before,*:after { box-sizing: border-box;}body { font: 16px/1.2 "Nunito", sans-serif;}.blog { font-size: 14px; font-weight: bold; text-align: center; position: absolute; bottom: 15px; left: 50%; z-index: 1;}svg,img { display: block;}/* container */.container { width: 280px; height: auto; border-radius: 5px; background-color: white; position: absolute; z-index: 1;}/* receipt_box */.receipt_box>* { padding: 5px 10px;}/* head */.head { display: flex; align-items: center;}.head .logo { flex: 1 0 20%;}.head .number { flex: 1 0 70%; font-size: 13px; font-weight: 800; text-transform: uppercase;}.head .ref { font-size: 14px; font-weight: normal; text-transform: none;}/* body */.body .info { position: relative;}.body .info:before { content: ""; display: block; width: 5px; height: 100%; position: absolute; top: 0; left: -32px;}.body .info .welcome { font-weight: bold;}.body .info .welcome .username { color: rgb(0, 0, 0);}.body .info p { font-size: 14px;}.cart .title { font-size: 36px; font-weight: 900; text-align: center; text-transform: capitalize;}.cart .content { font-size: 14px;}.cart_list { color: black;}.cart_list .cart_item { display: flex; padding: 5px 0;}.cart_list .cart_item+.cart_item { border-top: 1px dashed rgb(0, 0, 0);}.cart_list .cart_item .index { margin-right: 8px; width: 18px; overflow: hidden;}.cart_list .cart_item .name { flex-grow: 1;}.cart_list .cart_item .price { font-weight: bold;}.cart .total { font-weight: bold; text-transform: uppercase; /* border-top: 2px solid black; */}.cart .total_price { float: right;}/* foot */.foot { border-top: 2px dotted black; position: relative; display: flex;}.foot:before,.foot:after { border: 4px solid transparent; position: absolute; top: -5px;}.foot:before { content: ""; display: block; border-left: 7px solid black; left: -1px;}.foot:after { content: ""; display: block; border-right: 7px solid black; right: -1px;}.foot .logo { flex: 1 0 20%;}.foot .number { flex: 1 0 70%; font-size: 12px;}ul { display: block; list-style-type: disc; margin-block-start: 0em; margin-block-end: 0em; margin-inline-start: 0px; margin-inline-end: 0px; padding-inline-start: 10px;}@media print {@page { size: auto; margin: 0mm;}}</style>'
       );
       mywindow.document.write(
-        '<body><div class="container"> <div class="receipt_box"><div class="head"><div class="logo"> <img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Seal_of_Bantul_Regency.svg" width="40px" /></div><div class="number"> <div class="date">Dinas Kependudukan dan Pencatatan Sipil</div> <div class="ref">Kabupaten Bantul</div></div></div><div class="body"><div class="info"> <center><div class="welcome">Nomor Antrean Anda</div> </center></div><div class="cart"> <div class="title">' +
+        '<body><div class="container"> <div class="receipt_box"><div class="head"><div class="logo"> <img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Seal_of_Bantul_Regency.svg" width="40px" /></div><div class="number"> <div class="date">Dinas Kependudukan dan Pencatatan Sipil</div> <div class="ref">Kabupaten Bantul</div></div></div><div class="body"><div class="info"> <center><div class="welcome">Nomor Antrian Anda</div> </center></div><div class="cart"> <div class="title">' +
         nomor +
-        '</div> <div class="content"><ul class="cart_list"><li class="cart_item">Tanggal : <span class="tanggal">' +
+        '</div> <div class="content"><ul class="cart_list"><li class="cart_item"> <span class="index">1</span> <span class="name">Tanggal</span> <span class="price">' +
         today +
-        '</span><span class="label-jam">Jam : </span><span class="jam">' +
-        time +
-        '</span></li><li class="cart_item"><span class="index">1</span><span class="name">Layanan</span> <span class="price">' +
-        loket +
-        '</span></li><li class="cart_item"> <span class="index">2</span> <span class="name">Jumlah antrean didepan Anda</span> <span class="price">' +
-        sisa + '</span></li></ul></div></div></div><div class="foot"><div class="logo"> ');
+        '</span></li><li class="cart_item"> <span class="index">2</span> <span class="name">Jam</span> <span class="price">' +
+        time + '</span></li></ul><div class="total"><center><span>' + loket +
+        '</span></center></div> </div></div><center></center></div><div class="foot"><div class="logo"> ');
 
       qrcode.write('https://dukcapilonline.bantulkab.go.id/antrean/scan/' + nomor).make();
       mywindow.document.write(
         '<img src="' + qrcode.toDataURL() +
-        '" width="48" /> </div><div class="number"> Dimohon menunggu sampai nomor antrean Anda dipanggil petugas. <br />Terima kasih</div></div> </div></div></body>'
+        '" width="48" /> </div><div class="number"> Dimohon menunggu sampai nomor antrean dipanggil petugas. <br />Terima kasih</div></div> </div></div></body>'
       );
 
       mywindow.document.write('</body></html>');

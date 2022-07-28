@@ -1,7 +1,7 @@
 <html lang="en">
 
 <head>
-    <title>:: Media Informasi Antrian Cetak ::</title>
+    <title>:: Media Informasi Antrian Disdukcapil ::</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <script type="text/javascript" src="../../asset/js/bootstrap.min.js"></script> -->
@@ -162,7 +162,7 @@
     </div>
     <div class="footer">
         <div class="container-fluid">
-            <marquee>SELAMAT DATANG DI DINAS KEPENDUDUKAN & PENCATATAN SIPIL KABUPATEN BANTUL </marquee>
+            <marquee>SELAMAT DATANG DI DINAS KEPENDUDUKAN & PENCATATAN SIPIL KABUPATEN BANTUL <span class="text-warning"> TETAP JAGA PROTOKOL KESEHATAN</span> MOHON BERKENAN MENUNGGU HINGGA NOMOR ANTREAN DIPANGGIL OLEH PETUGAS</marquee>
         </div>
     </div>
 

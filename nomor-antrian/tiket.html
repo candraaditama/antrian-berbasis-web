@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antrian</title>
+    <style>
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+
+        body {
+            font: 16px/1.2 "Nunito", sans-serif;
+            margin: 0px;
+        }
+
+        .blog {
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            z-index: 1;
+        }
+
+        svg,
+        img {
+            display: block;
+        }
+
+        /* container */
+        .container {
+            width: 280px;
+            height: auto;
+            border-radius: 5px;
+            background-color: white;
+            position: absolute;
+            z-index: 1;
+        }
+
+        /* receipt_box */
+        .receipt_box>* {
+            padding: 0px 0px;
+        }
+
+        /* head */
+        .head {
+            display: flex;
+            align-items: center;
+        }
+
+        .head .logo {
+            flex: 1 0 10%;
+        }
+
+        .head .number {
+            flex: 1 0 70%;
+            font-size: 14px;
+            font-weight: 900;
+            text-transform: uppercase;
+            /* line-height: 0.9; */
+        }
+
+        .head .ref {
+            font-size: 14px;
+            font-weight: normal;
+            text-transform: none;
+        }
+
+        /* body */
+        .body .info {
+            position: relative;
+        }
+
+        .body .info:before {
+            content: "";
+            display: block;
+            width: 5px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: -32px;
+        }
+
+        .body .info .welcome {
+            font-weight: bold;
+        }
+
+        .body .info .welcome .username {
+            color: rgb(0, 0, 0);
+        }
+
+        .body .info p {
+            font-size: 14px;
+        }
+
+        .cart .title {
+            font-size: 40px;
+            font-weight: 900;
+            text-align: center;
+            text-transform: capitalize;
+            margin: -7px;
+        }
+
+        .cart .content {
+            font-size: 14px;
+        }
+
+        .cart_list {
+            color: black;
+        }
+
+        .cart_list .cart_item {
+            display: flex;
+            padding: 3px 0;
+        }
+
+        .cart_list .cart_item+.cart_item {
+            border-top: 1px dashed rgb(0, 0, 0);
+        }
+
+        .cart_list .cart_item .index {
+            margin-right: 8px;
+            overflow: hidden;
+        }
+
+        .cart_list .cart_item .name {
+            flex-grow: 1;
+        }
+
+        .cart_list .cart_item .price {
+            font-weight: bold;
+        }
+
+        .cart_list .cart_item .tanggal {
+            font-weight: bold;
+            margin-left: 2px;
+        }
+
+        .cart_list .cart_item .jam {
+            font-weight: bold;
+            text-align: right;
+            float: right;
+            margin-left: 2px;
+        }
+
+        .cart_list .cart_item .label-jam {
+            float: right;
+            margin-left: auto;
+        }
+
+        .cart .total {
+            font-weight: bold;
+            text-transform: uppercase;
+            /* border-top: 2px solid black; */
+        }
+
+        .cart .total_price {
+            float: right;
+        }
+
+        /* foot */
+        .foot {
+            /* border-top: 2px dotted black; */
+            position: relative;
+            display: flex;
+            margin-top: 3px;
+        }
+
+        .foot:before,
+        .foot:after {
+            border: 4px solid transparent;
+            position: absolute;
+            top: -5px;
+        }
+
+        .foot .logo {
+            flex: 1 0 20%;
+        }
+
+        .foot .number {
+            flex: 1 0 80%;
+            font-size: 12px;
+        }
+
+        ul {
+            display: block;
+            list-style-type: disc;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 10px;
+        }
+
+        @media print {
+            @page {
+                size: auto;
+                margin: 0mm;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="receipt_box">
+            <div class="head">
+                <div class="logo"> <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/6/68/Seal_of_Bantul_Regency.svg"
+                        width="40px"></div>
+                <div class="number">
+                    <div class="date">Dinas Kependudukan dan Pencatatan Sipil</div>
+                    <div class="ref">Kabupaten Bantul</div>
+                </div>
+            </div>
+            <div class="body">
+                <div class="info">
+                    <center>
+                        <div class="welcome">Nomor Antrian Anda</div>
+                    </center>
+                </div>
+                <div class="cart">
+                    <div class="title">A-7</div>
+                    <div class="content">
+                        <ul class="cart_list">
+                            <li class="cart_item">Tanggal : <span class="tanggal">7/28/2022</span><span class="label-jam">Jam : </span><span class="jam">8:40:50 AM</span></li>
+                            <li class="cart_item"> <span class="index">1</span> <span class="name">Layanan</span> <span class="price">Loket B (Mutasi Penduduk)</span></li>
+                            <li class="cart_item"> <span class="index">2</span> <span class="name">Jumlah antrean didepan Anda</span> <span class="price">2</span></li>
+                    </div>
+                </div>
+            </div>
+            <div class="foot">
+                <div class="logo"> <img
+                        src="data:image/gif;base64,R0lGODdhUgBSAIAAAAAAAP///ywAAAAAUgBSAAAC/4yPqcvtD6OctNqLs968+w+G4kiW5mkC6sqyimq0KyLLdG1PeH7H9b0DAINCXZEBCySTPl7CpSwyF1NI9SnNDqGvWdTnuIazUPGhfDyT0+AomrJstZHea9y+jsPzWnd9Pfcl2OOnZ9T0h2j4phbYlmNGp9jniHXnFXhpKKFJOUj1x/XZWTlm6od4mioY+WnFhrUq2jX0CEvISbTYt2trq7sHzMpL7DssTOK0qbaM8irajOoaEjQZvforN1z6UF2YCDrV2TudqwyOY50mDutkri3LN75O3zUbMc+o3lrbWI4vTxu7dADZcVPV4J6+bwsX7nnWDtw+Tw6NQAqFDqNBaf/uKhBEwwgkpmN8OGyklVAXxVvSHvpDSUfYSUssJU27hC0WM3od+YGqhLOlzpwEcVn0FLPeP5VKLVS0p9QMU6PBmP5IaRNa06NW4f38qpWqx5rf1EFdtvFerjEiFQrcGrSqsXPe8IT9B3GuV5kR7/pEeBbQy7KjRv7tRvbizIv9DiKeBJQYY5px8WIljCdbRcVb19JsXLDvypyvoILO+7kw6cfhVg70mgmjY5umC7922+8p646ge45EqRYg5JS3RZ8KXlrnx8Qs80V0SWg5YH/exHqw+5thZ8xkNWD/blj0NeJEjJndxj2bU5XmtesNKRj613jjz2+BzZo2R4mt3RZnFZ6eUEGhFZBux71FlGAETlTfZZONh4xy5R0SIIQTAnchgA/KtpNU4Z1G4YaV8SYgT91dlhVckl0VHX6epWjULv9pdmJSdfEXWI4lrsdXg76JZJ0zQg5JZJFGHolkkkouyWSTTjpZAAA7"
+                        width="48"> </div>
+                <div class="number"> Dimohon menunggu sampai nomor antrean Anda dipanggil petugas. <br>Terima kasih</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

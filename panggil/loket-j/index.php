@@ -237,7 +237,7 @@
 
         // mainkan suara nomor antrian
         setTimeout(function() {
-          responsiveVoice.speak("Nomor Antrian, " + data["no_antrian"] + ", menuju, loket, J", "Indonesian Female", {
+          responsiveVoice.speak("Nomor Antrian, " + data["no_antrian"] + ", silahkan menuju, loket, J", "Indonesian Female", {
             rate: 0.78,
             pitch: 1,
             volume: 1

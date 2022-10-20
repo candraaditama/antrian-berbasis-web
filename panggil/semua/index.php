@@ -64,13 +64,25 @@
                                         <p class="fw-bolder">MUTASI PENDUDUK</p>
                                     </div>
                                     <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
+                                        <p id="number1" class="loket">Loket D</p>
+                                        <p id="antrian-sekarang-d" class="number"></p>
+                                        <span></span>
+                                        <p class="fw-bolder">AKTA</p>
+                                    </div>
+                                    <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
+                                        <p id="number1" class="loket">Loket E</p>
+                                        <p id="antrian-sekarang-e" class="number"></p>
+                                        <span></span>
+                                        <p class="fw-bolder">AKSI SIMPATI</p>
+                                    </div>
+                                </div>
+                                <div class="projectFactsWrap ">
+                                    <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
                                         <p id="number1" class="loket">Loket F</p>
                                         <p id="antrian-sekarang-f" class="number"></p>
                                         <span></span>
                                         <p class="fw-bolder">LEGALISIR</p>
                                     </div>
-                                </div>
-                                <div class="projectFactsWrap ">
                                     <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
                                         <p id="number1" class="loket">Loket G</p>
                                         <p id="antrian-sekarang-g" class="number">G-21</p>
@@ -104,12 +116,44 @@
             <div class="col-md-4">
                 <div class="card shadow mb-2 bg-blue">
                     <div class="card-body p-1">
-                        <div class="image-inner" id="image-inner">
-
+                        <!-- <div class="image-inner" id="image-inner">
                             <div class="image-item'.$active.'" id="image-item">
                                 <img class="d-block img-fluid w-100"
                                     src='../../assets/img/MAKLUMAT.jpg' alt="">
                             </div>
+
+                        </div> -->
+                        <div id="demo" class="carousel slide" data-ride="carousel">
+
+                           
+
+                            <!-- The slideshow -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../../assets/img/MAKLUMAT.jpg" alt="Los Angeles"
+                                        class="d-block img-fluid w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../../assets/img/sma.jpeg" alt="Chicago" class="d-block img-fluid w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../../assets/img/odgj.jpeg" alt="New York" class="d-block img-fluid w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../../assets/img/sma2.jpg" alt="New York" class="d-block img-fluid w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../../assets/img/expo.jpg" alt="New York" class="d-block img-fluid w-100">
+                                </div>
+                            </div>
+
+                            <!-- Left and right controls -->
+                            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#demo" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
 
                         </div>
                     </div>
@@ -120,40 +164,40 @@
                         <div class="carousel-item'.$active.'">
                             <!-- <img class="d-block img-fluid w-100"
                                 src='../../asset/images/desain_banner/50aed40d12f49144a2a91ecb757561ec.png' alt=""> -->
-                                <table class="header shadow table-kontak">
-                                    <thead>
-                                        <tr></tr>
-                                        <!-- <tr>DAFTAR ANTREAN</th></tr> -->
-                                        <tr>
-                                            <th width="33%" class="rounded p-3" colspan="2">NOMOR WHATSAPP</th>
-                                        </tr>
-                                        <tbody>
-                                            <tr>
-                                                <td class="text-warning pt-4">PENGADUAN</td>
-                                                <td class="text-right text-warning pt-4">0821-3325-6500</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-warning pt-2">KARTU KELUARGA</td>
-                                                <td class="text-right text-warning pt-2">0895-1033-0146</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-warning pt-2">MUTASI PENDUDUK</td>
-                                                <td class="text-right text-warning pt-2 ">0895-3448-3998</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-warning pt-2">PERKAWINAN</td>
-                                                <td class="text-right text-warning pt-2">0819-1078-1439</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-warning pt-2">PENCATATAN SIPIL</td>
-                                                <td class="text-right text-warning pt-2">0897-0870-006</td>
-                                            </tr>
-                                        </tbody>
-                                    </thead>
-                                </table>
-                                
+                            <table class="header shadow table-kontak">
+                                <thead>
+                                    <tr></tr>
+                                    <!-- <tr>DAFTAR ANTREAN</th></tr> -->
+                                    <tr>
+                                        <th width="33%" class="rounded p-3" colspan="2">NOMOR WHATSAPP</th>
+                                    </tr>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-warning pt-4">PENGADUAN</td>
+                                        <td class="text-right text-warning pt-4">0821-3325-6500</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-warning pt-2">KARTU KELUARGA</td>
+                                        <td class="text-right text-warning pt-2">0895-1033-0146</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-warning pt-2">MUTASI PENDUDUK</td>
+                                        <td class="text-right text-warning pt-2 ">0895-3448-3998</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-warning pt-2">PERKAWINAN</td>
+                                        <td class="text-right text-warning pt-2">0819-1078-1439</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-warning pt-2">PENCATATAN SIPIL</td>
+                                        <td class="text-right text-warning pt-2">0897-0870-006</td>
+                                    </tr>
+                                </tbody>
+                                </thead>
+                            </table>
+
                         </div>
-                        
+
 
                     </div>
                 </div>
@@ -162,7 +206,9 @@
     </div>
     <div class="footer">
         <div class="container-fluid">
-            <marquee>SELAMAT DATANG DI DINAS KEPENDUDUKAN & PENCATATAN SIPIL KABUPATEN BANTUL <span class="text-warning"> TETAP JAGA PROTOKOL KESEHATAN</span> MOHON BERKENAN MENUNGGU HINGGA NOMOR ANTREAN DIPANGGIL OLEH PETUGAS</marquee>
+            <marquee>SELAMAT DATANG DI DINAS KEPENDUDUKAN & PENCATATAN SIPIL KABUPATEN BANTUL <span
+                    class="text-warning"> TETAP JAGA PROTOKOL KESEHATAN</span> MOHON BERKENAN MENUNGGU HINGGA NOMOR
+                ANTREAN DIPANGGIL OLEH PETUGAS</marquee>
         </div>
     </div>
 
@@ -178,7 +224,10 @@
             $('#antrian-sekarang-c').load('../loket-c/get_antrian_sekarang.php');
 
             // tampilkan informasi antrian
-            $('#antrian-sekarang-j').load('../loket-j/get_antrian_sekarang.php');
+            $('#antrian-sekarang-d').load('../loket-d/get_antrian_sekarang.php');
+
+            // tampilkan informasi antrian
+            $('#antrian-sekarang-e').load('../loket-e/get_antrian_sekarang.php');
 
             // tampilkan informasi antrian
             $('#antrian-sekarang-f').load('../loket-f/get_antrian_sekarang.php');
@@ -192,6 +241,9 @@
             // tampilkan informasi antrian
             $('#antrian-sekarang-i').load('../loket-i/get_antrian_sekarang.php');
 
+            // tampilkan informasi antrian
+            $('#antrian-sekarang-j').load('../loket-j/get_antrian_sekarang.php');
+
             // auto reload data antrian setiap 1 detik untuk menampilkan data secara realtime
             setInterval(function () {
                 $('#antrian-sekarang').load('../loket-a/get_antrian_sekarang.php').fadeIn("slow");
@@ -200,7 +252,9 @@
 
                 $('#antrian-sekarang-c').load('../loket-c/get_antrian_sekarang.php').fadeIn("slow");
 
-                $('#antrian-sekarang-j').load('../loket-j/get_antrian_sekarang.php').fadeIn("slow");
+                $('#antrian-sekarang-d').load('../loket-d/get_antrian_sekarang.php').fadeIn("slow");
+
+                $('#antrian-sekarang-e').load('../loket-e/get_antrian_sekarang.php').fadeIn("slow");
 
                 $('#antrian-sekarang-f').load('../loket-f/get_antrian_sekarang.php').fadeIn("slow");
 
@@ -209,6 +263,9 @@
                 $('#antrian-sekarang-h').load('../loket-h/get_antrian_sekarang.php').fadeIn("slow");
 
                 $('#antrian-sekarang-i').load('../loket-i/get_antrian_sekarang.php').fadeIn("slow");
+
+                $('#antrian-sekarang-j').load('../loket-j/get_antrian_sekarang.php').fadeIn("slow");
+
 
 
             }, 1000);

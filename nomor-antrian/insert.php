@@ -30,8 +30,8 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && ($_SERVER['HTTP_X_REQUESTED_WITH
   }
 
   // sql statement untuk insert data ke tabel "tbl_antrian"
-  $insert = mysqli_query($mysqli, "INSERT INTO tbl_antrian(tanggal, no_antrian,loket) 
-                                   VALUES('$tanggal', '$no_antrian','A')")
+  $insert = mysqli_query($mysqli, "INSERT INTO tbl_antrian(tanggal, no_antrian,loket, dilayani) 
+                                   VALUES('$tanggal', '$no_antrian','A','Belum dipanggil')")
                                    or die('Ada kesalahan pada query insert : ' . mysqli_error($mysqli));
   // cek query
   // jika proses insert berhasil

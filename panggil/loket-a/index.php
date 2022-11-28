@@ -129,6 +129,7 @@ header("Access-Control-Allow-Origin: *");
                   <th>ID</th>
                   <th>Status</th>
                   <th>Panggil</th>
+                  <th>Dilayani di</th>
                 </tr>
               </thead>
             </table>
@@ -216,6 +217,10 @@ header("Access-Control-Allow-Origin: *");
               };
               return btn;
             }
+          },
+          {
+            "data": "dilayani",
+            "className": 'text-center'
           },
         ],
         "order": [

@@ -197,7 +197,6 @@ header("Access-Control-Allow-Origin: *");
             "data": null,
             "orderable": false,
             "searchable": false,
-            "width": '100px',
             "className": 'text-center',
             "render": function(data, type, row) {
               // jika tidak ada data "status"
@@ -249,7 +248,7 @@ header("Access-Control-Allow-Origin: *");
 
         // mainkan suara nomor antrian
         setTimeout(function() {
-          responsiveVoice.speak("Nomor Antrian, " + data["no_antrian"] + ", silahkan menuju, loket, A", "Indonesian Female", {
+          responsiveVoice.speak("Nomor Antrian, " + data["no_antrian"] + ", silahkan menuju, loket, 1", "Indonesian Female", {
             rate: 0.78,
             pitch: 1,
             volume: 1

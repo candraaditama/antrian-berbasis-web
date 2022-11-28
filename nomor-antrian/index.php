@@ -7,24 +7,25 @@ require('layout/header.php');
     <div class="container pt-3">
       <div class="row justify-content-lg-center">
 
-        <div class="col mb-4">
+        <div class="col mb-4 col-sm-4">
           <div class="px-4 py-3 mb-2 bg-white rounded-1 shadow-sm">
             <!-- judul halaman -->
             <div class="d-flex align-items-center me-md-auto">
-              <i class="bi-postcard text-success me-3 fs-3"></i>
-              <h1 class="h6 pt-2 fw-bold">Perekaman KTP</h1>
+              <i class="bi-postcard text-primary me-3 fs-3"></i>
+              <h1 class="h6 pt-2 fw-bold">Layanan Umum</h1>
             </div>
           </div>
 
           <div class="card border-0 rounded-1 shadow-sm">
             <div class="card-body text-center d-grid p-4">
-              <div class="border border-success rounded-1 py-2 mb-3" id="ktp">
-                <h3 class="pt-4 text-center">LOKET A</h3>
+              <a id="insert-a-div"href="javascript:void(0)" >
+            <div class="border border-primary rounded-1 py-2 mb-3" id="ktp">
+                <!-- <h3 class="pt-4 text-center text-dark fw-bold">LOKET UMUM (1-7)</h3> -->
                 <!-- menampilkan informasi jumlah antrian -->
-                <h1 id="antrian" class="display-1 fw-bolder text-successlh-1 pb-2"></h1>
-              </div>
+                <h1 id="antrian" class="display-3 mt-4 fw-bolder text-dark lh-1 pb-2"></h1>
+              </div></a>
               <!-- button pengambilan nomor antrian -->
-              <a id="insert-a" href="javascript:void(0)" class="btn btn-success btn-block fs-5 px-5 py-3 mb-2">
+              <a id="insert-a" href="javascript:void(0)" class="btn btn-primary btn-block fs-5 px-5 py-3 mb-2">
                 <i class="bi-person-plus fs-4 me-2"></i> Ambil Nomor
               </a>
             </div>
@@ -33,24 +34,50 @@ require('layout/header.php');
 
 
 
-        <div class="col mb-4">
+        <div class="col mb-4 col-sm-4">
           <div class="px-4 py-3 mb-2 bg-white rounded-1 shadow-sm">
             <!-- judul halaman -->
             <div class="d-flex align-items-center me-md-auto">
-              <i class="bi-postcard text-success me-3 fs-3"></i>
-              <h1 class="h6 pt-2 fw-bold">Kartu Keluarga</h1>
+              <i class="bi-postcard text-primary me-3 fs-3"></i>
+              <h1 class="h6 pt-2 fw-bold">Rekam & Cetak KTP EL</h1>
             </div>
           </div>
 
           <div class="card border-0 rounded-1 shadow-sm">
             <div class="card-body text-center d-grid p-4">
-              <div class="border border-success rounded-1 py-2 mb-3" id="ktp">
-                <h3 class="pt-4 text-center">LOKET B</h3>
+            <a id="insert-ktp-div"href="javascript:void(0)" >
+              <div class="border border-primary rounded-1 py-2 mb-3" id="ktp">
+                <!-- <h3 class="pt-4 text-center  text-dark fw-bold">LOKET KTP (8)</h3> -->
                 <!-- menampilkan informasi jumlah antrian -->
-                <h1 id="antrian-b" class="display-1 fw-bolder text-successlh-1 pb-2"></h1>
-              </div>
+                <h2 id="antrian-b" class="display-3 mt-4 fw-bolder text-dark lh-1 pb-2"></h2>
+              </div></a>
               <!-- button pengambilan nomor antrian -->
-              <a id="insert-b" href="javascript:void(0)" class="btn btn-success btn-block fs-5 px-5 py-3 mb-2">
+              <a id="insert-b" href="javascript:void(0)" class="btn btn-primary btn-block fs-5 px-5 py-3 mb-2">
+                <i class="bi-person-plus fs-4 me-2"></i> Ambil Nomor
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col mb-4 col-sm-4">
+          <div class="px-4 py-3 mb-2 bg-white rounded-1 shadow-sm">
+            <!-- judul halaman -->
+            <div class="d-flex align-items-center me-md-auto">
+              <i class="bi-postcard text-primary me-3 fs-3"></i>
+              <h1 class="h6 pt-2 fw-bold">Layanan Legalisir</h1>
+            </div>
+          </div>
+
+          <div class="card border-0 rounded-1 shadow-sm">
+            <div class="card-body text-center d-grid p-4">
+            <a id="insert-leg-div"href="javascript:void(0)" >
+              <div class="border border-primary rounded-1 py-2 mb-3" id="ktp">
+                <!-- <h3 class="pt-4 text-center fw-bold text-dark">LOKET LEGALISIR (9)</h3> -->
+                <!-- menampilkan informasi jumlah antrian -->
+                <h3 id="antrian-d" class="display-4 mt-4 fw-bolder text-dark lh-1 pb-3"></h3>
+              </div></a>
+              <!-- button pengambilan nomor antrian -->
+              <a id="insert-d" href="javascript:void(0)" class="btn btn-primary btn-block fs-5 px-5 py-3 mb-2">
                 <i class="bi-person-plus fs-4 me-2"></i> Ambil Nomor
               </a>
             </div>
@@ -58,81 +85,100 @@ require('layout/header.php');
         </div>
 
 
-        <div class="col mb-4">
+        <div class="col mb-4 col-sm-4">
           <div class="px-4 py-3 mb-2 bg-white rounded-1 shadow-sm">
-            <!-- judul halaman -->
             <div class="d-flex align-items-center me-md-auto">
-              <i class="bi-postcard text-success me-3 fs-3"></i>
-              <h1 class="h6 pt-2 fw-bold">Mutasi Penduduk</h1>
+              <i class="bi-postcard text-primary me-3 fs-3"></i>
+              <h1 class="h6 pt-2 fw-bold">Layanan Konsultasi</h1>
             </div>
           </div>
 
           <div class="card border-0 rounded-1 shadow-sm">
             <div class="card-body text-center d-grid p-4">
-              <div class="border border-success rounded-1 py-2 mb-3" id="ktp">
-                <h3 class="pt-4 text-center">LOKET C</h3>
-                <!-- menampilkan informasi jumlah antrian -->
-                <h1 id="antrian-c" class="display-1 fw-bolder text-successlh-1 pb-2"></h1>
-              </div>
-              <!-- button pengambilan nomor antrian -->
-              <a id="insert-c" href="javascript:void(0)" class="btn btn-success btn-block fs-5 px-5 py-3 mb-2">
+            <a id="insert-konsul-div"href="javascript:void(0)" >
+              <div class="border border-primary rounded-1 py-2 mb-3" id="ktp">
+                <!-- <h3 class="pt-4 fw-bold text-dark text-center">LOKET KONSULTASI (10)</h3> -->
+                <h1 id="antrian-e" class="display-5 mt-4 fw-bolder text-dark lh-1 pb-3"></h1>
+              </div></a>
+              <a id="insert-e" href="javascript:void(0)" class="btn btn-primary btn-block fs-5 px-5 py-3 mb-2">
                 <i class="bi-person-plus fs-4 me-2"></i> Ambil Nomor
               </a>
             </div>
           </div>
         </div>
 
-        <div class="col mb-4">
+        <div class="col mb-4 col-sm-4">
           <div class="px-4 py-3 mb-2 bg-white rounded-1 shadow-sm">
             <!-- judul halaman -->
             <div class="d-flex align-items-center me-md-auto">
-              <i class="bi-postcard text-success me-3 fs-3"></i>
-              <h1 class="h6 pt-2 fw-bold">Akta Kelahiran</h1>
+              <i class="bi-postcard text-primary me-3 fs-3"></i>
+              <h1 class="h6 pt-2 fw-bold">Layanan Pengaduan</h1>
             </div>
           </div>
 
           <div class="card border-0 rounded-1 shadow-sm">
             <div class="card-body text-center d-grid p-4">
-              <div class="border border-success rounded-1 py-2 mb-3" id="ktp">
-                <h3 class="pt-4 text-center">LOKET D</h3>
+            <a id="insert-aduan-div"href="javascript:void(0)" >
+              <div class="border border-primary rounded-1 py-2 mb-3" id="ktp">
+                <!-- <h3 class="pt-4 text-center fw-bold text-dark">LOKET ADUAN (11)</h3> -->
                 <!-- menampilkan informasi jumlah antrian -->
-                <h1 id="antrian-d" class="display-1 fw-bolder text-successlh-1 pb-2"></h1>
-              </div>
+                <h2 id="antrian-c" class="display-5 mt-4 fw-bolder text-dark lh-1 pb-3"></h2>
+              </div></a>
               <!-- button pengambilan nomor antrian -->
-              <a id="insert-d" href="javascript:void(0)" class="btn btn-success btn-block fs-5 px-5 py-3 mb-2">
+              <a id="insert-c" href="javascript:void(0)" class="btn btn-primary btn-block fs-5 px-5 py-3 mb-2">
                 <i class="bi-person-plus fs-4 me-2"></i> Ambil Nomor
               </a>
             </div>
           </div>
         </div>
 
-        <div class="col mb-4">
+        <div class="col mb-4 col-sm-4">
           <div class="px-4 py-3 mb-2 bg-white rounded-1 shadow-sm">
-            <!-- judul halaman -->
             <div class="d-flex align-items-center me-md-auto">
-              <i class="bi-postcard text-success me-3 fs-3"></i>
-              <h1 class="h6 pt-2 fw-bold">Akta Kematian</h1>
+              <i class="bi-postcard text-primary me-3 fs-3"></i>
+              <h1 class="h6 pt-2 fw-bold">Layanan Perkawinan</h1>
             </div>
           </div>
 
           <div class="card border-0 rounded-1 shadow-sm">
             <div class="card-body text-center d-grid p-4">
-              <div class="border border-success rounded-1 py-2 mb-3" id="ktp">
-                <h3 class="pt-4 text-center">LOKET E</h3>
-                <!-- menampilkan informasi jumlah antrian -->
-                <h1 id="antrian-e" class="display-1 fw-bolder text-successlh-1 pb-2"></h1>
-              </div>
-              <!-- button pengambilan nomor antrian -->
-              <a id="insert-e" href="javascript:void(0)" class="btn btn-success btn-block fs-5 px-5 py-3 mb-2">
+            <a id="insert-kawin-div"href="javascript:void(0)" >
+              <div class="border border-primary rounded-1 py-2 mb-3" id="ktp">
+                <!-- <h3 class="pt-4 fw-bold text-dark text-center">LOKET PERKAWINAN (12)</h3> -->
+                <h1 id="antrian-f" class="display-5 mt-4 fw-bolder text-dark lh-1 pb-3"></h1>
+              </div></a>
+              <a id="insert-f" href="javascript:void(0)" class="btn btn-primary btn-block fs-5 px-5 py-3 mb-2">
                 <i class="bi-person-plus fs-4 me-2"></i> Ambil Nomor
               </a>
             </div>
           </div>
         </div>
+        
+        <div class="col mb-4 col-sm-4">
+          <div class="px-4 py-3 mb-2 bg-white rounded-1 shadow-sm">
+            <div class="d-flex align-items-center me-md-auto">
+              <i class="bi-postcard text-primary me-3 fs-3"></i>
+              <h1 class="h6 pt-2 fw-bold">Layanan Costumer Service</h1>
+            </div>
+          </div>
 
+          <div class="card border-0 rounded-1 shadow-sm">
+            <div class="card-body text-center d-grid p-4">
+            <a id="insert-cs-div"href="javascript:void(0)" >
+              <div class="border border-primary rounded-1 py-2 mb-3" id="ktp">
+                <!-- <h3 class="pt-4 fw-bold text-dark text-center">LOKET PERKAWINAN (12)</h3> -->
+                <h1 id="antrian-g" class="display-5 mt-4 fw-bolder text-dark lh-1 pb-3"></h1>
+              </div></a>
+              <a id="insert-g" href="javascript:void(0)" class="btn btn-primary btn-block fs-5 px-5 py-3 mb-2">
+                <i class="bi-person-plus fs-4 me-2"></i> Ambil Nomor
+              </a>
+            </div>
+          </div>
+        </div>
+        
+<!-- 
         <div class="col mb-4">
           <div class="px-4 py-3 mb-2 bg-white rounded-1 shadow-sm">
-            <!-- judul halaman -->
             <div class="d-flex align-items-center me-md-auto">
               <i class="bi-postcard text-success me-3 fs-3"></i>
               <h1 class="h6 pt-2 fw-bold">Legalisir</h1>
@@ -143,20 +189,17 @@ require('layout/header.php');
             <div class="card-body text-center d-grid p-4">
               <div class="border border-success rounded-1 py-2 mb-3" id="ktp">
                 <h3 class="pt-4 text-center">LOKET F</h3>
-                <!-- menampilkan informasi jumlah antrian -->
                 <h1 id="antrian-f" class="display-1 fw-bolder text-successlh-1 pb-2"></h1>
               </div>
-              <!-- button pengambilan nomor antrian -->
               <a id="insert-f" href="javascript:void(0)" class="btn btn-success btn-block fs-5 px-5 py-3 mb-2">
                 <i class="bi-person-plus fs-4 me-2"></i> Ambil Nomor
               </a>
             </div>
           </div>
-        </div>
+        </div> -->
 
-        <div class="col mb-4">
+        <!-- <div class="col mb-4">
           <div class="px-4 py-3 mb-2 bg-white rounded-1 shadow-sm">
-            <!-- judul halaman -->
             <div class="d-flex align-items-center me-md-auto">
               <i class="bi-postcard text-success me-3 fs-3"></i>
               <h1 class="h6 pt-2 fw-bold">Konsultasi</h1>
@@ -167,10 +210,8 @@ require('layout/header.php');
             <div class="card-body text-center d-grid p-4">
               <div class="border border-success rounded-1 py-2 mb-3" id="ktp">
                 <h3 class="pt-4 text-center">LOKET G</h3>
-                <!-- menampilkan informasi jumlah antrian -->
                 <h1 id="antrian-g" class="display-1 fw-bolder text-successlh-1 pb-2"></h1>
               </div>
-              <!-- button pengambilan nomor antrian -->
               <a id="insert-g" href="javascript:void(0)" class="btn btn-success btn-block fs-5 px-5 py-3 mb-2">
                 <i class="bi-person-plus fs-4 me-2"></i> Ambil Nomor
               </a>
@@ -180,7 +221,6 @@ require('layout/header.php');
 
         <div class="col mb-4">
           <div class="px-4 py-3 mb-2 bg-white rounded-1 shadow-sm">
-            <!-- judul halaman -->
             <div class="d-flex align-items-center me-md-auto">
               <i class="bi-postcard text-success me-3 fs-3"></i>
               <h1 class="h6 pt-2 fw-bold">Pengaduan</h1>
@@ -191,10 +231,8 @@ require('layout/header.php');
             <div class="card-body text-center d-grid p-4">
               <div class="border border-success rounded-1 py-2 mb-3" id="ktp">
                 <h3 class="pt-4 text-center">LOKET H</h3>
-                <!-- menampilkan informasi jumlah antrian -->
                 <h1 id="antrian-h" class="display-1 fw-bolder text-successlh-1 pb-2"></h1>
               </div>
-              <!-- button pengambilan nomor antrian -->
               <a id="insert-h" href="javascript:void(0)" class="btn btn-success btn-block fs-5 px-5 py-3 mb-2">
                 <i class="bi-person-plus fs-4 me-2"></i> Ambil Nomor
               </a>
@@ -204,7 +242,6 @@ require('layout/header.php');
 
         <div class="col mb-4">
           <div class="px-4 py-3 mb-2 bg-white rounded-1 shadow-sm">
-            <!-- judul halaman -->
             <div class="d-flex align-items-center me-md-auto">
               <i class="bi-postcard text-success me-3 fs-3"></i>
               <h1 class="h6 pt-2 fw-bold">Perkawinan</h1>
@@ -215,10 +252,8 @@ require('layout/header.php');
             <div class="card-body text-center d-grid p-4">
               <div class="border border-success rounded-1 py-2 mb-3" id="ktp">
                 <h3 class="pt-4 text-center">LOKET I</h3>
-                <!-- menampilkan informasi jumlah antrian -->
                 <h1 id="antrian-i" class="display-1 fw-bolder text-successlh-1 pb-2"></h1>
               </div>
-              <!-- button pengambilan nomor antrian -->
               <a id="insert-i" href="javascript:void(0)" class="btn btn-success btn-block fs-5 px-5 py-3 mb-2">
                 <i class="bi-person-plus fs-4 me-2"></i> Ambil Nomor
               </a>
@@ -228,7 +263,6 @@ require('layout/header.php');
 
         <div class="col mb-4">
           <div class="px-4 py-3 mb-2 bg-white rounded-1 shadow-sm">
-            <!-- judul halaman -->
             <div class="d-flex align-items-center me-md-auto">
               <i class="bi-postcard text-success me-3 fs-3"></i>
               <h1 class="h6 pt-2 fw-bold">Umum</h1>
@@ -239,16 +273,14 @@ require('layout/header.php');
             <div class="card-body text-center d-grid p-4">
               <div class="border border-success rounded-1 py-2 mb-3" id="ktp">
                 <h3 class="pt-4 text-center">LOKET J</h3>
-                <!-- menampilkan informasi jumlah antrian -->
                 <h1 id="antrian-j" class="display-1 fw-bolder text-successlh-1 pb-2"></h1>
               </div>
-              <!-- button pengambilan nomor antrian -->
               <a id="insert-j" href="javascript:void(0)" class="btn btn-success btn-block fs-5 px-5 py-3 mb-2">
                 <i class="bi-person-plus fs-4 me-2"></i> Ambil Nomor
               </a>
             </div>
           </div>
-        </div>
+        </div> -->
 
 
 
@@ -310,7 +342,50 @@ require('layout/header.php');
 
       });
 
+      $('#insert-a-div').on('click', function () {
+        $.ajax({
+          type: 'POST', // mengirim data dengan method POST
+          url: 'insert.php', // url file proses insert data
+          success: function (result) { // ketika proses insert data selesai
+            // jika berhasil
+            if (result === 'Sukses') {
+              // tampilkan jumlah antrian
+
+              $.get("get_antrian.php", function (loketa) {
+                $.get('../panggil/loket-a/get_sisa_antrian.php', function (data) {
+                  sisa_a = data - 1;
+                  PrintElem(loketa, sisa_a);
+                });
+                $('#antrian').text(loketa);
+
+              });
+
+            }
+          },
+        });
+
+      });
+
       $('#insert-b').on('click', function () {
+        $.ajax({
+          type: 'POST', // mengirim data dengan method POST
+          url: 'insert_b.php', // url file proses insert data
+          success: function (result) { // ketika proses insert data selesai
+            // jika berhasil
+            if (result === 'Sukses') {
+              $.get("get_antrian_b.php", function (loketb) {
+                $.get('../panggil/loket-b/get_sisa_antrian_b.php', function (data) {
+                  sisa_b = data - 1;
+                  PrintElem(loketb, sisa_b);
+                });
+                $('#antrian-b').text(loketb);
+              });
+            }
+          },
+        });
+      });
+
+      $('#insert-ktp-div').on('click', function () {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
           url: 'insert_b.php', // url file proses insert data
@@ -348,6 +423,26 @@ require('layout/header.php');
         });
       });
 
+
+      $('#insert-aduan-div').on('click', function () {
+        $.ajax({
+          type: 'POST', // mengirim data dengan method POST
+          url: 'insert_c.php', // url file proses insert data
+          success: function (result) { // ketika proses insert data selesai
+            // jika berhasil
+            if (result === 'Sukses') {
+              $.get("get_antrian_c.php", function (loketc) {
+                $.get('../panggil/loket-c/get_sisa_antrian.php', function (data) {
+                  sisa_c = data - 1;
+                  PrintElem(loketc, sisa_c);
+                });
+                $('#antrian-c').text(loketc);
+              });
+            }
+          },
+        });
+      });
+
       $('#insert-d').on('click', function () {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
@@ -366,6 +461,26 @@ require('layout/header.php');
           },
         });
       });
+
+      $('#insert-leg-div').on('click', function () {
+        $.ajax({
+          type: 'POST', // mengirim data dengan method POST
+          url: 'insert_d.php', // url file proses insert data
+          success: function (result) { // ketika proses insert data selesai
+            // jika berhasil
+            if (result === 'Sukses') {
+              $.get("get_antrian_d.php", function (loketd) {
+                $.get('../panggil/loket-d/get_sisa_antrian.php', function (data) {
+                  sisa_d = data - 1;
+                  PrintElem(loketd, sisa_d);
+                });
+                $('#antrian-d').text(loketd);
+              });
+            }
+          },
+        });
+      });
+
 
       $('#insert-e').on('click', function () {
         $.ajax({
@@ -386,6 +501,26 @@ require('layout/header.php');
         });
       });
 
+      $('#insert-konsul-div').on('click', function () {
+        $.ajax({
+          type: 'POST', // mengirim data dengan method POST
+          url: 'insert_e.php', // url file proses insert data
+          success: function (result) { // ketika proses insert data selesai
+            // jika berhasil
+            if (result === 'Sukses') {
+              $.get("get_antrian_e.php", function (lokete) {
+                $.get('../panggil/loket-e/get_sisa_antrian.php', function (data) {
+                  sisa_e = data - 1;
+                  PrintElem(lokete, sisa_e);
+                });
+                $('#antrian-e').text(lokete);
+              });
+            }
+          },
+        });
+      });
+
+
       $('#insert-f').on('click', function () {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
@@ -405,7 +540,45 @@ require('layout/header.php');
         });
       });
 
+      $('#insert-kawin-div').on('click', function () {
+        $.ajax({
+          type: 'POST', // mengirim data dengan method POST
+          url: 'insert_f.php', // url file proses insert data
+          success: function (result) { // ketika proses insert data selesai
+            // jika berhasil
+            if (result === 'Sukses') {
+              $.get("get_antrian_f.php", function (loketf) {
+                $.get('../panggil/loket-f/get_sisa_antrian.php', function (data) {
+                  sisa_f = data - 1;
+                  PrintElem(loketf, sisa_f);
+                });
+                $('#antrian-f').text(loketf);
+              });
+            }
+          },
+        });
+      });
+
       $('#insert-g').on('click', function () {
+        $.ajax({
+          type: 'POST', // mengirim data dengan method POST
+          url: 'insert_g.php', // url file proses insert data
+          success: function (result) { // ketika proses insert data selesai
+            // jika berhasil
+            if (result === 'Sukses') {
+              $.get("get_antrian_g.php", function (loketg) {
+                $.get('../panggil/loket-g/get_sisa_antrian.php', function (data) {
+                  sisa_g = data - 1;
+                  PrintElem(loketg, sisa_g);
+                });
+                $('#antrian-g').text(loketg);
+              });
+            }
+          },
+        });
+      });
+
+      $('#insert-cs-div').on('click', function () {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
           url: 'insert_g.php', // url file proses insert data
@@ -488,37 +661,44 @@ require('layout/header.php');
     function PrintElem(nomor, sisa) {
       let today = new Date().toLocaleDateString();
       let time = new Date().toLocaleTimeString();
-      let loket = nomor.charAt(0);
+      let loket = nomor.substring(0,2);
       switch (loket) {
         case "A":
-          loket = "Loket A (Perekaman KTP)";
+          loket = "Loket Aduan (11)";
           break;
-        case "B":
-          loket = "Loket B (Kartu Keluarga)";
+        case "KT":
+          loket = "Loket KTP (8)";
           break;
-        case "C":
-          loket = "Loket C (Mutasi Penduduk)";
+        case "Le":
+          loket = "Loket Legalisir (9)";
           break;
-        case "D":
-          loket = "Loket D (Akta Kematian)";
+        case "Pe":
+          loket = "Loket Perkawinan (12)";
           break;
-        case "E":
-          loket = "Loket E (Akta Kelahiran)";
+        case "CS":
+          loket = "Loket Costumer Service (13)";
           break;
-        case "F":
-          loket = "Loket F (Legalisir)";
+          case "Ko":
+          loket = "Loket Konsultasi (10)";
           break;
-        case "G":
-          loket = "Loket G (Konsultasi)";
-          break;
-        case "H":
-          loket = "Loket H (Pengaduan)";
-          break;
-        case "I":
-          loket = "Loket I (Perkawinan)";
-          break;
-        case "J":
-          loket = "Loket J (Umum)";
+        // case "F":
+        //   loket = "Loket F (Legalisir)";
+        //   break;
+        // case "G":
+        //   loket = "Loket G (Konsultasi)";
+        //   break;
+        // case "H":
+        //   loket = "Loket H (Pengaduan)";
+        //   break;
+        // case "I":
+        //   loket = "Loket I (Perkawinan)";
+        //   break;
+        // case "J":
+        //   loket = "Loket J (Umum)";
+        //   break;
+          default:
+          loket = "Loket Umum (1-7)";
+
       }
       var qrcode = new QRCode.Encoder();
 

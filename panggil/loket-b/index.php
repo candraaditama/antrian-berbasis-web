@@ -38,7 +38,7 @@ header("Access-Control-Allow-Origin: *");
         <!-- judul halaman -->
         <div class="d-flex align-items-center me-md-auto">
           <i class="bi-mic-fill text-success me-3 fs-3"></i>
-          <h1 class="h5 pt-2">LOKET B</h1>
+          <h1 class="h5 pt-2">LOKET KTP</h1>
         </div>
         <!-- breadcrumbs -->
         <div class="ms-5 ms-md-0 pt-md-3 pb-md-0">
@@ -129,6 +129,7 @@ header("Access-Control-Allow-Origin: *");
                   <th>ID</th>
                   <th>Status</th>
                   <th>Panggil</th>
+                  <th>Dilayani</th>
                 </tr>
               </thead>
             </table>
@@ -199,7 +200,6 @@ header("Access-Control-Allow-Origin: *");
             "data": null,
             "orderable": false,
             "searchable": false,
-            "width": '100px',
             "className": 'text-center',
             "render": function(data, type, row) {
               // jika tidak ada data "status"
@@ -219,6 +219,10 @@ header("Access-Control-Allow-Origin: *");
               };
               return btn;
             }
+          },
+          {
+            "data": "dilayani",
+            "className": 'text-center',
           },
         ],
         "order": [
@@ -247,7 +251,7 @@ header("Access-Control-Allow-Origin: *");
 
         // mainkan suara nomor antrian
         setTimeout(function() {
-          responsiveVoice.speak("Nomor Antrian, " + data["no_antrian"] + ", silahkan menuju, loket, B", "Indonesian Female", {
+          responsiveVoice.speak("Nomor Antrian, " + data["no_antrian"] + ", silahkan menuju, loket, KTP", "Indonesian Female", {
             rate: 0.78,
             pitch: 1,
             volume: 1

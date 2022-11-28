@@ -46,31 +46,31 @@
                             <div class="fullWidth eight columns">
                                 <div class="projectFactsWrap ">
                                     <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
-                                        <p id="number1" class="loket">Loket A</p>
-                                        <p id="antrian-sekarang" class="number">A-12</p>
+                                        <p id="number1" class="loket">Loket 1</p>
+                                        <p id="antrian-sekarang" class="number"></p>
                                         <span></span>
-                                        <p class="fw-bolder">PEREKAMAN KTP</p>
+                                        <p class="fw-bolder">UMUM</p>
                                     </div>
                                     <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
-                                        <p id="number1" class="loket">Loket B</p>
+                                        <p id="number1" class="loket">Loket 2</p>
                                         <p id="antrian-sekarang-b" class="number"></p>
                                         <span></span>
-                                        <p class="fw-bolder">KARTU KELUARGA</p>
+                                        <p class="fw-bolder">UMUM</p>
                                     </div>
                                     <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
-                                        <p id="number1" class="loket">Loket C</p>
+                                        <p id="number1" class="loket">Loket 3</p>
                                         <p id="antrian-sekarang-c" class="number"></p>
                                         <span></span>
-                                        <p class="fw-bolder">MUTASI PENDUDUK</p>
+                                        <p class="fw-bolder">UMUM</p>
                                     </div>
                                     <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
-                                        <p id="number1" class="loket">Loket D</p>
+                                        <p id="number1" class="loket">Loket 4</p>
                                         <p id="antrian-sekarang-d" class="number"></p>
                                         <span></span>
                                         <p class="fw-bolder">AKTA</p>
                                     </div>
                                     <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
-                                        <p id="number1" class="loket">Loket E</p>
+                                        <p id="number1" class="loket">Loket 5</p>
                                         <p id="antrian-sekarang-e" class="number"></p>
                                         <span></span>
                                         <p class="fw-bolder">AKSI SIMPATI</p>
@@ -78,31 +78,31 @@
                                 </div>
                                 <div class="projectFactsWrap ">
                                     <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
-                                        <p id="number1" class="loket">Loket F</p>
+                                        <p id="number1" class="loket">Loket 6</p>
                                         <p id="antrian-sekarang-f" class="number"></p>
                                         <span></span>
                                         <p class="fw-bolder">LEGALISIR</p>
                                     </div>
                                     <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
-                                        <p id="number1" class="loket">Loket G</p>
+                                        <p id="number1" class="loket">Loket 7</p>
                                         <p id="antrian-sekarang-g" class="number">G-21</p>
                                         <span></span>
                                         <p class="fw-bolder">KONSULTASI</p>
                                     </div>
                                     <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
-                                        <p id="number1" class="loket">Loket H</p>
+                                        <p id="number1" class="loket">Loket KTP</p>
                                         <p id="antrian-sekarang-h" class="number"></p>
                                         <span></span>
                                         <p class="fw-bolder">PENGADUAN & PPID</p>
                                     </div>
                                     <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
-                                        <p id="number1" class="loket">Loket I</p>
+                                        <p id="number1" class="loket">Legalisir</p>
                                         <p id="antrian-sekarang-i" class="number"></p>
                                         <span></span>
                                         <p class="fw-bolder">PERKAWINAN</p>
                                     </div>
                                     <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
-                                        <p id="number1" class="loket">Loket J</p>
+                                        <p id="number1" class="loket">Aduan</p>
                                         <p id="antrian-sekarang-j" class="number"></p>
                                         <span></span>
                                         <p class="fw-bolder">UMUM</p>
@@ -215,13 +215,13 @@
     <script type="text/javascript">
         $(document).ready(function () {
             // tampilkan informasi antrian
-            $('#antrian-sekarang').load('../loket-a/get_antrian_sekarang.php');
+            $('#antrian-sekarang').load('get_antrian_sekarang_loket_1.php');
 
             // tampilkan informasi antrian
-            $('#antrian-sekarang-b').load('../loket-b/get_antrian_sekarang_b.php');
+            $('#antrian-sekarang-b').load('get_antrian_sekarang_loket_2.php');
 
             // tampilkan informasi antrian
-            $('#antrian-sekarang-c').load('../loket-c/get_antrian_sekarang.php');
+            $('#antrian-sekarang-c').load('get_antrian_sekarang_loket_3.php');
 
             // tampilkan informasi antrian
             $('#antrian-sekarang-d').load('../loket-d/get_antrian_sekarang.php');
@@ -246,11 +246,11 @@
 
             // auto reload data antrian setiap 1 detik untuk menampilkan data secara realtime
             setInterval(function () {
-                $('#antrian-sekarang').load('../loket-a/get_antrian_sekarang.php').fadeIn("slow");
+                $('#antrian-sekarang').load('get_antrian_sekarang_loket_1.php').fadeIn("slow");
 
-                $('#antrian-sekarang-b').load('../loket-b/get_antrian_sekarang_b.php').fadeIn("slow");
+                $('#antrian-sekarang-b').load('get_antrian_sekarang_loket_2.php').fadeIn("slow");
 
-                $('#antrian-sekarang-c').load('../loket-c/get_antrian_sekarang.php').fadeIn("slow");
+                $('#antrian-sekarang-c').load('get_antrian_sekarang_loket_3.php').fadeIn("slow");
 
                 $('#antrian-sekarang-d').load('../loket-d/get_antrian_sekarang.php').fadeIn("slow");
 

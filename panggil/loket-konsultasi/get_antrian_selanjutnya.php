@@ -25,7 +25,7 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && ($_SERVER['HTTP_X_REQUESTED_WITH
     $no_antrian = $data['no_antrian'];
 
     // tampilkan data
-    echo ('E-'. number_format($no_antrian, 0, '', '.'));
+    echo ('Konsultasi-'. number_format($no_antrian, 0, '', '.'));
   } 
   // jika data "no_antrian" tidak ada
   else {

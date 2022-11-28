@@ -25,7 +25,7 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && ($_SERVER['HTTP_X_REQUESTED_WITH
     $no_antrian = $data['no_antrian'];
 
     // tampilkan data
-    echo ('B-'. number_format($no_antrian, 0, '', '.'));
+    echo ('KTP-'. number_format($no_antrian, 0, '', '.'));
   } 
   // jika data "no_antrian" tidak ada
   else {

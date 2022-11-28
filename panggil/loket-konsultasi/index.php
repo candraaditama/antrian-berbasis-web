@@ -78,7 +78,7 @@ header("Access-Control-Allow-Origin: *");
                   <i class="bi-person-check text-success"></i>
                 </div>
                 <div>
-                  <p id="antrian-sekarang" class="fs-3 text-success mb-1"></p>
+                  <p id="antrian-sekarang" class="fs-4 text-success mb-1"></p>
                   <p class="mb-0">Antrian Sekarang</p>
                 </div>
               </div>
@@ -94,7 +94,7 @@ header("Access-Control-Allow-Origin: *");
                   <i class="bi-person-plus text-info"></i>
                 </div>
                 <div>
-                  <p id="antrian-selanjutnya" class="fs-3 text-info mb-1"></p>
+                  <p id="antrian-selanjutnya" class="fs-4 text-info mb-1"></p>
                   <p class="mb-0">Antrian Selanjutnya</p>
                 </div>
               </div>

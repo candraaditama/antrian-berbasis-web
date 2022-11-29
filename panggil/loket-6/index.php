@@ -38,7 +38,7 @@ header("Access-Control-Allow-Origin: *");
         <!-- judul halaman -->
         <div class="d-flex align-items-center me-md-auto">
           <i class="bi-mic-fill text-success me-3 fs-3"></i>
-          <h1 class="h5 pt-2">LOKET 5</h1>
+          <h1 class="h5 pt-2">LOKET 6</h1>
         </div>
         <!-- breadcrumbs -->
         <div class="ms-5 ms-md-0 pt-md-3 pb-md-0">

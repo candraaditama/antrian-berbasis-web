@@ -67,13 +67,13 @@
                                         <p id="number1" class="loket">Loket 4</p>
                                         <p id="antrian-sekarang-d" class="number"></p>
                                         <span></span>
-                                        <p class="fw-bolder">AKTA</p>
+                                        <p class="fw-bolder">UMUM</p>
                                     </div>
                                     <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
                                         <p id="number1" class="loket">Loket 5</p>
                                         <p id="antrian-sekarang-e" class="number"></p>
                                         <span></span>
-                                        <p class="fw-bolder">AKSI SIMPATI</p>
+                                        <p class="fw-bolder">UMUM</p>
                                     </div>
                                 </div>
                                 <div class="projectFactsWrap ">
@@ -81,31 +81,31 @@
                                         <p id="number1" class="loket">Loket 6</p>
                                         <p id="antrian-sekarang-f" class="number"></p>
                                         <span></span>
-                                        <p class="fw-bolder">LEGALISIR</p>
+                                        <p class="fw-bolder">UMUM</p>
                                     </div>
                                     <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
                                         <p id="number1" class="loket">Loket 7</p>
                                         <p id="antrian-sekarang-g" class="number">G-21</p>
                                         <span></span>
-                                        <p class="fw-bolder">KONSULTASI</p>
+                                        <p class="fw-bolder">UMUM</p>
                                     </div>
                                     <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
-                                        <p id="number1" class="loket">Loket KTP</p>
+                                        <p id="number1" class="loket">Loket 8</p>
                                         <p id="antrian-sekarang-h" class="number"></p>
                                         <span></span>
-                                        <p class="fw-bolder">PENGADUAN & PPID</p>
+                                        <p class="fw-bolder">REKAM & CETAK KTP</p>
                                     </div>
                                     <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
-                                        <p id="number1" class="loket">Legalisir</p>
+                                        <p id="number1" class="loket">Loket 9</p>
                                         <p id="antrian-sekarang-i" class="number"></p>
                                         <span></span>
-                                        <p class="fw-bolder">PERKAWINAN</p>
+                                        <p class="fw-bolder">LEGALISIR</p>
                                     </div>
                                     <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
-                                        <p id="number1" class="loket">Aduan</p>
+                                        <p id="number1" class="loket">Loket 10</p>
                                         <p id="antrian-sekarang-j" class="number"></p>
                                         <span></span>
-                                        <p class="fw-bolder">UMUM</p>
+                                        <p class="fw-bolder">ADUAN</p>
                                     </div>
                                 </div>
                             </div>

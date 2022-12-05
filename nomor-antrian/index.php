@@ -662,7 +662,7 @@ require('layout/header.php');
       let time = new Date().toLocaleTimeString();
       let loket = nomor.substring(0,2);
       switch (loket) {
-        case "A":
+        case "Ad":
           loket = "Loket Aduan (11)";
           break;
         case "KT":

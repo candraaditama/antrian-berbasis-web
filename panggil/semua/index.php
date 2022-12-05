@@ -102,7 +102,7 @@
                                         <p class="fw-bolder">LEGALISIR</p>
                                     </div>
                                     <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
-                                        <p id="number1" class="loket">Loket 10</p>
+                                        <p id="number1" class="loket">Loket 11</p>
                                         <p id="antrian-sekarang-j" class="number"></p>
                                         <span></span>
                                         <p class="fw-bolder">ADUAN</p>

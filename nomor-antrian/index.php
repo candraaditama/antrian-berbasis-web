@@ -85,7 +85,7 @@ require('layout/header.php');
         </div>
 
 
-        <div class="col mb-4 col-sm-4">
+        <!-- <div class="col mb-4 col-sm-4">
           <div class="px-4 py-3 mb-2 bg-white rounded-1 shadow-sm">
             <div class="d-flex align-items-center me-md-auto">
               <i class="bi-postcard text-primary me-3 fs-3"></i>
@@ -97,7 +97,6 @@ require('layout/header.php');
             <div class="card-body text-center d-grid p-4">
             <a id="insert-konsul-div"href="javascript:void(0)" >
               <div class="border border-primary rounded-1 py-2 mb-3" id="ktp">
-                <!-- <h3 class="pt-4 fw-bold text-dark text-center">LOKET KONSULTASI (10)</h3> -->
                 <h1 id="antrian-e" class="display-5 mt-4 fw-bolder text-dark lh-1 pb-3"></h1>
               </div></a>
               <a id="insert-e" href="javascript:void(0)" class="btn btn-primary btn-block fs-5 px-5 py-3 mb-2">
@@ -105,7 +104,7 @@ require('layout/header.php');
               </a>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <div class="col mb-4 col-sm-4">
           <div class="px-4 py-3 mb-2 bg-white rounded-1 shadow-sm">

@@ -3,7 +3,7 @@
 // jika ada ajax request
 if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && ($_SERVER['HTTP_X_REQUESTED_WITH'] == 'XMLHttpRequest')) {
   // panggil file "database.php" untuk koneksi ke database
-  require_once "../../config/database.php";
+  require_once "../config/database.php";
 
   // ambil tanggal sekarang
   $tanggal = gmdate("Y-m-d", time() + 60 * 60 * 7);
@@ -15,8 +15,9 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && ($_SERVER['HTTP_X_REQUESTED_WITH
   // ambil data hasil query
   $data = mysqli_fetch_assoc($query);
   // buat variabel untuk menampilkan data
-  $jumlah_antrian = $data['jumlah'];
+  $jumlah_antrian = $data['jumlah'] ;
 
   // tampilkan data
-  echo number_format($jumlah_antrian, 0, '', '.');
+  // echo ('A-'. number_format($jumlah_antrian, 0, '', '.'));
+  echo ('G-'.number_format($jumlah_antrian, 0, '', '.'));
 }

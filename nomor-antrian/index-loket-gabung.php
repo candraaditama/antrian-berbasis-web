@@ -7,205 +7,60 @@ require('layout/header.php');
     <div class="container pt-3">
       <div class="row justify-content-lg-center">
 
-
-        <div class="col mb-4 col-sm-3">
-          <div class="px-4 py-1 mb-2 bg-white rounded-1 shadow-sm">
-            <div class="d-flex align-items-center me-md-auto">
-              <i class="bi-postcard text-primary me-3 fs-3"></i>
-              <h4 class="pt-2 fw-bold">Umum</h4>
-            </div>
-          </div>
-          <div class="card border-0 rounded-1 shadow-sm">
-            <div class="card-body text-center d-grid p-4">
-              <a id="insert-1-div" href="javascript:void(0)">
-                <div class="border border-primary rounded-1 py-2 mb-3" id="ktp">
-                  <h1 id="antrian-1" class="display-3 mt-4 fw-bolder text-dark lh-1 pb-2"></h1>
-                </div>
-              </a>
-              <a id="insert-1" href="javascript:void(0)" class="btn btn-primary btn-block fs-5 px-5 py-3 mb-2">
-                <span class="h3 fw-bolder">Loket 1 </span>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col mb-4 col-sm-3">
-          <div class="px-4 py-1 mb-2 bg-white rounded-1 shadow-sm">
-            <div class="d-flex align-items-center me-md-auto">
-              <i class="bi-postcard text-primary me-3 fs-3"></i>
-              <h4 class="pt-2 fw-bold">Umum</h4>
-            </div>
-          </div>
-          <div class="card border-0 rounded-1 shadow-sm">
-            <div class="card-body text-center d-grid p-4">
-              <a id="insert-2-div" href="javascript:void(0)">
-                <div class="border border-primary rounded-1 py-2 mb-3" id="ktp">
-                  <h1 id="antrian-2" class="display-3 mt-4 fw-bolder text-dark lh-1 pb-2"></h1>
-                </div>
-              </a>
-              <a id="insert-2" href="javascript:void(0)" class="btn btn-primary btn-block fs-5 px-5 py-3 mb-2">
-                <span class="h3 fw-bolder">Loket 2 </span>
-              </a>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col mb-4 col-sm-3">
-          <div class="px-4 py-1 mb-2 bg-white rounded-1 shadow-sm">
-            <div class="d-flex align-items-center me-md-auto">
-              <i class="bi-postcard text-primary me-3 fs-3"></i>
-              <h4 class="pt-2 fw-bold">Umum</h4>
-            </div>
-          </div>
-          <div class="card border-0 rounded-1 shadow-sm">
-            <div class="card-body text-center d-grid p-4">
-              <a id="insert-3-div" href="javascript:void(0)">
-                <div class="border border-primary rounded-1 py-2 mb-3" id="ktp">
-                  <h1 id="antrian-3" class="display-3 mt-4 fw-bolder text-dark lh-1 pb-2"></h1>
-                </div>
-              </a>
-              <a id="insert-3" href="javascript:void(0)" class="btn btn-primary btn-block fs-5 px-5 py-3 mb-2">
-                <span class="h3 fw-bolder">Loket 3 </span>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col mb-4 col-sm-3">
-          <div class="px-4 py-1 mb-2 bg-white rounded-1 shadow-sm">
-            <div class="d-flex align-items-center me-md-auto">
-              <i class="bi-postcard text-primary me-3 fs-3"></i>
-              <h4 class="pt-2 fw-bold">Umum</h4>
-            </div>
-          </div>
-          <div class="card border-0 rounded-1 shadow-sm">
-            <div class="card-body text-center d-grid p-4">
-              <a id="insert-4-div" href="javascript:void(0)">
-                <div class="border border-primary rounded-1 py-2 mb-3" id="ktp">
-                  <h1 id="antrian-4" class="display-3 mt-4 fw-bolder text-dark lh-1 pb-2"></h1>
-                </div>
-              </a>
-              <a id="insert-4" href="javascript:void(0)" class="btn btn-primary btn-block fs-5 px-5 py-3 mb-2">
-                <span class="h3 fw-bolder">Loket 4 </span>
-              </a>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col mb-4 col-sm-3">
-          <div class="px-4 py-1 mb-2 bg-white rounded-1 shadow-sm">
-            <div class="d-flex align-items-center me-md-auto">
-              <i class="bi-postcard text-primary me-3 fs-3"></i>
-              <h4 class="pt-2 fw-bold">Umum</h4>
-            </div>
-          </div>
-          <div class="card border-0 rounded-1 shadow-sm">
-            <div class="card-body text-center d-grid p-4">
-              <a id="insert-5-div" href="javascript:void(0)">
-                <div class="border border-primary rounded-1 py-2 mb-3" id="ktp">
-                  <h1 id="antrian-5" class="display-3 mt-4 fw-bolder text-dark lh-1 pb-2"></h1>
-                </div>
-              </a>
-              <a id="insert-5" href="javascript:void(0)" class="btn btn-primary btn-block fs-5 px-5 py-3 mb-2">
-                <span class="h3 fw-bolder">Loket 5 </span>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col mb-4 col-sm-3">
-          <div class="px-4 py-1 mb-2 bg-white rounded-1 shadow-sm">
-            <div class="d-flex align-items-center me-md-auto">
-              <i class="bi-postcard text-primary me-3 fs-3"></i>
-              <h4 class="pt-2 fw-bold">Umum</h4>
-            </div>
-          </div>
-          <div class="card border-0 rounded-1 shadow-sm">
-            <div class="card-body text-center d-grid p-4">
-              <a id="insert-6-div" href="javascript:void(0)">
-                <div class="border border-primary rounded-1 py-2 mb-3" id="ktp">
-                  <h1 id="antrian-6" class="display-3 mt-4 fw-bolder text-dark lh-1 pb-2"></h1>
-                </div>
-              </a>
-              <a id="insert-6" href="javascript:void(0)" class="btn btn-primary btn-block fs-5 px-5 py-3 mb-2">
-                <span class="h3 fw-bolder">Loket 6 </span>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col mb-4 col-sm-3">
-          <div class="px-4 py-1 mb-2 bg-white rounded-1 shadow-sm">
-            <div class="d-flex align-items-center me-md-auto">
-              <i class="bi-postcard text-primary me-3 fs-3"></i>
-              <h4 class="pt-2 fw-bold">Umum</h4>
-            </div>
-          </div>
-          <div class="card border-0 rounded-1 shadow-sm">
-            <div class="card-body text-center d-grid p-4">
-              <a id="insert-7-div" href="javascript:void(0)">
-                <div class="border border-primary rounded-1 py-2 mb-3" id="ktp">
-                  <h1 id="antrian-7" class="display-3 mt-4 fw-bolder text-dark lh-1 pb-2"></h1>
-                </div>
-              </a>
-              <a id="insert-7" href="javascript:void(0)" class="btn btn-primary btn-block fs-5 px-5 py-3 mb-2">
-                <span class="h3 fw-bolder">Loket 7 </span>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- <div class="col mb-4 col-sm-4">
+        <div class="col mb-4 col-sm-4">
           <div class="px-4 py-3 mb-2 bg-white rounded-1 shadow-sm">
+            <!-- judul halaman -->
             <div class="d-flex align-items-center me-md-auto">
               <i class="bi-postcard text-primary me-3 fs-3"></i>
               <h1 class="h6 pt-2 fw-bold">Layanan Umum</h1>
             </div>
           </div>
+
           <div class="card border-0 rounded-1 shadow-sm">
             <div class="card-body text-center d-grid p-4">
               <a id="insert-a-div"href="javascript:void(0)" >
             <div class="border border-primary rounded-1 py-2 mb-3" id="ktp">
+                <!-- <h3 class="pt-4 text-center text-dark fw-bold">LOKET UMUM (1-7)</h3> -->
+                <!-- menampilkan informasi jumlah antrian -->
                 <h1 id="antrian" class="display-3 mt-4 fw-bolder text-dark lh-1 pb-2"></h1>
               </div></a>
+              <!-- button pengambilan nomor antrian -->
               <a id="insert-a" href="javascript:void(0)" class="btn btn-primary btn-block fs-5 px-5 py-3 mb-2">
                 <i class="bi-person-plus fs-4 me-2"></i> Ambil Nomor
               </a>
             </div>
           </div>
-        </div> -->
+        </div>
 
 
-        <div class="col mb-4 col-sm-3">
-          <div class="px-4 py-1 mb-2 bg-white rounded-1 shadow-sm">
+
+        <div class="col mb-4 col-sm-4">
+          <div class="px-4 py-3 mb-2 bg-white rounded-1 shadow-sm">
             <!-- judul halaman -->
             <div class="d-flex align-items-center me-md-auto">
               <i class="bi-postcard text-primary me-3 fs-3"></i>
-              <h4 class="pt-2 fw-bold">KTP EL</h4>
+              <h1 class="h6 pt-2 fw-bold">Rekam & Cetak KTP EL</h1>
             </div>
           </div>
 
           <div class="card border-0 rounded-1 shadow-sm">
             <div class="card-body text-center d-grid p-4">
-              <a id="insert-ktp-div" href="javascript:void(0)">
-                <div class="border border-primary rounded-1 py-2 mb-3" id="ktp">
-                  <!-- <h3 class="pt-4 text-center  text-dark fw-bold">LOKET KTP (8)</h3> -->
-                  <!-- menampilkan informasi jumlah antrian -->
-                  <h2 id="antrian-b" class="display-3 mt-4 fw-bolder text-dark lh-1 pb-2"></h2>
-                </div>
-              </a>
+            <a id="insert-ktp-div"href="javascript:void(0)" >
+              <div class="border border-primary rounded-1 py-2 mb-3" id="ktp">
+                <!-- <h3 class="pt-4 text-center  text-dark fw-bold">LOKET KTP (8)</h3> -->
+                <!-- menampilkan informasi jumlah antrian -->
+                <h2 id="antrian-b" class="display-3 mt-4 fw-bolder text-dark lh-1 pb-2"></h2>
+              </div></a>
               <!-- button pengambilan nomor antrian -->
               <a id="insert-b" href="javascript:void(0)" class="btn btn-primary btn-block fs-5 px-5 py-3 mb-2">
-              <span class="h3 fw-bolder">Loket KTP </span>
+                <i class="bi-person-plus fs-4 me-2"></i> Ambil Nomor
               </a>
             </div>
           </div>
         </div>
 
         <div class="col mb-4 col-sm-4">
-          <div class="px-4 py-1 mb-2 bg-white rounded-1 shadow-sm">
+          <div class="px-4 py-3 mb-2 bg-white rounded-1 shadow-sm">
             <!-- judul halaman -->
             <div class="d-flex align-items-center me-md-auto">
               <i class="bi-postcard text-primary me-3 fs-3"></i>
@@ -215,16 +70,15 @@ require('layout/header.php');
 
           <div class="card border-0 rounded-1 shadow-sm">
             <div class="card-body text-center d-grid p-4">
-              <a id="insert-leg-div" href="javascript:void(0)">
-                <div class="border border-primary rounded-1 py-2 mb-3" id="ktp">
-                  <!-- <h3 class="pt-4 text-center fw-bold text-dark">LOKET LEGALISIR (9)</h3> -->
-                  <!-- menampilkan informasi jumlah antrian -->
-                  <h3 id="antrian-d" class="display-5 mt-4 fw-bolder text-dark lh-1 pb-3"></h3>
-                </div>
-              </a>
+            <a id="insert-leg-div"href="javascript:void(0)" >
+              <div class="border border-primary rounded-1 py-2 mb-3" id="ktp">
+                <!-- <h3 class="pt-4 text-center fw-bold text-dark">LOKET LEGALISIR (9)</h3> -->
+                <!-- menampilkan informasi jumlah antrian -->
+                <h3 id="antrian-d" class="display-4 mt-4 fw-bolder text-dark lh-1 pb-3"></h3>
+              </div></a>
               <!-- button pengambilan nomor antrian -->
               <a id="insert-d" href="javascript:void(0)" class="btn btn-primary btn-block fs-5 px-5 py-3 mb-2">
-              <span class="h3 fw-bolder">Loket Legalisir </span>
+                <i class="bi-person-plus fs-4 me-2"></i> Ambil Nomor
               </a>
             </div>
           </div>
@@ -253,7 +107,7 @@ require('layout/header.php');
         </div> -->
 
         <div class="col mb-4 col-sm-4">
-          <div class="px-4 py-1 mb-2 bg-white rounded-1 shadow-sm">
+          <div class="px-4 py-3 mb-2 bg-white rounded-1 shadow-sm">
             <!-- judul halaman -->
             <div class="d-flex align-items-center me-md-auto">
               <i class="bi-postcard text-primary me-3 fs-3"></i>
@@ -263,23 +117,22 @@ require('layout/header.php');
 
           <div class="card border-0 rounded-1 shadow-sm">
             <div class="card-body text-center d-grid p-4">
-              <a id="insert-aduan-div" href="javascript:void(0)">
-                <div class="border border-primary rounded-1 py-2 mb-3" id="ktp">
-                  <!-- <h3 class="pt-4 text-center fw-bold text-dark">LOKET ADUAN (11)</h3> -->
-                  <!-- menampilkan informasi jumlah antrian -->
-                  <h2 id="antrian-c" class="display-5 mt-4 fw-bolder text-dark lh-1 pb-3"></h2>
-                </div>
-              </a>
+            <a id="insert-aduan-div"href="javascript:void(0)" >
+              <div class="border border-primary rounded-1 py-2 mb-3" id="ktp">
+                <!-- <h3 class="pt-4 text-center fw-bold text-dark">LOKET ADUAN (11)</h3> -->
+                <!-- menampilkan informasi jumlah antrian -->
+                <h2 id="antrian-c" class="display-5 mt-4 fw-bolder text-dark lh-1 pb-3"></h2>
+              </div></a>
               <!-- button pengambilan nomor antrian -->
               <a id="insert-c" href="javascript:void(0)" class="btn btn-primary btn-block fs-5 px-5 py-3 mb-2">
-              <span class="h3 fw-bolder">Loket Aduan </span>
+                <i class="bi-person-plus fs-4 me-2"></i> Ambil Nomor
               </a>
             </div>
           </div>
         </div>
 
         <div class="col mb-4 col-sm-4">
-          <div class="px-4 py-1 mb-2 bg-white rounded-1 shadow-sm">
+          <div class="px-4 py-3 mb-2 bg-white rounded-1 shadow-sm">
             <div class="d-flex align-items-center me-md-auto">
               <i class="bi-postcard text-primary me-3 fs-3"></i>
               <h1 class="h6 pt-2 fw-bold">Layanan Perkawinan</h1>
@@ -288,20 +141,19 @@ require('layout/header.php');
 
           <div class="card border-0 rounded-1 shadow-sm">
             <div class="card-body text-center d-grid p-4">
-              <a id="insert-kawin-div" href="javascript:void(0)">
-                <div class="border border-primary rounded-1 py-2 mb-3" id="ktp">
-                  <!-- <h3 class="pt-4 fw-bold text-dark text-center">LOKET PERKAWINAN (12)</h3> -->
-                  <h1 id="antrian-f" class="display-5 mt-4 fw-bolder text-dark lh-1 pb-3"></h1>
-                </div>
-              </a>
+            <a id="insert-kawin-div"href="javascript:void(0)" >
+              <div class="border border-primary rounded-1 py-2 mb-3" id="ktp">
+                <!-- <h3 class="pt-4 fw-bold text-dark text-center">LOKET PERKAWINAN (12)</h3> -->
+                <h1 id="antrian-f" class="display-5 mt-4 fw-bolder text-dark lh-1 pb-3"></h1>
+              </div></a>
               <a id="insert-f" href="javascript:void(0)" class="btn btn-primary btn-block fs-5 px-5 py-3 mb-2">
-              <span class="h3 fw-bolder">Perkawinan </span>
+                <i class="bi-person-plus fs-4 me-2"></i> Ambil Nomor
               </a>
             </div>
           </div>
         </div>
-
-        <!-- <div class="col mb-4 col-sm-4">
+        
+        <div class="col mb-4 col-sm-4">
           <div class="px-4 py-3 mb-2 bg-white rounded-1 shadow-sm">
             <div class="d-flex align-items-center me-md-auto">
               <i class="bi-postcard text-primary me-3 fs-3"></i>
@@ -311,19 +163,19 @@ require('layout/header.php');
 
           <div class="card border-0 rounded-1 shadow-sm">
             <div class="card-body text-center d-grid p-4">
-              <a id="insert-cs-div" href="javascript:void(0)">
-                <div class="border border-primary rounded-1 py-2 mb-3" id="ktp">
-                  <h1 id="antrian-g" class="display-5 mt-4 fw-bolder text-dark lh-1 pb-3"></h1>
-                </div>
-              </a>
+            <a id="insert-cs-div"href="javascript:void(0)" >
+              <div class="border border-primary rounded-1 py-2 mb-3" id="ktp">
+                <!-- <h3 class="pt-4 fw-bold text-dark text-center">LOKET PERKAWINAN (12)</h3> -->
+                <h1 id="antrian-g" class="display-5 mt-4 fw-bolder text-dark lh-1 pb-3"></h1>
+              </div></a>
               <a id="insert-g" href="javascript:void(0)" class="btn btn-primary btn-block fs-5 px-5 py-3 mb-2">
                 <i class="bi-person-plus fs-4 me-2"></i> Ambil Nomor
               </a>
             </div>
           </div>
-        </div> -->
-
-        <!-- 
+        </div>
+        
+<!-- 
         <div class="col mb-4">
           <div class="px-4 py-3 mb-2 bg-white rounded-1 shadow-sm">
             <div class="d-flex align-items-center me-md-auto">
@@ -454,13 +306,6 @@ require('layout/header.php');
       $('#antrian-h').load('get_antrian_h.php');
       $('#antrian-i').load('get_antrian_i.php');
       $('#antrian-j').load('get_antrian_j.php');
-      $('#antrian-1').load('get_antrian_1.php');
-      $('#antrian-2').load('get_antrian_2.php');
-      $('#antrian-3').load('get_antrian_3.php');
-      $('#antrian-4').load('get_antrian_4.php');
-      $('#antrian-5').load('get_antrian_5.php');
-      $('#antrian-6').load('get_antrian_6.php');
-      $('#antrian-7').load('get_antrian_7.php');
 
       function wait(ms) {
         var start = new Date().getTime();
@@ -471,72 +316,22 @@ require('layout/header.php');
       }
 
 
-      // proses insert data loket 1
-      $('#insert-1').on('click', function () {
-        $.ajax({
-          type: 'POST', // mengirim data dengan method POST
-          url: 'insert_1.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
-            // jika berhasil
-            if (result === 'Sukses') {
-              // tampilkan jumlah antrian
-
-              $.get("get_antrian_1.php", function (loket1) {
-                $.get('../panggil/loket-1/get_sisa_antrian.php', function (data) {
-                  sisa_1 = data - 1;
-                  PrintElem(loket1, sisa_1);
-                });
-                $('#antrian-1').text(loket1);
-
-              });
-
-            }
-          },
-        });
-      });
-
-      $('#insert-1-div').on('click', function () {
-        $.ajax({
-          type: 'POST', // mengirim data dengan method POST
-          url: 'insert_1.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
-            // jika berhasil
-            if (result === 'Sukses') {
-              // tampilkan jumlah antrian
-
-              $.get("get_antrian_1.php", function (loket1) {
-                $.get('../panggil/loket-1/get_sisa_antrian.php', function (data) {
-                  sisa_1 = data - 1;
-                  PrintElem(loket1, sisa_1);
-                });
-                $('#antrian-1').text(loket1);
-
-              });
-
-            }
-          },
-        });
-
-      });
-
-
-      //loket 2
       // proses insert data
-      $('#insert-2').on('click', function () {
+      $('#insert-a').on('click', function () {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
-          url: 'insert_2.php', // url file proses insert data
+          url: 'insert.php', // url file proses insert data
           success: function (result) { // ketika proses insert data selesai
             // jika berhasil
             if (result === 'Sukses') {
               // tampilkan jumlah antrian
 
-              $.get("get_antrian_2.php", function (loket2) {
-                $.get('../panggil/loket-2/get_sisa_antrian.php', function (data) {
-                  sisa_2 = data - 1;
-                  PrintElem(loket2, sisa_2);
+              $.get("get_antrian.php", function (loketa) {
+                $.get('../panggil/loket-a/get_sisa_antrian.php', function (data) {
+                  sisa_a = data - 1;
+                  PrintElem(loketa, sisa_a);
                 });
-                $('#antrian-2').text(loket2);
+                $('#antrian').text(loketa);
 
               });
 
@@ -545,21 +340,21 @@ require('layout/header.php');
         });
       });
 
-      $('#insert-2-div').on('click', function () {
+      $('#insert-a-div').on('click', function () {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
-          url: 'insert_2.php', // url file proses insert data
+          url: 'insert.php', // url file proses insert data
           success: function (result) { // ketika proses insert data selesai
             // jika berhasil
             if (result === 'Sukses') {
               // tampilkan jumlah antrian
 
-              $.get("get_antrian_2.php", function (loket2) {
-                $.get('../panggil/loket-2/get_sisa_antrian.php', function (data) {
-                  sisa_2 = data - 1;
-                  PrintElem(loket2, sisa_2);
+              $.get("get_antrian.php", function (loketa) {
+                $.get('../panggil/loket-a/get_sisa_antrian.php', function (data) {
+                  sisa_a = data - 1;
+                  PrintElem(loketa, sisa_a);
                 });
-                $('#antrian-2').text(loket2);
+                $('#antrian').text(loketa);
 
               });
 
@@ -568,232 +363,6 @@ require('layout/header.php');
         });
 
       });
-
-      //loket 3
-      $('#insert-3').on('click', function () {
-        $.ajax({
-          type: 'POST', // mengirim data dengan method POST
-          url: 'insert_3.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
-            // jika berhasil
-            if (result === 'Sukses') {
-              // tampilkan jumlah antrian
-
-              $.get("get_antrian_3.php", function (loket3) {
-                $.get('../panggil/loket-3/get_sisa_antrian.php', function (data) {
-                  sisa_3 = data - 1;
-                  PrintElem(loket3, sisa_3);
-                });
-                $('#antrian-3').text(loket3);
-
-              });
-
-            }
-          },
-        });
-      });
-
-      $('#insert-3-div').on('click', function () {
-        $.ajax({
-          type: 'POST', // mengirim data dengan method POST
-          url: 'insert_3.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
-            // jika berhasil
-            if (result === 'Sukses') {
-              // tampilkan jumlah antrian
-
-              $.get("get_antrian_3.php", function (loket3) {
-                $.get('../panggil/loket-3/get_sisa_antrian.php', function (data) {
-                  sisa_3 = data - 1;
-                  PrintElem(loket3, sisa_3);
-                });
-                $('#antrian-2').text(loket3);
-
-              });
-
-            }
-          },
-        });
-      });
-
-
-//loket 4
-$('#insert-4').on('click', function () {
-        $.ajax({
-          type: 'POST', // mengirim data dengan method POST
-          url: 'insert_4.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
-            // jika berhasil
-            if (result === 'Sukses') {
-              // tampilkan jumlah antrian
-
-              $.get("get_antrian_4.php", function (loket4) {
-                $.get('../panggil/loket-4/get_sisa_antrian.php', function (data) {
-                  sisa_4 = data - 1;
-                  PrintElem(loket4, sisa_4);
-                });
-                $('#antrian-4').text(loket4);
-
-              });
-
-            }
-          },
-        });
-      });
-
-      $('#insert-4-div').on('click', function () {
-        $.ajax({
-          type: 'POST', // mengirim data dengan method POST
-          url: 'insert_4.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
-            // jika berhasil
-            if (result === 'Sukses') {
-              // tampilkan jumlah antrian
-
-              $.get("get_antrian_4.php", function (loket4) {
-                $.get('../panggil/loket-4/get_sisa_antrian.php', function (data) {
-                  sisa_4 = data - 1;
-                  PrintElem(loket4, sisa_4);
-                });
-                $('#antrian-4').text(loket4);
-
-              });
-
-            }
-          },
-        });
-
-      });
-
-
-      //loket 5
-$('#insert-5').on('click', function () {
-        $.ajax({
-          type: 'POST', // mengirim data dengan method POST
-          url: 'insert_5.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
-            // jika berhasil
-            if (result === 'Sukses') {
-              // tampilkan jumlah antrian
-
-              $.get("get_antrian_5.php", function (loket5) {
-                $.get('../panggil/loket-5/get_sisa_antrian.php', function (data) {
-                  sisa_5 = data - 1;
-                  PrintElem(loket5, sisa_5);
-                });
-                $('#antrian-5').text(loket5);
-              });
-            }
-          },
-        });
-      });
-
-      $('#insert-5-div').on('click', function () {
-        $.ajax({
-          type: 'POST', // mengirim data dengan method POST
-          url: 'insert_4.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
-            // jika berhasil
-            if (result === 'Sukses') {
-              // tampilkan jumlah antrian
-              $.get("get_antrian_5.php", function (loket5) {
-                $.get('../panggil/loket-5/get_sisa_antrian.php', function (data) {
-                  sisa_5 = data - 1;
-                  PrintElem(loket5, sisa_5);
-                });
-                $('#antrian-5').text(loket5);
-              });
-            }
-          },
-        });
-      });
-
-
-//loket 6
-$('#insert-6').on('click', function () {
-        $.ajax({
-          type: 'POST', // mengirim data dengan method POST
-          url: 'insert_6.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
-            // jika berhasil
-            if (result === 'Sukses') {
-              // tampilkan jumlah antrian
-
-              $.get("get_antrian_6.php", function (loket6) {
-                $.get('../panggil/loket-6/get_sisa_antrian.php', function (data) {
-                  sisa_6 = data - 1;
-                  PrintElem(loket6, sisa_6);
-                });
-                $('#antrian-6').text(loket6);
-              });
-            }
-          },
-        });
-      });
-
-      $('#insert-6-div').on('click', function () {
-        $.ajax({
-          type: 'POST', // mengirim data dengan method POST
-          url: 'insert_6.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
-            // jika berhasil
-            if (result === 'Sukses') {
-              // tampilkan jumlah antrian
-              $.get("get_antrian_6.php", function (loket6) {
-                $.get('../panggil/loket-6/get_sisa_antrian.php', function (data) {
-                  sisa_6 = data - 1;
-                  PrintElem(loket6, sisa_6);
-                });
-                $('#antrian-6').text(loket6);
-              });
-            }
-          },
-        });
-      });
-
-
-//loket 7
-$('#insert-7').on('click', function () {
-        $.ajax({
-          type: 'POST', // mengirim data dengan method POST
-          url: 'insert_7.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
-            // jika berhasil
-            if (result === 'Sukses') {
-              // tampilkan jumlah antrian
-
-              $.get("get_antrian_7.php", function (loket7) {
-                $.get('../panggil/loket-7/get_sisa_antrian.php', function (data) {
-                  sisa_7 = data - 1;
-                  PrintElem(loket7, sisa_7);
-                });
-                $('#antrian-7').text(loket7);
-              });
-            }
-          },
-        });
-      });
-
-      $('#insert-7-div').on('click', function () {
-        $.ajax({
-          type: 'POST', // mengirim data dengan method POST
-          url: 'insert_7.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
-            // jika berhasil
-            if (result === 'Sukses') {
-              // tampilkan jumlah antrian
-              $.get("get_antrian_7.php", function (loket7) {
-                $.get('../panggil/loket-7/get_sisa_antrian.php', function (data) {
-                  sisa_6 = data - 1;
-                  PrintElem(loket7, sisa_7);
-                });
-                $('#antrian-7').text(loket7);
-              });
-            }
-          },
-        });
-      });
-
 
       $('#insert-b').on('click', function () {
         $.ajax({
@@ -803,7 +372,7 @@ $('#insert-7').on('click', function () {
             // jika berhasil
             if (result === 'Sukses') {
               $.get("get_antrian_b.php", function (loketb) {
-                $.get('../panggil/loket-ktp/get_sisa_antrian_b.php', function (data) {
+                $.get('../panggil/loket-b/get_sisa_antrian_b.php', function (data) {
                   sisa_b = data - 1;
                   PrintElem(loketb, sisa_b);
                 });
@@ -822,7 +391,7 @@ $('#insert-7').on('click', function () {
             // jika berhasil
             if (result === 'Sukses') {
               $.get("get_antrian_b.php", function (loketb) {
-                $.get('../panggil/loket-ktp/get_sisa_antrian_b.php', function (data) {
+                $.get('../panggil/loket-b/get_sisa_antrian_b.php', function (data) {
                   sisa_b = data - 1;
                   PrintElem(loketb, sisa_b);
                 });
@@ -1056,8 +625,8 @@ $('#insert-7').on('click', function () {
                 $.get('../panggil/loket-i/get_sisa_antrian.php', function (data) {
                   sisa_i = data - 1;
                   PrintElem(loketi, sisa_i);
-                });
-                $('#antrian-i').text(loketi);
+                });               
+                 $('#antrian-i').text(loketi);
               });
             }
           },
@@ -1090,51 +659,42 @@ $('#insert-7').on('click', function () {
     function PrintElem(nomor, sisa) {
       let today = new Date().toLocaleDateString();
       let time = new Date().toLocaleTimeString();
-      let loket = nomor.substring(0, 2);
+      let loket = nomor.substring(0,2);
       switch (loket) {
         case "Ad":
-          loket = "Loket 11 (Aduan)";
+          loket = "Loket Aduan (11)";
           break;
         case "KT":
-          loket = "Loket 8 (KTP)";
+          loket = "Loket KTP (8)";
           break;
         case "Le":
-          loket = "Loket 9 (Legalisir)";
+          loket = "Loket Legalisir (9)";
           break;
         case "Pe":
-          loket = "Loket 12 (Perkawinan)";
+          loket = "Loket Perkawinan (12)";
           break;
         case "CS":
           loket = "Loket Costumer Service (13)";
           break;
-        case "Ko":
+          case "Ko":
           loket = "Loket Konsultasi (10)";
           break;
-        case "B-":
-          loket = "Loket 2 (Umum)";
-          break;
-        case "A-":
-          loket = "Loket 1 (Umum)";
-          break;
-        case "C-":
-          loket = "Loket 3 (Umum)";
-          break;
-        case "D-":
-          loket = "Loket 4 (Umum)";
-          break;
-        case "E-":
-          loket = "Loket 5 (Umum)";
-          break;
-        case "F-":
-          loket = "Loket 6 (Umum)";
-          break;
-        case "G-":
-          loket = "Loket 7 (Umum)";
-          break;  
-          // case "J":
-          //   loket = "Loket J (Umum)";
-          //   break;
-        default:
+        // case "F":
+        //   loket = "Loket F (Legalisir)";
+        //   break;
+        // case "G":
+        //   loket = "Loket G (Konsultasi)";
+        //   break;
+        // case "H":
+        //   loket = "Loket H (Pengaduan)";
+        //   break;
+        // case "I":
+        //   loket = "Loket I (Perkawinan)";
+        //   break;
+        // case "J":
+        //   loket = "Loket J (Umum)";
+        //   break;
+          default:
           loket = "Loket Umum (1-7)";
 
       }

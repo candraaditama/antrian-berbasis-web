@@ -10,7 +10,7 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && ($_SERVER['HTTP_X_REQUESTED_WITH
 
   // sql statement untuk menampilkan jumlah data dari tabel "tbl_antrian" berdasarkan "tanggal"
   $query = mysqli_query($mysqli, "SELECT count(id) as jumlah FROM tbl_antrian 
-                                  WHERE tanggal='$tanggal' AND loket='A'")
+                                  WHERE tanggal='$tanggal' AND loket='A' AND dilayani='Loket 1'")
                                   or die('Ada kesalahan pada query tampil data : ' . mysqli_error($mysqli));
   // ambil data hasil query
   $data = mysqli_fetch_assoc($query);
@@ -19,5 +19,5 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && ($_SERVER['HTTP_X_REQUESTED_WITH
 
   // tampilkan data
   // echo ('A-'. number_format($jumlah_antrian, 0, '', '.'));
-  echo (number_format($jumlah_antrian, 0, '', '.'));
+  echo ('A-'.number_format($jumlah_antrian, 0, '', '.'));
 }

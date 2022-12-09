@@ -9,7 +9,7 @@
   $tanggal = gmdate("Y-m-d", time() + 60 * 60 * 7);
 
   // sql statement untuk menampilkan data dari tabel "tbl_antrian" berdasarkan "tanggal"
-  $query = mysqli_query($mysqli, "SELECT dilayani, COUNT(*) AS total_layanan FROM tbl_antrian WHERE tanggal='".$tanggal."' GROUP BY dilayani;")
+  $query = mysqli_query($mysqli, "SELECT *, COUNT(*) AS total_layanan FROM tbl_antrian WHERE tanggal='".$tanggal."' GROUP BY dilayani;")
                                   or die('Ada kesalahan pada query tampil data : ' . mysqli_error($mysqli));
   // ambil jumlah baris data hasil query
   $rows = mysqli_num_rows($query);

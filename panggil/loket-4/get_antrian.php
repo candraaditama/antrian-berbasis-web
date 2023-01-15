@@ -24,7 +24,7 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && ($_SERVER['HTTP_X_REQUESTED_WITH
     // ambil data hasil query
     while ($row = mysqli_fetch_assoc($query)) {
       $data['id']         = $row["id"];
-      $data['no_antrian'] = "D-".$row["no_antrian"];
+      $data['no_antrian'] = "E-".$row["no_antrian"];
       $data['status']     = $row["status"];
       $data['dilayani']     = $row["dilayani"];
 

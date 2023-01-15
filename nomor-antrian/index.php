@@ -23,7 +23,7 @@ require('layout/header.php');
                 </div>
               </a>
               <a id="insert-1" href="javascript:void(0)" class="btn btn-primary btn-block fs-5 px-5 py-3 mb-2">
-                <span class="h3 fw-bolder">Loket 1 </span>
+                <span class="h3 fw-bolder">Loket B </span>
               </a>
             </div>
           </div>
@@ -44,7 +44,7 @@ require('layout/header.php');
                 </div>
               </a>
               <a id="insert-2" href="javascript:void(0)" class="btn btn-primary btn-block fs-5 px-5 py-3 mb-2">
-                <span class="h3 fw-bolder">Loket 2 </span>
+                <span class="h3 fw-bolder">Loket C </span>
               </a>
             </div>
           </div>
@@ -66,7 +66,7 @@ require('layout/header.php');
                 </div>
               </a>
               <a id="insert-3" href="javascript:void(0)" class="btn btn-primary btn-block fs-5 px-5 py-3 mb-2">
-                <span class="h3 fw-bolder">Loket 3 </span>
+                <span class="h3 fw-bolder">Loket D </span>
               </a>
             </div>
           </div>
@@ -87,7 +87,7 @@ require('layout/header.php');
                 </div>
               </a>
               <a id="insert-4" href="javascript:void(0)" class="btn btn-primary btn-block fs-5 px-5 py-3 mb-2">
-                <span class="h3 fw-bolder">Loket 4 </span>
+                <span class="h3 fw-bolder">Loket E </span>
               </a>
             </div>
           </div>
@@ -109,7 +109,7 @@ require('layout/header.php');
                 </div>
               </a>
               <a id="insert-5" href="javascript:void(0)" class="btn btn-primary btn-block fs-5 px-5 py-3 mb-2">
-                <span class="h3 fw-bolder">Loket 5 </span>
+                <span class="h3 fw-bolder">Loket F </span>
               </a>
             </div>
           </div>
@@ -130,7 +130,7 @@ require('layout/header.php');
                 </div>
               </a>
               <a id="insert-6" href="javascript:void(0)" class="btn btn-primary btn-block fs-5 px-5 py-3 mb-2">
-                <span class="h3 fw-bolder">Loket 6 </span>
+                <span class="h3 fw-bolder">Loket G </span>
               </a>
             </div>
           </div>
@@ -151,7 +151,7 @@ require('layout/header.php');
                 </div>
               </a>
               <a id="insert-7" href="javascript:void(0)" class="btn btn-primary btn-block fs-5 px-5 py-3 mb-2">
-                <span class="h3 fw-bolder">Loket 7 </span>
+                <span class="h3 fw-bolder">Loket H </span>
               </a>
             </div>
           </div>
@@ -198,7 +198,7 @@ require('layout/header.php');
               </a>
               <!-- button pengambilan nomor antrian -->
               <a id="insert-b" href="javascript:void(0)" class="btn btn-primary btn-block fs-5 px-5 py-3 mb-2">
-              <span class="h3 fw-bolder">Loket KTP </span>
+                <span class="h3 fw-bolder">Loket KTP </span>
               </a>
             </div>
           </div>
@@ -224,7 +224,7 @@ require('layout/header.php');
               </a>
               <!-- button pengambilan nomor antrian -->
               <a id="insert-d" href="javascript:void(0)" class="btn btn-primary btn-block fs-5 px-5 py-3 mb-2">
-              <span class="h3 fw-bolder">Loket Legalisir </span>
+                <span class="h3 fw-bolder">Loket Legalisir </span>
               </a>
             </div>
           </div>
@@ -272,7 +272,7 @@ require('layout/header.php');
               </a>
               <!-- button pengambilan nomor antrian -->
               <a id="insert-c" href="javascript:void(0)" class="btn btn-primary btn-block fs-5 px-5 py-3 mb-2">
-              <span class="h3 fw-bolder">Loket Aduan </span>
+                <span class="h3 fw-bolder">Loket Aduan </span>
               </a>
             </div>
           </div>
@@ -295,7 +295,7 @@ require('layout/header.php');
                 </div>
               </a>
               <a id="insert-f" href="javascript:void(0)" class="btn btn-primary btn-block fs-5 px-5 py-3 mb-2">
-              <span class="h3 fw-bolder">Perkawinan </span>
+                <span class="h3 fw-bolder">Perkawinan </span>
               </a>
             </div>
           </div>
@@ -436,13 +436,13 @@ require('layout/header.php');
   </main>
 
   <?php
- require('layout/footer.php');
-?>
+  require('layout/footer.php');
+  ?>
 
 
 
   <script type="text/javascript">
-    $(document).ready(function () {
+    $(document).ready(function() {
       // tampilkan jumlah antrian
       $('#antrian').load('get_antrian.php');
       $('#antrian-b').load('get_antrian_b.php');
@@ -472,17 +472,17 @@ require('layout/header.php');
 
 
       // proses insert data loket 1
-      $('#insert-1').on('click', function () {
+      $('#insert-1').on('click', function() {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
           url: 'insert_1.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
+          success: function(result) { // ketika proses insert data selesai
             // jika berhasil
             if (result === 'Sukses') {
               // tampilkan jumlah antrian
 
-              $.get("get_antrian_1.php", function (loket1) {
-                $.get('../panggil/loket-1/get_sisa_antrian.php', function (data) {
+              $.get("get_antrian_1.php", function(loket1) {
+                $.get('../panggil/loket-1/get_sisa_antrian.php', function(data) {
                   sisa_1 = data - 1;
                   PrintElem(loket1, sisa_1);
                 });
@@ -495,17 +495,17 @@ require('layout/header.php');
         });
       });
 
-      $('#insert-1-div').on('click', function () {
+      $('#insert-1-div').on('click', function() {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
           url: 'insert_1.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
+          success: function(result) { // ketika proses insert data selesai
             // jika berhasil
             if (result === 'Sukses') {
               // tampilkan jumlah antrian
 
-              $.get("get_antrian_1.php", function (loket1) {
-                $.get('../panggil/loket-1/get_sisa_antrian.php', function (data) {
+              $.get("get_antrian_1.php", function(loket1) {
+                $.get('../panggil/loket-1/get_sisa_antrian.php', function(data) {
                   sisa_1 = data - 1;
                   PrintElem(loket1, sisa_1);
                 });
@@ -522,17 +522,17 @@ require('layout/header.php');
 
       //loket 2
       // proses insert data
-      $('#insert-2').on('click', function () {
+      $('#insert-2').on('click', function() {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
           url: 'insert_2.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
+          success: function(result) { // ketika proses insert data selesai
             // jika berhasil
             if (result === 'Sukses') {
               // tampilkan jumlah antrian
 
-              $.get("get_antrian_2.php", function (loket2) {
-                $.get('../panggil/loket-2/get_sisa_antrian.php', function (data) {
+              $.get("get_antrian_2.php", function(loket2) {
+                $.get('../panggil/loket-2/get_sisa_antrian.php', function(data) {
                   sisa_2 = data - 1;
                   PrintElem(loket2, sisa_2);
                 });
@@ -545,17 +545,17 @@ require('layout/header.php');
         });
       });
 
-      $('#insert-2-div').on('click', function () {
+      $('#insert-2-div').on('click', function() {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
           url: 'insert_2.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
+          success: function(result) { // ketika proses insert data selesai
             // jika berhasil
             if (result === 'Sukses') {
               // tampilkan jumlah antrian
 
-              $.get("get_antrian_2.php", function (loket2) {
-                $.get('../panggil/loket-2/get_sisa_antrian.php', function (data) {
+              $.get("get_antrian_2.php", function(loket2) {
+                $.get('../panggil/loket-2/get_sisa_antrian.php', function(data) {
                   sisa_2 = data - 1;
                   PrintElem(loket2, sisa_2);
                 });
@@ -570,17 +570,17 @@ require('layout/header.php');
       });
 
       //loket 3
-      $('#insert-3').on('click', function () {
+      $('#insert-3').on('click', function() {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
           url: 'insert_3.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
+          success: function(result) { // ketika proses insert data selesai
             // jika berhasil
             if (result === 'Sukses') {
               // tampilkan jumlah antrian
 
-              $.get("get_antrian_3.php", function (loket3) {
-                $.get('../panggil/loket-3/get_sisa_antrian.php', function (data) {
+              $.get("get_antrian_3.php", function(loket3) {
+                $.get('../panggil/loket-3/get_sisa_antrian.php', function(data) {
                   sisa_3 = data - 1;
                   PrintElem(loket3, sisa_3);
                 });
@@ -593,17 +593,17 @@ require('layout/header.php');
         });
       });
 
-      $('#insert-3-div').on('click', function () {
+      $('#insert-3-div').on('click', function() {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
           url: 'insert_3.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
+          success: function(result) { // ketika proses insert data selesai
             // jika berhasil
             if (result === 'Sukses') {
               // tampilkan jumlah antrian
 
-              $.get("get_antrian_3.php", function (loket3) {
-                $.get('../panggil/loket-3/get_sisa_antrian.php', function (data) {
+              $.get("get_antrian_3.php", function(loket3) {
+                $.get('../panggil/loket-3/get_sisa_antrian.php', function(data) {
                   sisa_3 = data - 1;
                   PrintElem(loket3, sisa_3);
                 });
@@ -617,18 +617,18 @@ require('layout/header.php');
       });
 
 
-//loket 4
-$('#insert-4').on('click', function () {
+      //loket 4
+      $('#insert-4').on('click', function() {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
           url: 'insert_4.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
+          success: function(result) { // ketika proses insert data selesai
             // jika berhasil
             if (result === 'Sukses') {
               // tampilkan jumlah antrian
 
-              $.get("get_antrian_4.php", function (loket4) {
-                $.get('../panggil/loket-4/get_sisa_antrian.php', function (data) {
+              $.get("get_antrian_4.php", function(loket4) {
+                $.get('../panggil/loket-4/get_sisa_antrian.php', function(data) {
                   sisa_4 = data - 1;
                   PrintElem(loket4, sisa_4);
                 });
@@ -641,17 +641,17 @@ $('#insert-4').on('click', function () {
         });
       });
 
-      $('#insert-4-div').on('click', function () {
+      $('#insert-4-div').on('click', function() {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
           url: 'insert_4.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
+          success: function(result) { // ketika proses insert data selesai
             // jika berhasil
             if (result === 'Sukses') {
               // tampilkan jumlah antrian
 
-              $.get("get_antrian_4.php", function (loket4) {
-                $.get('../panggil/loket-4/get_sisa_antrian.php', function (data) {
+              $.get("get_antrian_4.php", function(loket4) {
+                $.get('../panggil/loket-4/get_sisa_antrian.php', function(data) {
                   sisa_4 = data - 1;
                   PrintElem(loket4, sisa_4);
                 });
@@ -667,17 +667,17 @@ $('#insert-4').on('click', function () {
 
 
       //loket 5
-$('#insert-5').on('click', function () {
+      $('#insert-5').on('click', function() {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
           url: 'insert_5.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
+          success: function(result) { // ketika proses insert data selesai
             // jika berhasil
             if (result === 'Sukses') {
               // tampilkan jumlah antrian
 
-              $.get("get_antrian_5.php", function (loket5) {
-                $.get('../panggil/loket-5/get_sisa_antrian.php', function (data) {
+              $.get("get_antrian_5.php", function(loket5) {
+                $.get('../panggil/loket-5/get_sisa_antrian.php', function(data) {
                   sisa_5 = data - 1;
                   PrintElem(loket5, sisa_5);
                 });
@@ -688,16 +688,16 @@ $('#insert-5').on('click', function () {
         });
       });
 
-      $('#insert-5-div').on('click', function () {
+      $('#insert-5-div').on('click', function() {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
           url: 'insert_4.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
+          success: function(result) { // ketika proses insert data selesai
             // jika berhasil
             if (result === 'Sukses') {
               // tampilkan jumlah antrian
-              $.get("get_antrian_5.php", function (loket5) {
-                $.get('../panggil/loket-5/get_sisa_antrian.php', function (data) {
+              $.get("get_antrian_5.php", function(loket5) {
+                $.get('../panggil/loket-5/get_sisa_antrian.php', function(data) {
                   sisa_5 = data - 1;
                   PrintElem(loket5, sisa_5);
                 });
@@ -709,18 +709,18 @@ $('#insert-5').on('click', function () {
       });
 
 
-//loket 6
-$('#insert-6').on('click', function () {
+      //loket 6
+      $('#insert-6').on('click', function() {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
           url: 'insert_6.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
+          success: function(result) { // ketika proses insert data selesai
             // jika berhasil
             if (result === 'Sukses') {
               // tampilkan jumlah antrian
 
-              $.get("get_antrian_6.php", function (loket6) {
-                $.get('../panggil/loket-6/get_sisa_antrian.php', function (data) {
+              $.get("get_antrian_6.php", function(loket6) {
+                $.get('../panggil/loket-6/get_sisa_antrian.php', function(data) {
                   sisa_6 = data - 1;
                   PrintElem(loket6, sisa_6);
                 });
@@ -731,16 +731,16 @@ $('#insert-6').on('click', function () {
         });
       });
 
-      $('#insert-6-div').on('click', function () {
+      $('#insert-6-div').on('click', function() {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
           url: 'insert_6.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
+          success: function(result) { // ketika proses insert data selesai
             // jika berhasil
             if (result === 'Sukses') {
               // tampilkan jumlah antrian
-              $.get("get_antrian_6.php", function (loket6) {
-                $.get('../panggil/loket-6/get_sisa_antrian.php', function (data) {
+              $.get("get_antrian_6.php", function(loket6) {
+                $.get('../panggil/loket-6/get_sisa_antrian.php', function(data) {
                   sisa_6 = data - 1;
                   PrintElem(loket6, sisa_6);
                 });
@@ -752,18 +752,18 @@ $('#insert-6').on('click', function () {
       });
 
 
-//loket 7
-$('#insert-7').on('click', function () {
+      //loket 7
+      $('#insert-7').on('click', function() {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
           url: 'insert_7.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
+          success: function(result) { // ketika proses insert data selesai
             // jika berhasil
             if (result === 'Sukses') {
               // tampilkan jumlah antrian
 
-              $.get("get_antrian_7.php", function (loket7) {
-                $.get('../panggil/loket-7/get_sisa_antrian.php', function (data) {
+              $.get("get_antrian_7.php", function(loket7) {
+                $.get('../panggil/loket-7/get_sisa_antrian.php', function(data) {
                   sisa_7 = data - 1;
                   PrintElem(loket7, sisa_7);
                 });
@@ -774,16 +774,16 @@ $('#insert-7').on('click', function () {
         });
       });
 
-      $('#insert-7-div').on('click', function () {
+      $('#insert-7-div').on('click', function() {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
           url: 'insert_7.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
+          success: function(result) { // ketika proses insert data selesai
             // jika berhasil
             if (result === 'Sukses') {
               // tampilkan jumlah antrian
-              $.get("get_antrian_7.php", function (loket7) {
-                $.get('../panggil/loket-7/get_sisa_antrian.php', function (data) {
+              $.get("get_antrian_7.php", function(loket7) {
+                $.get('../panggil/loket-7/get_sisa_antrian.php', function(data) {
                   sisa_6 = data - 1;
                   PrintElem(loket7, sisa_7);
                 });
@@ -795,15 +795,15 @@ $('#insert-7').on('click', function () {
       });
 
 
-      $('#insert-b').on('click', function () {
+      $('#insert-b').on('click', function() {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
           url: 'insert_b.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
+          success: function(result) { // ketika proses insert data selesai
             // jika berhasil
             if (result === 'Sukses') {
-              $.get("get_antrian_b.php", function (loketb) {
-                $.get('../panggil/loket-ktp/get_sisa_antrian_b.php', function (data) {
+              $.get("get_antrian_b.php", function(loketb) {
+                $.get('../panggil/loket-ktp/get_sisa_antrian_b.php', function(data) {
                   sisa_b = data - 1;
                   PrintElem(loketb, sisa_b);
                 });
@@ -814,15 +814,15 @@ $('#insert-7').on('click', function () {
         });
       });
 
-      $('#insert-ktp-div').on('click', function () {
+      $('#insert-ktp-div').on('click', function() {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
           url: 'insert_b.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
+          success: function(result) { // ketika proses insert data selesai
             // jika berhasil
             if (result === 'Sukses') {
-              $.get("get_antrian_b.php", function (loketb) {
-                $.get('../panggil/loket-ktp/get_sisa_antrian_b.php', function (data) {
+              $.get("get_antrian_b.php", function(loketb) {
+                $.get('../panggil/loket-ktp/get_sisa_antrian_b.php', function(data) {
                   sisa_b = data - 1;
                   PrintElem(loketb, sisa_b);
                 });
@@ -833,15 +833,15 @@ $('#insert-7').on('click', function () {
         });
       });
 
-      $('#insert-c').on('click', function () {
+      $('#insert-c').on('click', function() {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
           url: 'insert_c.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
+          success: function(result) { // ketika proses insert data selesai
             // jika berhasil
             if (result === 'Sukses') {
-              $.get("get_antrian_c.php", function (loketc) {
-                $.get('../panggil/loket-c/get_sisa_antrian.php', function (data) {
+              $.get("get_antrian_c.php", function(loketc) {
+                $.get('../panggil/loket-c/get_sisa_antrian.php', function(data) {
                   sisa_c = data - 1;
                   PrintElem(loketc, sisa_c);
                 });
@@ -853,15 +853,15 @@ $('#insert-7').on('click', function () {
       });
 
 
-      $('#insert-aduan-div').on('click', function () {
+      $('#insert-aduan-div').on('click', function() {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
           url: 'insert_c.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
+          success: function(result) { // ketika proses insert data selesai
             // jika berhasil
             if (result === 'Sukses') {
-              $.get("get_antrian_c.php", function (loketc) {
-                $.get('../panggil/loket-c/get_sisa_antrian.php', function (data) {
+              $.get("get_antrian_c.php", function(loketc) {
+                $.get('../panggil/loket-c/get_sisa_antrian.php', function(data) {
                   sisa_c = data - 1;
                   PrintElem(loketc, sisa_c);
                 });
@@ -872,15 +872,15 @@ $('#insert-7').on('click', function () {
         });
       });
 
-      $('#insert-d').on('click', function () {
+      $('#insert-d').on('click', function() {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
           url: 'insert_d.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
+          success: function(result) { // ketika proses insert data selesai
             // jika berhasil
             if (result === 'Sukses') {
-              $.get("get_antrian_d.php", function (loketd) {
-                $.get('../panggil/loket-d/get_sisa_antrian.php', function (data) {
+              $.get("get_antrian_d.php", function(loketd) {
+                $.get('../panggil/loket-d/get_sisa_antrian.php', function(data) {
                   sisa_d = data - 1;
                   PrintElem(loketd, sisa_d);
                 });
@@ -891,15 +891,15 @@ $('#insert-7').on('click', function () {
         });
       });
 
-      $('#insert-leg-div').on('click', function () {
+      $('#insert-leg-div').on('click', function() {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
           url: 'insert_d.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
+          success: function(result) { // ketika proses insert data selesai
             // jika berhasil
             if (result === 'Sukses') {
-              $.get("get_antrian_d.php", function (loketd) {
-                $.get('../panggil/loket-d/get_sisa_antrian.php', function (data) {
+              $.get("get_antrian_d.php", function(loketd) {
+                $.get('../panggil/loket-d/get_sisa_antrian.php', function(data) {
                   sisa_d = data - 1;
                   PrintElem(loketd, sisa_d);
                 });
@@ -911,15 +911,15 @@ $('#insert-7').on('click', function () {
       });
 
 
-      $('#insert-e').on('click', function () {
+      $('#insert-e').on('click', function() {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
           url: 'insert_e.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
+          success: function(result) { // ketika proses insert data selesai
             // jika berhasil
             if (result === 'Sukses') {
-              $.get("get_antrian_e.php", function (lokete) {
-                $.get('../panggil/loket-e/get_sisa_antrian.php', function (data) {
+              $.get("get_antrian_e.php", function(lokete) {
+                $.get('../panggil/loket-e/get_sisa_antrian.php', function(data) {
                   sisa_e = data - 1;
                   PrintElem(lokete, sisa_e);
                 });
@@ -930,15 +930,15 @@ $('#insert-7').on('click', function () {
         });
       });
 
-      $('#insert-konsul-div').on('click', function () {
+      $('#insert-konsul-div').on('click', function() {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
           url: 'insert_e.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
+          success: function(result) { // ketika proses insert data selesai
             // jika berhasil
             if (result === 'Sukses') {
-              $.get("get_antrian_e.php", function (lokete) {
-                $.get('../panggil/loket-e/get_sisa_antrian.php', function (data) {
+              $.get("get_antrian_e.php", function(lokete) {
+                $.get('../panggil/loket-e/get_sisa_antrian.php', function(data) {
                   sisa_e = data - 1;
                   PrintElem(lokete, sisa_e);
                 });
@@ -950,15 +950,15 @@ $('#insert-7').on('click', function () {
       });
 
 
-      $('#insert-f').on('click', function () {
+      $('#insert-f').on('click', function() {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
           url: 'insert_f.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
+          success: function(result) { // ketika proses insert data selesai
             // jika berhasil
             if (result === 'Sukses') {
-              $.get("get_antrian_f.php", function (loketf) {
-                $.get('../panggil/loket-f/get_sisa_antrian.php', function (data) {
+              $.get("get_antrian_f.php", function(loketf) {
+                $.get('../panggil/loket-f/get_sisa_antrian.php', function(data) {
                   sisa_f = data - 1;
                   PrintElem(loketf, sisa_f);
                 });
@@ -969,15 +969,15 @@ $('#insert-7').on('click', function () {
         });
       });
 
-      $('#insert-kawin-div').on('click', function () {
+      $('#insert-kawin-div').on('click', function() {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
           url: 'insert_f.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
+          success: function(result) { // ketika proses insert data selesai
             // jika berhasil
             if (result === 'Sukses') {
-              $.get("get_antrian_f.php", function (loketf) {
-                $.get('../panggil/loket-f/get_sisa_antrian.php', function (data) {
+              $.get("get_antrian_f.php", function(loketf) {
+                $.get('../panggil/loket-f/get_sisa_antrian.php', function(data) {
                   sisa_f = data - 1;
                   PrintElem(loketf, sisa_f);
                 });
@@ -988,15 +988,15 @@ $('#insert-7').on('click', function () {
         });
       });
 
-      $('#insert-g').on('click', function () {
+      $('#insert-g').on('click', function() {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
           url: 'insert_g.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
+          success: function(result) { // ketika proses insert data selesai
             // jika berhasil
             if (result === 'Sukses') {
-              $.get("get_antrian_g.php", function (loketg) {
-                $.get('../panggil/loket-g/get_sisa_antrian.php', function (data) {
+              $.get("get_antrian_g.php", function(loketg) {
+                $.get('../panggil/loket-g/get_sisa_antrian.php', function(data) {
                   sisa_g = data - 1;
                   PrintElem(loketg, sisa_g);
                 });
@@ -1007,15 +1007,15 @@ $('#insert-7').on('click', function () {
         });
       });
 
-      $('#insert-cs-div').on('click', function () {
+      $('#insert-cs-div').on('click', function() {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
           url: 'insert_g.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
+          success: function(result) { // ketika proses insert data selesai
             // jika berhasil
             if (result === 'Sukses') {
-              $.get("get_antrian_g.php", function (loketg) {
-                $.get('../panggil/loket-g/get_sisa_antrian.php', function (data) {
+              $.get("get_antrian_g.php", function(loketg) {
+                $.get('../panggil/loket-g/get_sisa_antrian.php', function(data) {
                   sisa_g = data - 1;
                   PrintElem(loketg, sisa_g);
                 });
@@ -1026,15 +1026,15 @@ $('#insert-7').on('click', function () {
         });
       });
 
-      $('#insert-h').on('click', function () {
+      $('#insert-h').on('click', function() {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
           url: 'insert_h.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
+          success: function(result) { // ketika proses insert data selesai
             // jika berhasil
             if (result === 'Sukses') {
-              $.get("get_antrian_h.php", function (loketh) {
-                $.get('../panggil/loket-h/get_sisa_antrian.php', function (data) {
+              $.get("get_antrian_h.php", function(loketh) {
+                $.get('../panggil/loket-h/get_sisa_antrian.php', function(data) {
                   sisa_h = data - 1;
                   PrintElem(loketh, sisa_h);
                 });
@@ -1045,15 +1045,15 @@ $('#insert-7').on('click', function () {
         });
       });
 
-      $('#insert-i').on('click', function () {
+      $('#insert-i').on('click', function() {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
           url: 'insert_i.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
+          success: function(result) { // ketika proses insert data selesai
             // jika berhasil
             if (result === 'Sukses') {
-              $.get("get_antrian_i.php", function (loketi) {
-                $.get('../panggil/loket-i/get_sisa_antrian.php', function (data) {
+              $.get("get_antrian_i.php", function(loketi) {
+                $.get('../panggil/loket-i/get_sisa_antrian.php', function(data) {
                   sisa_i = data - 1;
                   PrintElem(loketi, sisa_i);
                 });
@@ -1064,15 +1064,15 @@ $('#insert-7').on('click', function () {
         });
       });
 
-      $('#insert-j').on('click', function () {
+      $('#insert-j').on('click', function() {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
           url: 'insert_j.php', // url file proses insert data
-          success: function (result) { // ketika proses insert data selesai
+          success: function(result) { // ketika proses insert data selesai
             // jika berhasil
             if (result === 'Sukses') {
-              $.get("get_antrian_j.php", function (loketj) {
-                $.get('../panggil/loket-j/get_sisa_antrian.php', function (data) {
+              $.get("get_antrian_j.php", function(loketj) {
+                $.get('../panggil/loket-j/get_sisa_antrian.php', function(data) {
                   sisa_j = data - 1;
                   PrintElem(loketj, sisa_j);
                 });
@@ -1093,16 +1093,16 @@ $('#insert-7').on('click', function () {
       let loket = nomor.substring(0, 2);
       switch (loket) {
         case "Ad":
-          loket = "Loket 11 (Aduan)";
+          loket = "Loket K (Aduan)";
           break;
         case "KT":
-          loket = "Loket 8 (KTP)";
+          loket = "Loket A (KTP)";
           break;
         case "Le":
-          loket = "Loket 9 (Legalisir)";
+          loket = "Loket I (Legalisir)";
           break;
         case "Pe":
-          loket = "Loket 12 (Perkawinan)";
+          loket = "Loket J (Perkawinan)";
           break;
         case "CS":
           loket = "Loket Costumer Service (13)";
@@ -1111,26 +1111,29 @@ $('#insert-7').on('click', function () {
           loket = "Loket Konsultasi (10)";
           break;
         case "B-":
-          loket = "Loket 2 (Umum)";
+          loket = "Loket B (Umum)";
           break;
         case "A-":
-          loket = "Loket 1 (Umum)";
+          loket = "Loket 1 (KTP)";
           break;
         case "C-":
-          loket = "Loket 3 (Umum)";
+          loket = "Loket C (Umum)";
           break;
         case "D-":
-          loket = "Loket 4 (Umum)";
+          loket = "Loket D (Umum)";
           break;
         case "E-":
-          loket = "Loket 5 (Umum)";
+          loket = "Loket E (Umum)";
           break;
         case "F-":
-          loket = "Loket 6 (Umum)";
+          loket = "Loket F (Umum)";
           break;
         case "G-":
-          loket = "Loket 7 (Umum)";
-          break;  
+          loket = "Loket G (Umum)";
+          break;
+        case "H-":
+          loket = "Loket H (Umum)";
+          break;
           // case "J":
           //   loket = "Loket J (Umum)";
           //   break;
@@ -1168,7 +1171,7 @@ $('#insert-7').on('click', function () {
       mywindow.document.write('</body></html>');
       mywindow.document.close(); // necessary for IE >= 10
       mywindow.focus(); // necessary for IE >= 10*/
-      setTimeout(function () {
+      setTimeout(function() {
 
         mywindow.print();
         mywindow.close();

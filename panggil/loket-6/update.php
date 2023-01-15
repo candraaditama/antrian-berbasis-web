@@ -16,7 +16,7 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && ($_SERVER['HTTP_X_REQUESTED_WITH
 
     // sql statement untuk update data di tabel "tbl_antrian" berdasarkan "id"
     $update = mysqli_query($mysqli, "UPDATE tbl_antrian
-                                     SET status='$status', updated_date='$updated_date', dilayani='Loket 6'
+                                     SET status='$status', updated_date='$updated_date', dilayani='Loket C'
                                      WHERE id='$id'")
                                      or die('Ada kesalahan pada query update : ' . mysqli_error($mysqli));
   }

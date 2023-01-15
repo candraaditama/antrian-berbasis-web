@@ -38,7 +38,7 @@ header("Access-Control-Allow-Origin: *");
         <!-- judul halaman -->
         <div class="d-flex align-items-center me-md-auto">
           <i class="bi-mic-fill text-success me-3 fs-3"></i>
-          <h1 class="h5 pt-2">LOKET 4</h1>
+          <h1 class="h5 pt-2">LOKET E</h1>
         </div>
         <!-- breadcrumbs -->
         <div class="ms-5 ms-md-0 pt-md-3 pb-md-0">
@@ -248,8 +248,8 @@ header("Access-Control-Allow-Origin: *");
 
         // mainkan suara nomor antrian
         setTimeout(function() {
-          responsiveVoice.speak("Nomor Antrian, " + data["no_antrian"] + ", silahkan menuju loket, 4", "Indonesian Female", {
-            rate: 0.90,
+          responsiveVoice.speak("Nomor Antrian, " + data["no_antrian"] + ", silahkan menuju loket E", "Indonesian Female", {
+            rate: 0.95,
             pitch: 1,
             volume: 1
           });

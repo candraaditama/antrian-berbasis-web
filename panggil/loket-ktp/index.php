@@ -251,8 +251,8 @@ header("Access-Control-Allow-Origin: *");
 
         // mainkan suara nomor antrian
         setTimeout(function() {
-          responsiveVoice.speak("Nomor Antrian, " + data["no_antrian"] + ", silahkan menuju loket, 8", "Indonesian Female", {
-            rate: 0.90,
+          responsiveVoice.speak("Nomor Antrian, " + data["no_antrian"] + ", silahkan menuju loket A", "Indonesian Female", {
+            rate: 0.95,
             pitch: 1,
             volume: 1
           });

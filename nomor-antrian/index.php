@@ -482,7 +482,7 @@ require('layout/header.php');
               // tampilkan jumlah antrian
 
               $.get("get_antrian_1.php", function(loket1) {
-                $.get('../panggil/loket-1/get_sisa_antrian.php', function(data) {
+                $.get('../panggil/loket-7/get_sisa_antrian.php', function(data) {
                   sisa_1 = data - 1;
                   PrintElem(loket1, sisa_1);
                 });
@@ -505,7 +505,7 @@ require('layout/header.php');
               // tampilkan jumlah antrian
 
               $.get("get_antrian_1.php", function(loket1) {
-                $.get('../panggil/loket-1/get_sisa_antrian.php', function(data) {
+                $.get('../panggil/loket-7/get_sisa_antrian.php', function(data) {
                   sisa_1 = data - 1;
                   PrintElem(loket1, sisa_1);
                 });
@@ -532,7 +532,7 @@ require('layout/header.php');
               // tampilkan jumlah antrian
 
               $.get("get_antrian_2.php", function(loket2) {
-                $.get('../panggil/loket-2/get_sisa_antrian.php', function(data) {
+                $.get('../panggil/loket-6/get_sisa_antrian.php', function(data) {
                   sisa_2 = data - 1;
                   PrintElem(loket2, sisa_2);
                 });
@@ -555,7 +555,7 @@ require('layout/header.php');
               // tampilkan jumlah antrian
 
               $.get("get_antrian_2.php", function(loket2) {
-                $.get('../panggil/loket-2/get_sisa_antrian.php', function(data) {
+                $.get('../panggil/loket-6/get_sisa_antrian.php', function(data) {
                   sisa_2 = data - 1;
                   PrintElem(loket2, sisa_2);
                 });
@@ -580,7 +580,7 @@ require('layout/header.php');
               // tampilkan jumlah antrian
 
               $.get("get_antrian_3.php", function(loket3) {
-                $.get('../panggil/loket-3/get_sisa_antrian.php', function(data) {
+                $.get('../panggil/loket-5/get_sisa_antrian.php', function(data) {
                   sisa_3 = data - 1;
                   PrintElem(loket3, sisa_3);
                 });
@@ -603,7 +603,7 @@ require('layout/header.php');
               // tampilkan jumlah antrian
 
               $.get("get_antrian_3.php", function(loket3) {
-                $.get('../panggil/loket-3/get_sisa_antrian.php', function(data) {
+                $.get('../panggil/loket-5/get_sisa_antrian.php', function(data) {
                   sisa_3 = data - 1;
                   PrintElem(loket3, sisa_3);
                 });
@@ -677,7 +677,7 @@ require('layout/header.php');
               // tampilkan jumlah antrian
 
               $.get("get_antrian_5.php", function(loket5) {
-                $.get('../panggil/loket-5/get_sisa_antrian.php', function(data) {
+                $.get('../panggil/loket-3/get_sisa_antrian.php', function(data) {
                   sisa_5 = data - 1;
                   PrintElem(loket5, sisa_5);
                 });
@@ -697,7 +697,7 @@ require('layout/header.php');
             if (result === 'Sukses') {
               // tampilkan jumlah antrian
               $.get("get_antrian_5.php", function(loket5) {
-                $.get('../panggil/loket-5/get_sisa_antrian.php', function(data) {
+                $.get('../panggil/loket-3/get_sisa_antrian.php', function(data) {
                   sisa_5 = data - 1;
                   PrintElem(loket5, sisa_5);
                 });
@@ -720,7 +720,7 @@ require('layout/header.php');
               // tampilkan jumlah antrian
 
               $.get("get_antrian_6.php", function(loket6) {
-                $.get('../panggil/loket-6/get_sisa_antrian.php', function(data) {
+                $.get('../panggil/loket-2/get_sisa_antrian.php', function(data) {
                   sisa_6 = data - 1;
                   PrintElem(loket6, sisa_6);
                 });
@@ -740,7 +740,7 @@ require('layout/header.php');
             if (result === 'Sukses') {
               // tampilkan jumlah antrian
               $.get("get_antrian_6.php", function(loket6) {
-                $.get('../panggil/loket-6/get_sisa_antrian.php', function(data) {
+                $.get('../panggil/loket-2/get_sisa_antrian.php', function(data) {
                   sisa_6 = data - 1;
                   PrintElem(loket6, sisa_6);
                 });
@@ -763,7 +763,7 @@ require('layout/header.php');
               // tampilkan jumlah antrian
 
               $.get("get_antrian_7.php", function(loket7) {
-                $.get('../panggil/loket-7/get_sisa_antrian.php', function(data) {
+                $.get('../panggil/loket-1/get_sisa_antrian.php', function(data) {
                   sisa_7 = data - 1;
                   PrintElem(loket7, sisa_7);
                 });
@@ -783,7 +783,7 @@ require('layout/header.php');
             if (result === 'Sukses') {
               // tampilkan jumlah antrian
               $.get("get_antrian_7.php", function(loket7) {
-                $.get('../panggil/loket-7/get_sisa_antrian.php', function(data) {
+                $.get('../panggil/loket-1/get_sisa_antrian.php', function(data) {
                   sisa_6 = data - 1;
                   PrintElem(loket7, sisa_7);
                 });

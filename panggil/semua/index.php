@@ -46,31 +46,31 @@
                             <div class="fullWidth eight columns">
                                 <div class="projectFactsWrap ">
                                     <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
-                                        <p id="number1" class="loket">Loket 1</p>
+                                        <p id="number1" class="loket">Loket A</p>
                                         <p id="antrian-sekarang" class="number"></p>
                                         <span></span>
                                         <p class="fw-bolder">UMUM</p>
                                     </div>
                                     <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
-                                        <p id="number1" class="loket">Loket 2</p>
+                                        <p id="number1" class="loket">Loket B</p>
                                         <p id="antrian-sekarang-b" class="number"></p>
                                         <span></span>
                                         <p class="fw-bolder">UMUM</p>
                                     </div>
                                     <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
-                                        <p id="number1" class="loket">Loket 3</p>
+                                        <p id="number1" class="loket">Loket C</p>
                                         <p id="antrian-sekarang-c" class="number"></p>
                                         <span></span>
                                         <p class="fw-bolder">UMUM</p>
                                     </div>
                                     <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
-                                        <p id="number1" class="loket">Loket 4</p>
+                                        <p id="number1" class="loket">Loket D</p>
                                         <p id="antrian-sekarang-d" class="number"></p>
                                         <span></span>
                                         <p class="fw-bolder">UMUM</p>
                                     </div>
                                     <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
-                                        <p id="number1" class="loket">Loket 5</p>
+                                        <p id="number1" class="loket">Loket E</p>
                                         <p id="antrian-sekarang-e" class="number"></p>
                                         <span></span>
                                         <p class="fw-bolder">UMUM</p>
@@ -78,31 +78,31 @@
                                 </div>
                                 <div class="projectFactsWrap ">
                                     <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
-                                        <p id="number1" class="loket">Loket 6</p>
+                                        <p id="number1" class="loket">Loket F</p>
                                         <p id="antrian-sekarang-f" class="number"></p>
                                         <span></span>
                                         <p class="fw-bolder">UMUM</p>
                                     </div>
                                     <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
-                                        <p id="number1" class="loket">Loket 7</p>
+                                        <p id="number1" class="loket">Loket G</p>
                                         <p id="antrian-sekarang-g" class="number">G-21</p>
                                         <span></span>
                                         <p class="fw-bolder">UMUM</p>
                                     </div>
                                     <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
-                                        <p id="number1" class="loket">Loket 8</p>
+                                        <p id="number1" class="loket">Loket H</p>
                                         <p id="antrian-sekarang-h" class="number"></p>
                                         <span></span>
                                         <p class="fw-bolder">REKAM & CETAK KTP</p>
                                     </div>
                                     <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
-                                        <p id="number1" class="loket">Loket 9</p>
+                                        <p id="number1" class="loket">Loket I</p>
                                         <p id="antrian-sekarang-i" class="number"></p>
                                         <span></span>
                                         <p class="fw-bolder">LEGALISIR</p>
                                     </div>
                                     <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
-                                        <p id="number1" class="loket">Loket 11</p>
+                                        <p id="number1" class="loket">Loket K</p>
                                         <p id="antrian-sekarang-j" class="number"></p>
                                         <span></span>
                                         <p class="fw-bolder">ADUAN</p>

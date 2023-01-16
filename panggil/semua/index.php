@@ -49,7 +49,7 @@
                                         <p id="number1" class="loket">Loket A</p>
                                         <p id="antrian-sekarang" class="number"></p>
                                         <span></span>
-                                        <p class="fw-bolder">UMUM</p>
+                                        <p class="fw-bolder">REKAM & CETAK KTP</p>
                                     </div>
                                     <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
                                         <p id="number1" class="loket">Loket B</p>
@@ -93,7 +93,7 @@
                                         <p id="number1" class="loket">Loket H</p>
                                         <p id="antrian-sekarang-h" class="number"></p>
                                         <span></span>
-                                        <p class="fw-bolder">REKAM & CETAK KTP</p>
+                                        <p class="fw-bolder">UMUM</p>
                                     </div>
                                     <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
                                         <p id="number1" class="loket">Loket I</p>
@@ -236,7 +236,7 @@
             $('#antrian-sekarang-g').load('get_antrian_sekarang_loket_7.php');
 
             // tampilkan informasi antrian
-            $('#antrian-sekarang-h').load('../loket-b/get_antrian_sekarang_b.php');
+            $('#antrian-sekarang-h').load('get_antrian_sekarang_loket_H.php');
 
             // tampilkan informasi antrian
             $('#antrian-sekarang-i').load('../loket-d/get_antrian_sekarang.php');
@@ -260,7 +260,7 @@
 
                 $('#antrian-sekarang-g').load('get_antrian_sekarang_loket_7.php').fadeIn("slow");
 
-                $('#antrian-sekarang-h').load('../loket-b/get_antrian_sekarang_b.php').fadeIn("slow");
+                $('#antrian-sekarang-h').load('get_antrian_sekarang_loket_H.php').fadeIn("slow");
 
                 $('#antrian-sekarang-i').load('../loket-d/get_antrian_sekarang.php').fadeIn("slow");
 

@@ -31,6 +31,7 @@
 <?php
 header("Access-Control-Allow-Origin: *");
 ?>
+
 <body class="d-flex flex-column h-100">
   <main class="flex-shrink-0">
     <div class="container pt-4">
@@ -175,9 +176,9 @@ header("Access-Control-Allow-Origin: *");
 
       // menampilkan data antrian menggunakan DataTables
       var table = $('#tabel-antrian').DataTable({
-        "lengthChange": false,              // non-aktifkan fitur "lengthChange"
-        "searching": false,                 // non-aktifkan fitur "Search"
-        "ajax": "get_antrian.php",          // url file proses tampil data dari database
+        "lengthChange": false, // non-aktifkan fitur "lengthChange"
+        "searching": false, // non-aktifkan fitur "Search"
+        "ajax": "get_antrian.php", // url file proses tampil data dari database
         // menampilkan data
         "columns": [{
             "data": "no_antrian",
@@ -203,12 +204,12 @@ header("Access-Control-Allow-Origin: *");
               if (data["status"] === "") {
                 // sembunyikan button panggil
                 var btn = "-";
-              } 
+              }
               // jika data "status = 0"
               else if (data["status"] === "0") {
                 // tampilkan button panggil
                 var btn = "<button class=\"btn btn-success btn-sm rounded-circle\"><i class=\"bi-mic-fill\"></i></button>";
-              } 
+              }
               // jika data "status = 1"
               else if (data["status"] === "1") {
                 // tampilkan button ulangi panggilan
@@ -219,9 +220,9 @@ header("Access-Control-Allow-Origin: *");
           },
         ],
         "order": [
-          [1, "desc"]             // urutkan data berdasarkan "no_antrian" secara descending
+          [1, "desc"] // urutkan data berdasarkan "no_antrian" secara descending
         ],
-        "iDisplayLength": 10,     // tampilkan 10 data per halaman
+        "iDisplayLength": 10, // tampilkan 10 data per halaman
       });
 
       // panggilan antrian dan update data
@@ -240,22 +241,36 @@ header("Access-Control-Allow-Origin: *");
 
         // set delay antara suara bell dengan suara nomor antrian
         // durasi_bell = bell.duration * 770;
-        durasi_bell = bell.duration * 700;
+        durasi_bell = bell.duration * 770;
 
         // mainkan suara nomor antrian
+        // setTimeout(function() {
+        //   responsiveVoice.speak("Nomor Antrian, " + data["no_antrian"] + ", silahkan menuju, loket, C", "Indonesian Female", {
+        //     rate: 0.78,
+        //     pitch: 1,
+        //     volume: 1
+        //   });
+        // }, durasi_bell);
+
+
         setTimeout(function() {
-          responsiveVoice.speak("Nomor Antrian, " + data["no_antrian"] + ", silahkan menuju, loket, C", "Indonesian Female", {
-            rate: 0.78,
-            pitch: 1,
-            volume: 1
-          });
+            const message = new SpeechSynthesisUtterance("Nomor Antrian " + data["no_antrian"] + ", silahkan menuju loket C");
+            message.lang = "id-ID";
+            const voices = speechSynthesis.getVoices().filter(voice => voice.lang === "id-ID");
+            message.voice = voices[1];
+            speechSynthesis.speak(message);
         }, durasi_bell);
+
+
+
 
         // proses update data
         $.ajax({
-          type: "POST",               // mengirim data dengan method POST
-          url: "update.php",          // url file proses update data
-          data: { id: id }            // tentukan data yang dikirim
+          type: "POST", // mengirim data dengan method POST
+          url: "update.php", // url file proses update data
+          data: {
+            id: id
+          } // tentukan data yang dikirim
         });
       });
 

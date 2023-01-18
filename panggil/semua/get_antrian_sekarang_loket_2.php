@@ -10,7 +10,7 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && ($_SERVER['HTTP_X_REQUESTED_WITH
 
   // sql statement untuk menampilkan data "no_antrian" dari tabel "tbl_antrian" berdasarkan "tanggal" dan "status = 1"
   $query = mysqli_query($mysqli, "SELECT no_antrian FROM tbl_antrian 
-                                  WHERE tanggal='$tanggal' AND status='1' AND dilayani='Loket G'
+                                  WHERE tanggal='$tanggal' AND status='1' AND dilayani='Loket B'
                                   ORDER BY updated_date DESC LIMIT 1")
                                   or die('Ada kesalahan pada query tampil data : ' . mysqli_error($mysqli));
   // ambil jumlah baris data hasil query

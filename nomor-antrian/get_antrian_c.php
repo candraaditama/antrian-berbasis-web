@@ -18,5 +18,5 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && ($_SERVER['HTTP_X_REQUESTED_WITH
   $jumlah_antrian = $data['jumlah'];
 
   // tampilkan data
-  echo ('Aduan-'. number_format($jumlah_antrian, 0, '', '.'));
+  echo ('C-'. number_format($jumlah_antrian, 0, '', '.'));
 }

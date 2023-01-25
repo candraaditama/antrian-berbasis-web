@@ -157,10 +157,7 @@
 
   <!-- DataTables -->
   <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.10.25/datatables.min.js"></script>
-  <!-- Responsivevoice -->
-  <!-- Get API Key -> https://responsivevoice.org/ -->
-  <!-- <script src="https://code.responsivevoice.org/responsivevoice.js?key=jQZ2zcdq"></script> -->
-  <script src="https://code.responsivevoice.org/responsivevoice.js?key=AdOLuec5"></script>
+
 
   <script type="text/javascript">
     $(document).ready(function() {
@@ -236,12 +233,21 @@
         durasi_bell = bell.duration * 700;
 
         // mainkan suara nomor antrian
-        setTimeout(function() {
-          responsiveVoice.speak("Nomor Antrian, " + data["no_antrian"] + ", silahkan menuju, loket, I", "Indonesian Female", {
-            rate: 0.78,
-            pitch: 1,
-            volume: 1
-          });
+        var mytimer = setInterval(function() {
+          var voices = speechSynthesis.getVoices();
+          if (voices.length !== 0) {
+            var msg = new SpeechSynthesisUtterance();
+            msg.text = "Nomor Antrian " + data["no_antrian"] + ", silahkan menuju loket I";
+            msg.lang = "id-ID";
+            for (var i = 0; i < voices.length; i++) {
+              if (voices[i].lang == msg.lang) {
+                msg.voice = voices[i]; // Note: some voices don't support altering params
+                msg.voiceURI = voices[i].voiceURI;
+              }
+            }
+            speechSynthesis.speak(msg);
+            clearInterval(mytimer);
+          }
         }, durasi_bell);
 
         // proses update data

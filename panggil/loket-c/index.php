@@ -244,21 +244,21 @@ header("Access-Control-Allow-Origin: *");
         durasi_bell = bell.duration * 770;
 
         // mainkan suara nomor antrian
-        // setTimeout(function() {
-        //   responsiveVoice.speak("Nomor Antrian, " + data["no_antrian"] + ", silahkan menuju, loket, C", "Indonesian Female", {
-        //     rate: 0.78,
-        //     pitch: 1,
-        //     volume: 1
-        //   });
-        // }, durasi_bell);
-
-
-        setTimeout(function() {
-            const message = new SpeechSynthesisUtterance("Nomor Antrian " + data["no_antrian"] + ", silahkan menuju loket C");
-            message.lang = "id-ID";
-            const voices = speechSynthesis.getVoices().filter(voice => voice.lang === "id-ID");
-            message.voice = voices[1];
-            speechSynthesis.speak(message);
+        var mytimer = setInterval(function() {
+          var voices = speechSynthesis.getVoices();
+          if (voices.length !== 0) {
+            var msg = new SpeechSynthesisUtterance();
+            msg.text = "Nomor Antrian " + data["no_antrian"] + ", silahkan menuju loket C";
+            msg.lang = "id-ID";
+            for (var i = 0; i < voices.length; i++) {
+              if (voices[i].lang == msg.lang) {
+                msg.voice = voices[i]; // Note: some voices don't support altering params
+                msg.voiceURI = voices[i].voiceURI;
+              }
+            }
+            speechSynthesis.speak(msg);
+            clearInterval(mytimer);
+          }
         }, durasi_bell);
 
 

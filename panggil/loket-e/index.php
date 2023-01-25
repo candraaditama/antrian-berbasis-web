@@ -238,12 +238,21 @@ header("Access-Control-Allow-Origin: *");
         durasi_bell = bell.duration * 700;
 
         // mainkan suara nomor antrian
-        setTimeout(function() {
-          responsiveVoice.speak("Nomor Antrian, " + data["no_antrian"] + ", silahkan menuju, loket, E", "Indonesian Female", {
-            rate: 0.78,
-            pitch: 1,
-            volume: 1
-          });
+        var mytimer = setInterval(function() {
+          var voices = speechSynthesis.getVoices();
+          if (voices.length !== 0) {
+            var msg = new SpeechSynthesisUtterance();
+            msg.text = "Nomor Antrian " + data["no_antrian"] + ", silahkan menuju loket E";
+            msg.lang = "id-ID";
+            for (var i = 0; i < voices.length; i++) {
+              if (voices[i].lang == msg.lang) {
+                msg.voice = voices[i]; // Note: some voices don't support altering params
+                msg.voiceURI = voices[i].voiceURI;
+              }
+            }
+            speechSynthesis.speak(msg);
+            clearInterval(mytimer);
+          }
         }, durasi_bell);
 
         // proses update data

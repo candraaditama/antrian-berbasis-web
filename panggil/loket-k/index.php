@@ -28,9 +28,7 @@
   <!-- Custom Style -->
   <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
-<?php
-header("Access-Control-Allow-Origin: *");
-?>
+
 <body class="d-flex flex-column h-100">
   <main class="flex-shrink-0">
     <div class="container pt-4">
@@ -38,7 +36,7 @@ header("Access-Control-Allow-Origin: *");
         <!-- judul halaman -->
         <div class="d-flex align-items-center me-md-auto">
           <i class="bi-mic-fill text-success me-3 fs-3"></i>
-          <h1 class="h5 pt-2">LOKET B (Umum)</h1>
+          <h1 class="h5 pt-2">LOKET K (Pengaduan)</h1>
         </div>
         <!-- breadcrumbs -->
         <div class="ms-5 ms-md-0 pt-md-3 pb-md-0">
@@ -129,7 +127,6 @@ header("Access-Control-Allow-Origin: *");
                   <th>ID</th>
                   <th>Status</th>
                   <th>Panggil</th>
-                  <th>Dilayani</th>
                 </tr>
               </thead>
             </table>
@@ -150,9 +147,6 @@ header("Access-Control-Allow-Origin: *");
     </div>
   </footer>
 
-
-
-
   <!-- load file audio bell antrian -->
   <audio id="tingtung" src="../../assets/audio/tingtung.mp3"></audio>
 
@@ -164,6 +158,7 @@ header("Access-Control-Allow-Origin: *");
 
   <!-- DataTables -->
   <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.10.25/datatables.min.js"></script>
+
 
   <script type="text/javascript">
     $(document).ready(function() {
@@ -196,6 +191,7 @@ header("Access-Control-Allow-Origin: *");
             "data": null,
             "orderable": false,
             "searchable": false,
+            "width": '100px',
             "className": 'text-center',
             "render": function(data, type, row) {
               // jika tidak ada data "status"
@@ -215,10 +211,6 @@ header("Access-Control-Allow-Origin: *");
               };
               return btn;
             }
-          },
-          {
-            "data": "dilayani",
-            "className": 'text-center',
           },
         ],
         "order": [
@@ -250,7 +242,7 @@ header("Access-Control-Allow-Origin: *");
           var voices = speechSynthesis.getVoices();
           if (voices.length !== 0) {
             var msg = new SpeechSynthesisUtterance();
-            msg.text = "Nomor Antrian " + data["no_antrian"] + ", silahkan menuju loket B";
+            msg.text = "Nomor Antrian " + data["no_antrian"] + ", silahkan menuju loket K";
             msg.lang = "id-ID";
             for (var i = 0; i < voices.length; i++) {
               if (voices[i].lang == msg.lang) {

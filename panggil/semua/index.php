@@ -215,56 +215,56 @@
     <script type="text/javascript">
         $(document).ready(function () {
             // tampilkan informasi antrian
-            $('#antrian-sekarang').load('get_antrian_sekarang_loket_1.php');
+            $('#antrian-sekarang').load('../loket-a/get_antrian_sekarang.php');
 
             // tampilkan informasi antrian
-            $('#antrian-sekarang-b').load('get_antrian_sekarang_loket_2.php');
+            $('#antrian-sekarang-b').load('../loket-b/get_antrian_sekarang.php');
 
             // tampilkan informasi antrian
-            $('#antrian-sekarang-c').load('get_antrian_sekarang_loket_3.php');
+            $('#antrian-sekarang-c').load('../loket-c/get_antrian_sekarang.php');
 
             // tampilkan informasi antrian
-            $('#antrian-sekarang-d').load('get_antrian_sekarang_loket_4.php');
+            $('#antrian-sekarang-d').load('../loket-d/get_antrian_sekarang.php');
 
             // tampilkan informasi antrian
-            $('#antrian-sekarang-e').load('get_antrian_sekarang_loket_5.php');
+            $('#antrian-sekarang-e').load('../loket-e/get_antrian_sekarang.php');
 
             // tampilkan informasi antrian
-            $('#antrian-sekarang-f').load('get_antrian_sekarang_loket_6.php');
+            $('#antrian-sekarang-f').load('../loket-f/get_antrian_sekarang.php');
 
             // tampilkan informasi antrian
-            $('#antrian-sekarang-g').load('get_antrian_sekarang_loket_7.php');
+            $('#antrian-sekarang-g').load('../loket-g/get_antrian_sekarang.php');
 
             // tampilkan informasi antrian
-            $('#antrian-sekarang-h').load('get_antrian_sekarang_loket_H.php');
+            $('#antrian-sekarang-h').load('../loket-h/get_antrian_sekarang.php');
 
             // tampilkan informasi antrian
-            $('#antrian-sekarang-i').load('../loket-d/get_antrian_sekarang.php');
+            $('#antrian-sekarang-i').load('../loket-i/get_antrian_sekarang.php');
 
             // tampilkan informasi antrian
-            $('#antrian-sekarang-j').load('../loket-c/get_antrian_sekarang.php');
+            $('#antrian-sekarang-j').load('../loket-k/get_antrian_sekarang.php');
 
             // auto reload data antrian setiap 1 detik untuk menampilkan data secara realtime
             setInterval(function () {
-                $('#antrian-sekarang').load('get_antrian_sekarang_loket_1.php').fadeIn("slow");
+                $('#antrian-sekarang').load('../loket-a/get_antrian_sekarang.php').fadeIn("slow");
 
-                $('#antrian-sekarang-b').load('get_antrian_sekarang_loket_2.php').fadeIn("slow");
+                $('#antrian-sekarang-b').load('../loket-b/get_antrian_sekarang.php').fadeIn("slow");
 
-                $('#antrian-sekarang-c').load('get_antrian_sekarang_loket_3.php').fadeIn("slow");
+                $('#antrian-sekarang-c').load('../loket-c/get_antrian_sekarang.php').fadeIn("slow");
 
-                $('#antrian-sekarang-d').load('get_antrian_sekarang_loket_4.php').fadeIn("slow");
+                $('#antrian-sekarang-d').load('../loket-d/get_antrian_sekarang.php').fadeIn("slow");
 
-                $('#antrian-sekarang-e').load('get_antrian_sekarang_loket_5.php').fadeIn("slow");
+                $('#antrian-sekarang-e').load('../loket-e/get_antrian_sekarang.php').fadeIn("slow");
 
-                $('#antrian-sekarang-f').load('get_antrian_sekarang_loket_6.php').fadeIn("slow");
+                $('#antrian-sekarang-f').load('../loket-f/get_antrian_sekarang.php').fadeIn("slow");
 
-                $('#antrian-sekarang-g').load('get_antrian_sekarang_loket_7.php').fadeIn("slow");
+                $('#antrian-sekarang-g').load('../loket-g/get_antrian_sekarang.php').fadeIn("slow");
 
-                $('#antrian-sekarang-h').load('get_antrian_sekarang_loket_H.php').fadeIn("slow");
+                $('#antrian-sekarang-h').load('../loket-h/get_antrian_sekarang.php').fadeIn("slow");
 
-                $('#antrian-sekarang-i').load('../loket-d/get_antrian_sekarang.php').fadeIn("slow");
+                $('#antrian-sekarang-i').load('../loket-i/get_antrian_sekarang.php').fadeIn("slow");
 
-                $('#antrian-sekarang-j').load('../loket-c/get_antrian_sekarang.php').fadeIn("slow");
+                $('#antrian-sekarang-j').load('../loket-k/get_antrian_sekarang.php').fadeIn("slow");
 
 
 

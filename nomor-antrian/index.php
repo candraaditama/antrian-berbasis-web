@@ -1199,7 +1199,7 @@ require('layout/header.php');
           loket = "Loket B (Umum)";
           break;
         case "A-":
-          loket = "Loket 1 (KTP)";
+          loket = "Loket A (KTP)";
           break;
         case "C-":
           loket = "Loket C (Umum)";

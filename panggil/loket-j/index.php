@@ -124,6 +124,7 @@
               <thead>
                 <tr>
                   <th>Nomor Antrian</th>
+                  <th>ID</th>
                   <th>Status</th>
                   <th>Panggil</th>
                 </tr>
@@ -241,7 +242,7 @@
           var voices = speechSynthesis.getVoices();
           if (voices.length !== 0) {
             var msg = new SpeechSynthesisUtterance();
-            msg.text = "Nomor Antrian " + data["no_antrian"] + ", silahkan menuju loket I";
+            msg.text = "Nomor Antrian " + data["no_antrian"] + ", silahkan menuju loket J";
             msg.lang = "id-ID";
             for (var i = 0; i < voices.length; i++) {
               if (voices[i].lang == msg.lang) {

@@ -200,7 +200,7 @@
                                 </tbody>
                                 </thead>
                             </table>
-                            <video width="450" height="auto" autoplay muted class="mt-3 border border-5 border-dark rounded">
+                            <video width="450" height="auto" autoplay muted loop class="mt-3 border border-5 border-dark rounded">
                                 <source src="../../assets/vd/Dukcapil.mp4" type="video/mp4">
                                 <source src="../../assets/vd/Dukcapil.ogg" type="video/ogg">
                                 Your browser does not support the video tag.

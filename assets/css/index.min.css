@@ -192,7 +192,7 @@ table#tableisi {
 }
 
 .projectFactsWrap .item {
-  width: 20%;
+  width: 16%;
   height: 100%;
   padding: 35px 0px;
   text-align: center;
@@ -216,6 +216,9 @@ table#tableisi {
 }
 
 .projectFactsWrap .item:nth-child(5) {
+  background: #010a31;
+}
+.projectFactsWrap .item:nth-child(6) {
   background: #010a31;
 }
 

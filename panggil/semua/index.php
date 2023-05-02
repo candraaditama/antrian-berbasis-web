@@ -5,13 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <script type="text/javascript" src="../../asset/js/bootstrap.min.js"></script> -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="../../assets/js/index.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
     </script>
     <link rel="stylesheet" href="../../assets/css/index.min.css" />
 </head>
@@ -29,7 +26,7 @@
     </div>
     <div class="container-fluid mt-3">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-9">
                 <div class="card shadow bg-blue">
                     <div class="card-body">
                         <table class="header shadow">
@@ -49,7 +46,7 @@
                                         <p id="number1" class="loket">Loket A</p>
                                         <p id="antrian-sekarang" class="number"></p>
                                         <span></span>
-                                        <p class="fw-bolder">REKAM & CETAK KTP</p>
+                                        <p class="fw-bolder">REKAM KTP</p>
                                     </div>
                                     <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
                                         <p id="number1" class="loket">Loket B</p>
@@ -75,14 +72,14 @@
                                         <span></span>
                                         <p class="fw-bolder">UMUM</p>
                                     </div>
-                                </div>
-                                <div class="projectFactsWrap ">
                                     <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
                                         <p id="number1" class="loket">Loket F</p>
                                         <p id="antrian-sekarang-f" class="number"></p>
                                         <span></span>
                                         <p class="fw-bolder">UMUM</p>
                                     </div>
+                                </div>
+                                <div class="projectFactsWrap ">
                                     <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
                                         <p id="number1" class="loket">Loket G</p>
                                         <p id="antrian-sekarang-g" class="number">G-21</p>
@@ -102,8 +99,20 @@
                                         <p class="fw-bolder">LEGALISIR</p>
                                     </div>
                                     <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
-                                        <p id="number1" class="loket">Loket K</p>
+                                        <p id="number1" class="loket">Loket J</p>
                                         <p id="antrian-sekarang-j" class="number"></p>
+                                        <span></span>
+                                        <p class="fw-bolder">SITUPAT</p>
+                                    </div>
+                                    <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
+                                        <p id="number1" class="loket">Loket K</p>
+                                        <p id="antrian-sekarang-k" class="number"></p>
+                                        <span></span>
+                                        <p class="fw-bolder">PERKAWINAN</p>
+                                    </div>
+                                    <div class="item wow fadeInUpBig animated animated" style="visibility: visible;">
+                                        <p id="number1" class="loket">Loket L</p>
+                                        <p id="antrian-sekarang-l" class="number"></p>
                                         <span></span>
                                         <p class="fw-bolder">ADUAN</p>
                                     </div>
@@ -113,7 +122,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="card shadow mb-2 bg-blue">
                     <div class="card-body p-1">
                         <!-- <div class="image-inner" id="image-inner">
@@ -124,14 +133,10 @@
 
                         </div> -->
                         <div id="demo" class="carousel slide" data-ride="carousel">
-
-                           
-
                             <!-- The slideshow -->
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="../../assets/img/MAKLUMAT.jpg" alt="Los Angeles"
-                                        class="d-block img-fluid w-100">
+                                    <img src="../../assets/img/MAKLUMAT.jpg" alt="Los Angeles" class="d-block img-fluid w-100">
                                 </div>
                                 <div class="carousel-item">
                                     <img src="../../assets/img/sma.jpeg" alt="Chicago" class="d-block img-fluid w-100">
@@ -169,10 +174,10 @@
                                     <tr></tr>
                                     <!-- <tr>DAFTAR ANTREAN</th></tr> -->
                                     <tr>
-                                        <th width="33%" class="rounded p-3" colspan="2">NOMOR WHATSAPP</th>
+                                        <th width="33%" class="rounded p-3" colspan="2">MEDIA</th>
                                     </tr>
                                 <tbody>
-                                    <tr>
+                                    <!-- <tr>
                                         <td class="text-warning pt-4">PENGADUAN</td>
                                         <td class="text-right text-warning pt-4">0821-3325-6500</td>
                                     </tr>
@@ -191,11 +196,15 @@
                                     <tr>
                                         <td class="text-warning pt-2">PENCATATAN SIPIL</td>
                                         <td class="text-right text-warning pt-2">0897-0870-006</td>
-                                    </tr>
+                                    </tr> -->
                                 </tbody>
                                 </thead>
                             </table>
-
+                            <video width="450" height="auto" autoplay muted class="mt-3 border border-5 border-dark rounded">
+                                <source src="../../assets/vd/Dukcapil.mp4" type="video/mp4">
+                                <source src="../../assets/vd/Dukcapil.ogg" type="video/ogg">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
 
 
@@ -204,16 +213,47 @@
             </div>
         </div>
     </div>
+
+    <div id="header" class=" mt-3">
+        <div class="container-fluid d-flex">
+            <!-- <img class="float-left" src="../../assets/img/WA.png" width="35%"> -->
+            <div class="float-right ml-auto my-auto text-center section-time">
+                <h2 id="" class="text-warning">Kontak</h2>
+                <p id="" class="h2 text-white font-weight-bolder">WhatsApp</p>
+            </div>
+            <div class="float-right ml-auto my-auto text-center section-time">
+                <h2 id="" class="text-warning">0821-3325-6500</h2>
+                <p id="" class="h5 text-white font-weight-bolder">PENGADUAN</p>
+            </div>
+            <div class="ml-auto my-auto text-center section-time ">
+                <h2 id="" class="text-warning">0895-1033-0146</h2>
+                <p id="" class="h5 text-white font-weight-bolder">KARTU KELUARGA</p>
+            </div>
+            <div class="ml-auto my-auto text-center section-time">
+                <h2 id="" class="text-warning">0895-3448-3998</h2>
+                <p id="" class="h5 text-white font-weight-bolder">MUTASI PENDUDUK</p>
+            </div>
+            <div class="ml-auto my-auto text-center section-time">
+                <h2 id="" class="text-warning">0897-0870-006</h2>
+                <p id="" class="h5 text-white font-weight-bolder">PENCATATAN SIPIL</p>
+            </div>
+            <div class="ml-auto my-auto text-center section-time">
+                <h2 id="" class="text-warning">0819-1078-1439</h2>
+                <p id="" class="h5 text-white font-weight-bolder">PERKAWINAN</p>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+    </div>
+
     <div class="footer">
-        <div class="container-fluid">
-            <marquee>SELAMAT DATANG DI DINAS KEPENDUDUKAN & PENCATATAN SIPIL KABUPATEN BANTUL <span
-                    class="text-warning"> TETAP JAGA PROTOKOL KESEHATAN</span> MOHON BERKENAN MENUNGGU HINGGA NOMOR
+        <div class="container-fluid h5">
+            <marquee>SELAMAT DATANG DI DINAS KEPENDUDUKAN & PENCATATAN SIPIL KABUPATEN BANTUL <span class="text-warning"> TETAP JAGA PROTOKOL KESEHATAN</span> MOHON BERKENAN MENUNGGU HINGGA NOMOR
                 ANTREAN DIPANGGIL OLEH PETUGAS</marquee>
         </div>
     </div>
 
     <script type="text/javascript">
-        $(document).ready(function () {
+        $(document).ready(function() {
             // tampilkan informasi antrian
             $('#antrian-sekarang').load('../loket-a/get_antrian_sekarang.php');
 
@@ -242,10 +282,16 @@
             $('#antrian-sekarang-i').load('../loket-i/get_antrian_sekarang.php');
 
             // tampilkan informasi antrian
-            $('#antrian-sekarang-j').load('../loket-k/get_antrian_sekarang.php');
+            $('#antrian-sekarang-j').load('../loket-j/get_antrian_sekarang.php');
+
+            // tampilkan informasi antrian
+            $('#antrian-sekarang-k').load('../loket-k/get_antrian_sekarang.php');
+
+            // tampilkan informasi antrian
+            $('#antrian-sekarang-l').load('../loket-l/get_antrian_sekarang.php');
 
             // auto reload data antrian setiap 1 detik untuk menampilkan data secara realtime
-            setInterval(function () {
+            setInterval(function() {
                 $('#antrian-sekarang').load('../loket-a/get_antrian_sekarang.php').fadeIn("slow");
 
                 $('#antrian-sekarang-b').load('../loket-b/get_antrian_sekarang.php').fadeIn("slow");
@@ -266,7 +312,7 @@
 
                 $('#antrian-sekarang-j').load('../loket-k/get_antrian_sekarang.php').fadeIn("slow");
 
-
+                $('#antrian-sekarang-l').load('../loket-l/get_antrian_sekarang.php').fadeIn("slow");
 
             }, 1000);
         });

@@ -201,7 +201,7 @@ require('layout/header.php');
           </div>
         </div>
 
-        <div class="col mb-4 col-sm-4">
+        <div class="col mb-4 col-sm-3">
           <div class="px-4 py-1 mb-2 bg-white rounded-1 shadow-sm">
             <!-- judul halaman -->
             <div class="d-flex align-items-center me-md-auto">
@@ -225,33 +225,35 @@ require('layout/header.php');
         </div>
 
 
-        <!-- <div class="col mb-4 col-sm-4">
-          <div class="px-4 py-3 mb-2 bg-white rounded-1 shadow-sm">
+        <div class="col mb-4 col-sm-3">
+          <div class="px-4 py-1 mb-2 bg-white rounded-1 shadow-sm">
+            <!-- judul halaman -->
             <div class="d-flex align-items-center me-md-auto">
               <i class="bi-postcard text-primary me-3 fs-3"></i>
-              <h1 class="h6 pt-2 fw-bold">Layanan Konsultasi</h1>
+              <h1 class="h4 pt-2 fw-bold"> SITUPAT</h1>
             </div>
           </div>
 
           <div class="card border-0 rounded-1 shadow-sm">
             <div class="card-body text-center d-grid p-4">
-            <a id="insert-konsul-div"href="javascript:void(0)" >
-              <div class="border border-primary rounded-1 py-2 mb-3" id="ktp">
-                <h1 id="antrian-e" class="display-5 mt-4 fw-bolder text-dark lh-1 pb-3"></h1>
-              </div></a>
-              <a id="insert-e" href="javascript:void(0)" class="btn btn-primary btn-block fs-5 px-5 py-3 mb-2">
-                <i class="bi-person-plus fs-4 me-2"></i> Ambil Nomor
+              <a id="insert-i-div" href="javascript:void(0)">
+                <div class="border border-3 border-grey rounded-1 py-2 mb-3" id="ktp">
+                  <h3 id="antrian-j" class="display-3 mt-4 fw-bolder text-dark lh-1 pb-3"></h3>
+                </div>
+              </a>
+              <a id="insert-j" href="javascript:void(0)" class="btn btn-primary btn-block  shadow-0 fs-5 px-5 py-3 mb-2">
+                <span class="h3 fw-bolder">SITUPAT </span>
               </a>
             </div>
           </div>
-        </div> -->
+        </div>
 
-        <div class="col mb-4 col-sm-4">
+        <div class="col mb-4 col-sm-3">
           <div class="px-4 py-1 mb-2 bg-white rounded-1 shadow-sm">
             <!-- judul halaman -->
             <div class="d-flex align-items-center me-md-auto">
               <i class="bi-postcard text-primary me-3 fs-3"></i>
-              <h1 class="h4 pt-2 fw-bold">Layanan Perkawinan</h1>
+              <h1 class="h4 pt-2 fw-bold">Perkawinan</h1>
             </div>
           </div>
 
@@ -259,33 +261,33 @@ require('layout/header.php');
             <div class="card-body text-center d-grid p-4">
               <a id="insert-j-div" href="javascript:void(0)">
                 <div class="border border-3 border-grey rounded-1 py-2 mb-3" id="ktp">
-                  <h1 id="antrian-j" class="display-3 mt-4 fw-bolder text-dark lh-1 pb-3"></h1>
+                  <h1 id="antrian-k" class="display-3 mt-4 fw-bolder text-dark lh-1 pb-3"></h1>
                 </div>
               </a>
-              <a id="insert-j" href="javascript:void(0)" class="btn btn-primary btn-block  shadow-0 fs-5 px-5 py-3 mb-2">
+              <a id="insert-k" href="javascript:void(0)" class="btn btn-primary btn-block  shadow-0 fs-5 px-5 py-3 mb-2">
                 <span class="h3 fw-bolder">Perkawinan </span>
               </a>
             </div>
           </div>
         </div>
 
-        <div class="col mb-4 col-sm-4">
+        <div class="col mb-4 col-sm-3">
           <div class="px-4 py-1 mb-2 bg-white rounded-1 shadow-sm">
             <div class="d-flex align-items-center me-md-auto">
               <i class="bi-postcard text-primary me-3 fs-3"></i>
-              <h1 class="h4 pt-2 fw-bold">Layanan Pengaduan</h1>
+              <h1 class="h4 pt-2 fw-bold">Pengaduan</h1>
             </div>
           </div>
 
           <div class="card border-0 rounded-1 shadow-sm">
             <div class="card-body text-center d-grid p-4">
-              <a id="insert-k-div" href="javascript:void(0)">
+              <a id="insert-l-div" href="javascript:void(0)">
                 <div class="border border-3 border-grey rounded-1 py-2 mb-3" id="ktp">
                   <!-- <h3 class="pt-4 fw-bold text-dark text-center">LOKET PERKAWINAN (12)</h3> -->
-                  <h1 id="antrian-k" class="display-3 mt-4 fw-bolder text-dark lh-1 pb-3"></h1>
+                  <h1 id="antrian-l" class="display-3 mt-4 fw-bolder text-dark lh-1 pb-3"></h1>
                 </div>
               </a>
-              <a id="insert-k" href="javascript:void(0)" class="btn btn-primary btn-block  shadow-0 fs-5 px-5 py-3 mb-2">
+              <a id="insert-l" href="javascript:void(0)" class="btn btn-primary btn-block  shadow-0 fs-5 px-5 py-3 mb-2">
                 <span class="h3 fw-bolder">Pengaduan </span>
               </a>
             </div>
@@ -446,13 +448,14 @@ require('layout/header.php');
       $('#antrian-i').load('get_antrian_i.php');
       $('#antrian-j').load('get_antrian_j.php');
       $('#antrian-k').load('get_antrian_k.php');
-      $('#antrian-1').load('get_antrian_1.php');
-      $('#antrian-2').load('get_antrian_2.php');
-      $('#antrian-3').load('get_antrian_3.php');
-      $('#antrian-4').load('get_antrian_4.php');
-      $('#antrian-5').load('get_antrian_5.php');
-      $('#antrian-6').load('get_antrian_6.php');
-      $('#antrian-7').load('get_antrian_7.php');
+      $('#antrian-l').load('get_antrian_l.php');
+      // $('#antrian-1').load('get_antrian_1.php');
+      // $('#antrian-2').load('get_antrian_2.php');
+      // $('#antrian-3').load('get_antrian_3.php');
+      // $('#antrian-4').load('get_antrian_4.php');
+      // $('#antrian-5').load('get_antrian_5.php');
+      // $('#antrian-6').load('get_antrian_6.php');
+      // $('#antrian-7').load('get_antrian_7.php');
 
       function wait(ms) {
         var start = new Date().getTime();
@@ -1172,6 +1175,44 @@ require('layout/header.php');
         });
       });
 
+      $('#insert-l').on('click', function() {
+        $.ajax({
+          type: 'POST', // mengirim data dengan method POST
+          url: 'insert_l.php', // url file proses insert data
+          success: function(result) { // ketika proses insert data selesai
+            // jika berhasil
+            if (result === 'Sukses') {
+              $.get("get_antrian_l.php", function(loketl) {
+                $.get('../panggil/loket-l/get_sisa_antrian.php', function(data) {
+                  sisa_l = data - 1;
+                  PrintElem(loketl, sisa_l);
+                });
+                $('#antrian-l').text(loketl);
+              });
+            }
+          },
+        });
+      });
+
+      $('#insert-l-div').on('click', function() {
+        $.ajax({
+          type: 'POST', // mengirim data dengan method POST
+          url: 'insert_l.php', // url file proses insert data
+          success: function(result) { // ketika proses insert data selesai
+            // jika berhasil
+            if (result === 'Sukses') {
+              $.get("get_antrian_l.php", function(loketl) {
+                $.get('../panggil/loket-l/get_sisa_antrian.php', function(data) {
+                  sisa_l = data - 1;
+                  PrintElem(loketl, sisa_l);
+                });
+                $('#antrian-l').text(loketl);
+              });
+            }
+          },
+        });
+      });
+
     });
 
 
@@ -1181,13 +1222,16 @@ require('layout/header.php');
       let loket = nomor.substring(0, 2);
       switch (loket) {
         case "K-":
-          loket = "Loket K (Pengaduan)";
+          loket = "Loket K (Perkawinan)";
           break;
         case "KT":
+          case "L-":
+          loket = "Loket K (Pengaduan)";
+          break;
           loket = "Loket A (KTP)";
           break;
         case "J-":
-          loket = "Loket J (Perkawinan)";
+          loket = "Loket J (SITUPAT)";
           break;
         case "CS":
           loket = "Loket Costumer Service (13)";

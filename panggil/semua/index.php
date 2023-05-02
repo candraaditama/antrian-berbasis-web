@@ -310,7 +310,8 @@
 
                 $('#antrian-sekarang-i').load('../loket-i/get_antrian_sekarang.php').fadeIn("slow");
 
-                $('#antrian-sekarang-j').load('../loket-k/get_antrian_sekarang.php').fadeIn("slow");
+                $('#antrian-sekarang-j').load('../loket-j/get_antrian_sekarang.php').fadeIn("slow");
+                $('#antrian-sekarang-k').load('../loket-k/get_antrian_sekarang.php').fadeIn("slow");
 
                 $('#antrian-sekarang-l').load('../loket-l/get_antrian_sekarang.php').fadeIn("slow");
 

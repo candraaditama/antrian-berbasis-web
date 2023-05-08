@@ -236,7 +236,7 @@ require('layout/header.php');
 
           <div class="card border-0 rounded-1 shadow-sm">
             <div class="card-body text-center d-grid p-4">
-              <a id="insert-i-div" href="javascript:void(0)">
+              <a id="insert-j-div" href="javascript:void(0)">
                 <div class="border border-3 border-grey rounded-1 py-2 mb-3" id="ktp">
                   <h3 id="antrian-j" class="display-3 mt-4 fw-bolder text-dark lh-1 pb-3"></h3>
                 </div>
@@ -259,7 +259,7 @@ require('layout/header.php');
 
           <div class="card border-0 rounded-1 shadow-sm">
             <div class="card-body text-center d-grid p-4">
-              <a id="insert-j-div" href="javascript:void(0)">
+              <a id="insert-k-div" href="javascript:void(0)">
                 <div class="border border-3 border-grey rounded-1 py-2 mb-3" id="ktp">
                   <h1 id="antrian-k" class="display-3 mt-4 fw-bolder text-dark lh-1 pb-3"></h1>
                 </div>
@@ -848,7 +848,7 @@ require('layout/header.php');
       });
 
 
-      $('#insert-aduan-div').on('click', function() {
+      $('#insert-c-div').on('click', function() {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
           url: 'insert_c.php', // url file proses insert data
@@ -886,7 +886,7 @@ require('layout/header.php');
         });
       });
 
-      $('#insert-leg-div').on('click', function() {
+      $('#insert-d-div').on('click', function() {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
           url: 'insert_d.php', // url file proses insert data
@@ -925,7 +925,7 @@ require('layout/header.php');
         });
       });
 
-      $('#insert-konsul-div').on('click', function() {
+      $('#insert-e-div').on('click', function() {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
           url: 'insert_e.php', // url file proses insert data
@@ -964,7 +964,7 @@ require('layout/header.php');
         });
       });
 
-      $('#insert-kawin-div').on('click', function() {
+      $('#insert-f-div').on('click', function() {
         $.ajax({
           type: 'POST', // mengirim data dengan method POST
           url: 'insert_f.php', // url file proses insert data
@@ -1049,7 +1049,7 @@ require('layout/header.php');
             if (result === 'Sukses') {
               $.get("get_antrian_h.php", function(loketh) {
                 $.get('../panggil/loket-h/get_sisa_antrian.php', function(data) {
-                  sisa_g = data - 1;
+                  sisa_h = data - 1;
                   PrintElem(loketh, sisa_h);
                 });
                 $('#antrian-h').text(loketh);
@@ -1166,7 +1166,7 @@ require('layout/header.php');
               $.get("get_antrian_k.php", function(loketk) {
                 $.get('../panggil/loket-k/get_sisa_antrian.php', function(data) {
                   sisa_k = data - 1;
-                  PrintElem(loketk, sisa_i);
+                  PrintElem(loketk, sisa_k);
                 });
                 $('#antrian-k').text(loketk);
               });

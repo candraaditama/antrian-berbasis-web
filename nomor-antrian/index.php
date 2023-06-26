@@ -1224,10 +1224,10 @@ require('layout/header.php');
         case "K-":
           loket = "Loket K (Perkawinan)";
           break;
-        case "KT":
-          case "L-":
-          loket = "Loket K (Pengaduan)";
+        case "L-":
+          loket = "Loket L (Pengaduan)";
           break;
+        case "KT":
           loket = "Loket A (KTP)";
           break;
         case "J-":

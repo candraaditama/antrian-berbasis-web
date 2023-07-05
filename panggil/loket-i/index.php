@@ -208,9 +208,9 @@
             }
           },
         ],
-        "order": [
-          [0, "desc"]             // urutkan data berdasarkan "no_antrian" secara descending
-        ],
+        // "order": [
+        //   [0, "desc"]             // urutkan data berdasarkan "no_antrian" secara descending
+        // ],
         "iDisplayLength": 10,     // tampilkan 10 data per halaman
       });
 

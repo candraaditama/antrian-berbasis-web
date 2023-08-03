@@ -265,7 +265,7 @@
         $('#antrian-selanjutnya').load('get_antrian_selanjutnya.php').fadeIn("slow");
         $('#sisa-antrian').load('get_sisa_antrian.php').fadeIn("slow");
         table.ajax.reload(null, false);
-      }, 1000);
+      }, 10000);
     });
   </script>
 </body>

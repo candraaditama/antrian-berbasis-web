@@ -315,7 +315,7 @@
 
                 $('#antrian-sekarang-l').load('../loket-l/get_antrian_sekarang.php').fadeIn("slow");
 
-            }, 1000);
+            }, 5000);
         });
     </script>
 </body>

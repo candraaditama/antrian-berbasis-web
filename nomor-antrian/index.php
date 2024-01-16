@@ -1296,7 +1296,7 @@ require('layout/header.php');
 
       // qrcode.write('https://dukcapilonline.bantulkab.go.id/antrean/scan/' + nomor).make();
       mywindow.document.write(
-        '<img src="http://10.129.1.20/antrean/assets/img/wifi.svg" width="40" /> </div><div class="number"> Mohon berkenan menunggu. Terima kasih <br />Wifi : IBN-PUBLIK-CAPIL <br />Pass : @capilbtl100</div></div> </div></div></body>'
+        '<img src="http://10.129.1.20/antrean/assets/img/wifi.svg" width="40" /> </div><div class="number"> Mohon berkenan menunggu. Terima kasih <br />Wifi : IBN-PUBLIK-CAPIL <br />Pass : manutaja</div></div> </div></div></body>'
       );
 
       mywindow.document.write('</body></html>');

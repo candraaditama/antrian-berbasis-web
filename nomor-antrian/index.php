@@ -119,7 +119,7 @@ require('layout/header.php');
           <div class="px-4 py-1 mb-2 bg-white rounded-1 shadow-sm">
             <div class="d-flex align-items-center me-md-auto">
               <i class="bi-postcard text-primary me-3 fs-3"></i>
-              <h4 class="pt-2 fw-bold">Umum</h4>
+              <h4 class="pt-2 fw-bold">Disabilitas</h4>
             </div>
           </div>
           <div class="card border-0 rounded-1 shadow-sm">
@@ -130,7 +130,7 @@ require('layout/header.php');
                 </div>
               </a>
               <a id="insert-f" href="javascript:void(0)" class="btn btn-primary btn-block  shadow-0 fs-5 px-5 py-3 mb-2">
-                <span class="h3 fw-bolder">Loket F </span>
+                <span class="h3 fw-bolder">DISABILITAS</span>
               </a>
             </div>
           </div>
@@ -140,7 +140,7 @@ require('layout/header.php');
           <div class="px-4 py-1 mb-2 bg-white rounded-1 shadow-sm">
             <div class="d-flex align-items-center me-md-auto">
               <i class="bi-postcard text-primary me-3 fs-3"></i>
-              <h4 class="pt-2 fw-bold">Umum</h4>
+              <h4 class="pt-2 fw-bold">Pengambilan</h4>
             </div>
           </div>
           <div class="card border-0 rounded-1 shadow-sm">
@@ -151,7 +151,7 @@ require('layout/header.php');
                 </div>
               </a>
               <a id="insert-g" href="javascript:void(0)" class="btn btn-primary btn-block  shadow-0 fs-5 px-5 py-3 mb-2">
-                <span class="h3 fw-bolder">Loket G </span>
+                <span class="h5 fw-bolder">PENGAMBILAN</span>
               </a>
             </div>
           </div>
@@ -182,7 +182,7 @@ require('layout/header.php');
           <div class="px-4 py-1 mb-2 bg-white rounded-1 shadow-sm">
             <div class="d-flex align-items-center me-md-auto">
               <i class="bi-postcard text-primary me-3 fs-3"></i>
-              <h4 class="pt-2 fw-bold">Umum</h4>
+              <h4 class="pt-2 fw-bold">Legalisir</h4>
             </div>
           </div>
 
@@ -195,7 +195,7 @@ require('layout/header.php');
               </a>
               <!-- button pengambilan nomor antrian -->
               <a id="insert-h" href="javascript:void(0)" class="btn btn-primary btn-block shadow-0 fs-5 px-5 py-3 mb-2">
-                <span class="h3 fw-bolder">Loket H </span>
+                <span class="h3 fw-bolder">LEGALISIR </span>
               </a>
             </div>
           </div>
@@ -206,7 +206,7 @@ require('layout/header.php');
             <!-- judul halaman -->
             <div class="d-flex align-items-center me-md-auto">
               <i class="bi-postcard text-primary me-3 fs-3"></i>
-              <h1 class="h4 pt-2 fw-bold">Layanan Legalisir</h1>
+              <h1 class="h4 pt-2 fw-bold">Pengaduan</h1>
             </div>
           </div>
 
@@ -218,7 +218,7 @@ require('layout/header.php');
                 </div>
               </a>
               <a id="insert-i" href="javascript:void(0)" class="btn btn-primary btn-block  shadow-0 fs-5 px-5 py-3 mb-2">
-                <span class="h3 fw-bolder">Legalisir </span>
+                <span class="h4 fw-bolder">Pengaduan</span>
               </a>
             </div>
           </div>
@@ -230,7 +230,7 @@ require('layout/header.php');
             <!-- judul halaman -->
             <div class="d-flex align-items-center me-md-auto">
               <i class="bi-postcard text-primary me-3 fs-3"></i>
-              <h1 class="h4 pt-2 fw-bold"> SITUPAT</h1>
+              <h1 class="h4 pt-2 fw-bold"> Perkawinan</h1>
             </div>
           </div>
 
@@ -242,18 +242,17 @@ require('layout/header.php');
                 </div>
               </a>
               <a id="insert-j" href="javascript:void(0)" class="btn btn-primary btn-block  shadow-0 fs-5 px-5 py-3 mb-2">
-                <span class="h3 fw-bolder">SITUPAT </span>
+                <span class="h4 fw-bolder">PERKAWINAN </span>
               </a>
             </div>
           </div>
         </div>
 
-        <div class="col mb-4 col-sm-3">
+        <!-- <div class="col mb-4 col-sm-3">
           <div class="px-4 py-1 mb-2 bg-white rounded-1 shadow-sm">
-            <!-- judul halaman -->
             <div class="d-flex align-items-center me-md-auto">
               <i class="bi-postcard text-primary me-3 fs-3"></i>
-              <h1 class="h4 pt-2 fw-bold">Perkawinan</h1>
+              <h1 class="h4 pt-2 fw-bold">-</h1>
             </div>
           </div>
 
@@ -265,7 +264,7 @@ require('layout/header.php');
                 </div>
               </a>
               <a id="insert-k" href="javascript:void(0)" class="btn btn-primary btn-block  shadow-0 fs-5 px-5 py-3 mb-2">
-                <span class="h3 fw-bolder">Perkawinan </span>
+                <span class="h3 fw-bolder">- </span>
               </a>
             </div>
           </div>
@@ -275,7 +274,7 @@ require('layout/header.php');
           <div class="px-4 py-1 mb-2 bg-white rounded-1 shadow-sm">
             <div class="d-flex align-items-center me-md-auto">
               <i class="bi-postcard text-primary me-3 fs-3"></i>
-              <h1 class="h4 pt-2 fw-bold">Pengaduan</h1>
+              <h1 class="h4 pt-2 fw-bold">-</h1>
             </div>
           </div>
 
@@ -283,16 +282,15 @@ require('layout/header.php');
             <div class="card-body text-center d-grid p-4">
               <a id="insert-l-div" href="javascript:void(0)">
                 <div class="border border-3 border-grey rounded-1 py-2 mb-3" id="ktp">
-                  <!-- <h3 class="pt-4 fw-bold text-dark text-center">LOKET PERKAWINAN (12)</h3> -->
                   <h1 id="antrian-l" class="display-3 mt-4 fw-bolder text-dark lh-1 pb-3"></h1>
                 </div>
               </a>
               <a id="insert-l" href="javascript:void(0)" class="btn btn-primary btn-block  shadow-0 fs-5 px-5 py-3 mb-2">
-                <span class="h3 fw-bolder">Pengaduan </span>
+                <span class="h3 fw-bolder">- </span>
               </a>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!-- <div class="col mb-4 col-sm-4">
           <div class="px-4 py-3 mb-2 bg-white rounded-1 shadow-sm">
@@ -1231,7 +1229,7 @@ require('layout/header.php');
           loket = "Loket A (KTP)";
           break;
         case "J-":
-          loket = "Loket J (SITUPAT)";
+          loket = "Loket J (Perkawinan)";
           break;
         case "CS":
           loket = "Loket Costumer Service (13)";
@@ -1255,16 +1253,16 @@ require('layout/header.php');
           loket = "Loket E (Umum)";
           break;
         case "F-":
-          loket = "Loket F (Umum)";
+          loket = "Loket F (Disabilitas)";
           break;
         case "G-":
-          loket = "Loket G (Umum)";
+          loket = "Loket G (Pengambilan Berkas)";
           break;
         case "H-":
-          loket = "Loket H (Umum)";
+          loket = "Loket H (Legalisir)";
           break;
         case "I-":
-          loket = "Loket I (Legalisir)";
+          loket = "Loket I (Pengaduan)";
           break;
           // case "J":
           //   loket = "Loket J (Umum)";
